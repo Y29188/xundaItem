@@ -1,0 +1,37 @@
+<view>
+    <view class="my">
+        <view class="header">
+            <image class="img" src="/assets/image/7.jpg"></image>
+        </view>
+    </view>
+    <view class="middle">
+        <view class="order">
+            <text class="left">我的订单</text>
+            <text class="right">全部订单 ></text>
+        </view>
+        <view class="icon">
+            <view class="box">
+                <image class="img" src="/assets/image/待付款.png"></image>
+                <view class="fukuan">待付款</view>
+            </view>
+            <text style="color: #dfdfdf; margin-top: 20rpx;">|</text>
+            <view class="box">
+                <image class="img" src="/assets/image/待发货.png"></image>
+                <view class="fukuan">待发货</view>
+            </view>
+            <text style="color: #dfdfdf; margin-top: 20rpx;">|</text>
+            <view class="box">
+                <image class="img" src="/assets/image/待收货.png"></image>
+                <view class="fukuan">待收货</view>
+            </view>
+            <text style="color: #dfdfdf; margin-top: 20rpx;">|</text>
+            <view class="box">
+                <image class="img" src="/assets/image/评价.png"></image>
+                <view class="fukuan">待评价</view>
+            </view>
+        </view>
+        <view class="footer">
+            
+        </view>
+    </view>
+</view>

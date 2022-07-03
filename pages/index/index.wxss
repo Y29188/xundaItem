@@ -1,19 +1,302 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+.index {
+    position: relative;
+    width: 750rpx;
+    height: 840rpx;
+
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.index .banner {
+    width: 100%;
+    height: 564rpx;
+    border-radius: 12rpx;
+    background-color: #7cb342;
 }
 
-.usermotto {
-  margin-top: 200px;
+.index .banner swiper {
+    position: absolute;
+    left: 12rpx;
+    top: 60rpx;
+    height: 100%;
+    width: 100%;
+}
+
+.index .banner image {
+    width: 708rpx;
+    height: 312rpx;
+    border-radius: 6px;
+}
+
+.index .box {
+    position: absolute;
+    left: -20rpx;
+    top: 378rpx;
+    width: 790rpx;
+    height: 432rpx;
+    background-color: #7cb342;
+    border-radius: 100%;
+}
+
+.index .box .city {
+    position: absolute;
+    left: 80rpx;
+    top: 40rpx;
+    width: 624rpx;
+    height: 386rpx;
+    border-radius: 14rpx;
+    box-shadow: 0rpx 3rpx 7rpx 2rpx rgba(0, 0, 0, 0.4);
+    border: 1rpx solid rgba(187, 187, 187, 100);
+    background-color: #fff;
+}
+
+.index .box .city .plane {
+    position: absolute;
+    left: 262rpx;
+    top: 120rpx;
+    width: 92rpx;
+    height: 92rpx;
+}
+
+.index .box .city .text {
+    position: absolute;
+    font-size: 56rpx;
+    text-align: center;
+}
+
+.index .box .city .china {
+    left: 80rpx;
+    top: 125rpx;
+}
+
+.index .box .city .usa {
+    right: 80rpx;
+    top: 125rpx;
+}
+
+.index .box .city .fast {
+    position: absolute;
+    left: 156rpx;
+    top: 260rpx;
+    width: 324rpx;
+    height: 76rpx;
+    line-height: 76rpx;
+    border-radius: 4rpx;
+    background-color: #7cb342;
+    color: rgba(255, 255, 255, 100);
+    font-size: 32rpx;
+    text-align: center;
+}
+
+.contact {
+    position: relative;
+    margin-left: 20rpx;
+    width: 714rpx;
+    height: 100rpx;
+    line-height: 20rpx;
+    border-radius: 64rpx;
+    background-color: #ff6600;
+    color: rgba(247, 246, 246, 100);
+    font-size: 14rpx;
+}
+
+.contact .kefu {
+    position: absolute;
+    left: 0rpx;
+    top: -4rpx;
+    width: 108rpx;
+    height: 108rpx;
+    border-radius: 50%;
+}
+
+.contact .text {
+    position: absolute;
+    left: 150rpx;
+    bottom: 58rpx;
+    font-weight: bold;
+    font-size: 34rpx;
+}
+
+.contact .text1 {
+    position: absolute;
+    left: 150rpx;
+    bottom: 16rpx;
+    font-size: 26rpx;
+}
+
+.contact .arrow {
+    position: absolute;
+    right: 40rpx;
+    bottom: 45rpx;
+    font-size: 80rpx;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28rpx;
+    width: 100%;
+    height: 330rpx;
+    font-weight: bold;
+}
+
+.container1 .box {
+    width: 342rpx;
+    height: 324rpx;
+    line-height: 40rpx;
+    border-radius: 28rpx;
+    background-color: rgba(124, 179, 66, 56);
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    box-shadow: 0rpx 3rpx 7rpx 2rpx rgba(0, 0, 0, 0.4);
+    border: 2rpx solid rgba(187, 187, 187, 100);
+    box-sizing: border-box;
+}
+
+.container1 .right {
+    padding-left: 30rpx;
+    background-color: #fc9d62;
+    color: rgba(231, 105, 29, 100);
+}
+
+.container1 .left {
+    position: relative;
+    padding-left: 30rpx;
+    color: rgba(247, 246, 246, 100);
+}
+
+.container1 .text {
+    padding-top: 40rpx;
+    font-size: 56rpx;
+}
+
+.container1 .text1 {
+    padding-top: 40rpx;
+    font-size: 32rpx;
+}
+
+.container1 .arrow {
+    margin-top: 60rpx;
+    margin-left: 30rpx;
+    color: rgba(247, 246, 246, 100);
+    width: 58rpx;
+    height: 54rpx;
+    line-height: 48rpx;
+    border-radius: 58rpx;
+    background-color: rgba(124, 179, 66, 56);
+    text-align: center;
+    box-shadow: 2rpx 6rpx 20rpx 2rpx rgba(0, 0, 0, 0.4);
+}
+
+.arrow .arrow_1 {
+    font-size: 48rpx;
+}
+
+.container1 .arrow .img {
+    position: absolute;
+    right: -10rpx;
+    bottom: 0rpx;
+    width: 160rpx;
+    height: 130rpx;
+}
+
+.container1 .arrow_right {
+    background-color: #ff6200;
+}
+
+.container1 .box .ringht_ing {
+    position: absolute;
+    bottom: -180rpx;
+    right: 20rpx;
+    width: 130rpx;
+}
+
+.title {
+    color: rgba(0, 0, 0, 1);
+    font-size: 56rpx;
+    margin-top: 50rpx;
+    margin-left: 30rpx;
+    font-weight: bold;
+}
+
+.change {
+    width: 750rpx;
+    height: 260rpx;
+    margin-top: 10rpx;
+}
+
+.change .pic {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30rpx;
+}
+
+.change .img {
+    width: 65rpx;
+    height: 65rpx;
+}
+
+.change .text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15rpx;
+}
+
+.change .arrow {
+    position: relative;
+}
+
+.change .arrow .arrow1 {
+    font-weight: bold;
+    position: absolute;
+    left: 137rpx;
+    top: -65rpx;
+}
+
+.change .arrow .arrow2 {
+    left: 295rpx;
+}
+
+.change .arrow .arrow3 {
+    left: 438rpx;
+}
+
+.change .arrow .arrow3 {
+    left: 438rpx;
+}
+
+.change .arrow .arrow4 {
+    left: 586rpx;
+}
+
+.change .desc {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #aeaeae;
+    font-size: 24rpx;
+}
+
+.copy {
+    width: 660rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 38rpx;
+    background-color: #7cb342;
+    color: rgba(255, 255, 255, 100);
+    text-align: center;
+    margin-top: 100rpx;
+    margin-left: 48rpx;
+}
+
+.copy .img{
+    width: 38rpx;
+    height: 34rpx;
+    line-height: 34rpx;
+    padding-right: 10rpx;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 15rpx;
+    margin-bottom: 100rpx;
+    color: #7cb342;
 }
