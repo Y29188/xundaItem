@@ -1,0 +1,75 @@
+.yunfei {
+    width: 100%;
+    height: 1132rpx;
+    background-color: aquamarine;
+}
+
+.yunfei .img {
+    width: 100%;
+    height: 100%;
+}
+
+.yunfei_title {
+    font-size: 50rpx;
+    font-weight: bold;
+    margin: 20rpx;
+}
+
+.yunfei_box {
+    display: flex;
+    justify-content: space-between;
+    height: 172rpx;
+    margin: 40rpx;
+    box-sizing: border-box;
+    font-size: 36rpx;
+    text-align: center;
+}
+
+.flex_C_C {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yunfei_box .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 172rpx;
+    width: 280rpx;
+}
+
+.all {
+    border-radius: 14px;
+    box-shadow: 0rpx 6rpx 14rpx 4rpx rgba(0, 0, 0, 0.4);
+}
+
+.yunfei_box .left {
+    background-color: #89c3f6;
+    color: #0881ec;
+}
+
+.yunfei_box .right {
+    color: #0aac29;
+    background-color: #89ec9c
+}
+
+.tiji_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 666rpx;
+    height: 172rpx;
+    background-color: #90aef6;
+}
+
+.tiji_footer  {
+    margin-top: 40rpx;
+    margin-bottom: 100rpx;
+    background-color: #0b73f7;
+    font-size: 38rpx;
+    color: #fff;
+}

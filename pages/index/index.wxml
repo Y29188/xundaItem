@@ -21,38 +21,55 @@
             <view class="city">
                 <text class="text china">中国</text>
                 <image class="plane" src="/assets/image/plane.jpg"></image>
-                <text class="text usa">美国</text>
-                <view class="fast">立即转出</view>
+                <text class="text usa">{{country}}</text>
+                <view bindtap="showDialogBtn" class="fast">立即转运</view>
+            </view>
+            <!--弹窗-->
+            <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+            <view class="modal-dialog" wx:if="{{showModal}}">
+                <view class="modal-title">预选渠道</view>
+                <view class="modal-content">
+                    <view class="wrap active">普通货物</view>
+
+                    <view class="wrap">电子产品</view>
+                    <view class="wrap">液体粉末</view>
+                    <view class="wrap">内地EMS</view>
+                    <view class="wrap">广东EMS</view>
+                </view>
+                <view class="modal-footer">
+                    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+                    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">下一步</view>
+                </view>
             </view>
 
         </view>
     </view>
     <!-- 联系迅达 -->
-    <view class="contact">
+    <navigator class="contact" url="/pages/contactSer/contactSer">
         <image class="kefu" src="/assets/image/kefu.jpg"></image>
         <text class="text">联系迅达</text>
         <text class="text1">为您解决下单疑问</text>
         <text class="arrow">></text>
-    </view>
+    </navigator>
 
     <!-- 转运须知 -->
     <view class="container1">
-        <view class="box left">
+        <navigator url="/pages/mustKnow/mustKnow" class="wrap box left">
             <view class="text">转运须知</view>
             <view class="text1">流程和注意事项</view>
             <view class="arrow">
                 <text class="arrow_1">></text>
                 <image class="img" src="/assets/image/car.png"></image>
             </view>
-        </view>
-        <view class="box right">
+        </navigator>
+        <navigator url="/pages/fare/fare" class="box right">
             <view class="text">运费估算</view>
             <view class="text1">费用心中有数</view>
             <view class="arrow arrow_right">
                 <text class="arrow_1">></text>
                 <image class="img ringht_ing" src="/assets/image/4.png"></image>
             </view>
-        </view>
+        </navigator>
     </view>
 
     <!-- 轻松转换 -->

@@ -1,0 +1,59 @@
+.couponDet {
+    width: 710rpx;
+    height: 270rpx;
+    margin: 40rpx auto;
+}
+
+.couponDet .wrap {
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px dashed #e7691d;
+}
+
+.couponDet .wrap .left {
+    width: 240rpx;
+    height: 198rpx;
+    text-align: center;
+    border-right: 1px dashed #e7691d;
+
+}
+
+.couponDet .wrap .right .liji {
+    margin-top: -10rpx;
+    background-color: #f6390d;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    width: 120rpx;
+    float: right;
+    border-radius: 34rpx;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.footer {
+    height: 1100rpx;
+    margin: 20rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.coupon_all{
+    margin-top: 10rpx;
+    margin-left: 40rpx;
+    font-size: 29rpx;
+}
+
+.footer .title1 {
+    font-size: 46rpx;
+    margin: 40rpx;
+    margin-bottom: 20rpx;
+}
+
+.footer .youxiaoqi{
+    margin: 30rpx 0 10rpx 40rpx;
+}
+
+.footer .reject {
+    margin: 60rpx 0 20rpx 40rpx;
+}

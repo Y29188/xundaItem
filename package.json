@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@miniprogram-component-plus/tabs": "^1.0.0",
+    "vue-country-intl": "^1.1.3"
+  },
+  "name": "xundaitem",
+  "description": "小程序项目",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Y29188/xundaItem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Y29188/xundaItem/issues"
+  },
+  "homepage": "https://github.com/Y29188/xundaItem#readme"
+}

@@ -1,0 +1,10 @@
+.active {
+    width: 100%;
+    height: 646rpx;
+    background-color: aquamarine;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}

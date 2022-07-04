@@ -21,6 +21,26 @@
     height: 140rpx;
 }
 
+.my .desc {
+    color: #fff;
+    margin-left: 60rpx;
+}
+
+.my .name {
+    font-size: 48rpx;
+}
+
+.my .content {
+    padding-top: 40rpx;
+}
+
+.my .header .right {
+    width: 40rpx;
+    height: 40rpx;
+    color: #fff;
+    font-size: 40rpx;
+}
+
 .middle {
     box-sizing: border-box;
     width: 720rpx;
@@ -55,7 +75,7 @@
     font-size: 34rpx;
     color: #a39f9f;
     margin-top: 30rpx;
-    margin-right: 16rpx;
+    margin-right: -326rpx;
 }
 
 .middle .icon {
@@ -70,14 +90,36 @@
     height: 56rpx;
 }
 
-.middle .footer {
-    margin-top: 80rpx;
+.footer {   
+    margin-top: 50rpx;
+    margin-bottom: 160rpx;
+    margin-left: 14rpx;
     width: 720rpx;
-    height: 601rpx;
+    height: 658rpx;
     line-height: 40rpx;
     border-radius: 22rpx 22rpx 22rpx 22rpx;
     background-color: rgba(255, 255, 255, 100);
     text-align: center;
     box-shadow: 0rpx 4rpx 12rpx 0rpx rgba(0, 0, 0, 0.4);
     border: 2rpx solid rgba(187, 187, 187, 100);
+}
+
+.footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88rpx;
+    border-bottom: 2rpx solid #e2dfdf;
+}
+
+.footer .wrap .text{
+    color: rgba(16, 16, 16, 100);
+    margin-left: 30rpx;
+    font-size: 34rpx;
+}
+
+.footer .wrap .arrow{
+    color: #bbbbbb;
+    font-size: 40rpx;
+    margin-right: 30rpx;
 }

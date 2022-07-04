@@ -1,0 +1,73 @@
+@import '../address/address.wxss';
+
+.tip {
+    height: 70rpx;
+    line-height: 64rpx;
+    padding: 6rpx;
+    box-sizing: border-box;
+    background-color: #b3d68e;
+}
+
+.address {
+    height: 350rpx;
+}
+
+.first .order_text1 {
+    font-size: 36rpx;
+    margin: 30rpx 0 10rpx 30rpx;
+}
+
+.first .all1 {
+    margin-left: 20rpx;
+    margin-top: 30rpx;
+}
+
+.first .tel {
+    font-size: 36rpx;
+
+}
+
+.first .copy {
+    color: #40b850;
+    font-size: 26rpx;
+}
+
+.orderMiddle {
+    width: 694rpx;
+    height: 850rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.orderMiddle .redTip {
+    color: #ec0606;
+    font-size: 28rpx;
+    margin: 30rpx;
+}
+
+.kuaidigeshu {
+    display: flex;
+    /* height: 80rpx; */
+    margin: 0rpx 0 25rpx 30rpx
+}
+
+.kuaidigeshu .inp {
+    width: 400rpx;
+    margin-left: 20rpx;
+    height: 50rpx;
+    border-radius: 16rpx;
+    border: 2rpx solid #bbbbbb;
+    padding-left: 10rpx;
+}
+
+.orderMiddle .remarks{
+    padding:10rpx;
+    margin: 0 auto;
+    border: 2rpx solid #bbbbbb;
+    border-radius: 16rpx;
+    box-sizing: border-box;
+}
+
+.kuaidigeshu .inp1{
+    width: 550rpx;
+}

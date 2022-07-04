@@ -1,0 +1,33 @@
+.procedure {
+    margin: 30rpx;
+}
+
+.procedure .title {
+    font-size: 60rpx;
+    font-weight: bold;
+}
+
+.procedure .text {
+    padding-top: 15rpx;
+    font-size: 37rpx;
+}
+
+.procedure .right {
+    margin-top: 30rpx;
+    float: right;
+    color: #686868;
+    font-size: 36rpx;
+}
+
+.procedure .btn {
+    width: 374rpx;
+    height: 82rpx;
+    line-height: 82rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    margin: 220rpx auto;
+    font-size: 36rpx;
+    color: #fff;
+    background-color: #e7691d;
+
+}

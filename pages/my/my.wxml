@@ -3,11 +3,18 @@
         <view class="header">
             <image class="img" src="/assets/image/7.jpg"></image>
         </view>
+        <view class="desc">
+            <view class="name">Yuu</view>
+            <view class="content">编码：XDY</view>
+        </view>
+
+
     </view>
     <view class="middle">
         <view class="order">
             <text class="left">我的订单</text>
             <text class="right">全部订单 ></text>
+            <view class="line"></view>
         </view>
         <view class="icon">
             <view class="box">
@@ -30,8 +37,35 @@
                 <view class="fukuan">待评价</view>
             </view>
         </view>
-        <view class="footer">
-            
-        </view>
+    </view>
+    <view class="footer">
+        <navigator url="/pages/myAddress/myAddress" class="wrap">
+            <text class="text">我的地址</text>
+            <text class="arrow">></text>
+        </navigator>
+        <navigator url="/pages/myCoupon/myCoupon" class="wrap">
+            <text class="text">我的优惠券</text>
+            <text class="arrow">></text>
+        </navigator>
+        <navigator url="/pages/activeCenter/activeCenter" class="wrap">
+            <text class="text">活动中心</text>
+            <text class="arrow">></text>
+        </navigator>
+        <navigator url="/pages/contactSer/contactSer" class="wrap">
+            <text class="text">联系客服</text>
+            <text class="arrow">></text>
+        </navigator>
+        <navigator url="/pages/procedure/procedure" class="wrap">
+            <text class="text">转运流程</text>
+            <text class="arrow">></text>
+        </navigator>
+        <navigator url="/pages/mustKnow/mustKnow" class="wrap">
+            <text class="text">转运须知</text>
+            <text class="arrow">></text>
+        </navigator>
+        <navigator url="/pages/aboutAs/aboutAs" class="wrap">
+            <text class="text">关于我们</text>
+            <text class="arrow">></text>
+        </navigator>
     </view>
 </view>

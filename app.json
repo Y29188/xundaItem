@@ -3,7 +3,22 @@
         "pages/index/index",
         "pages/coupon/coupon",
         "pages/order/order",
-        "pages/my/my"
+        "pages/my/my",
+        "pages/myAddress/myAddress",
+        "pages/address/address",
+        "pages/addAddress/addAddress",
+        "pages/copyAddress/copyAddress",
+        "pages/myCoupon/myCoupon",
+        "pages/couponDetail/couponDetail",
+        "pages/orderDetail/orderDetail",
+        "pages/activeCenter/activeCenter",
+        "pages/contactSer/contactSer",
+        "pages/mustKnow/mustKnow",
+        "pages/procedure/procedure",
+        "pages/aboutAs/aboutAs",
+        "pages/fare/fare",
+       
+        "pages/pageList/pageList"
     ],
     "window": {
         "backgroundTextStyle": "light",

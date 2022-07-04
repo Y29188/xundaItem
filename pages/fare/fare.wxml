@@ -1,0 +1,31 @@
+<view class="yunfei">
+    <image class="img" src="/assets/image/yunfei.png"></image>
+</view>
+
+<view class="yunfei_title">预估运费</view>
+<view class="yunfei_box">
+    <view class="box left all">
+        <view>转运渠道</view>
+        <view>普通货物</view>
+    </view>
+    <view class="box right all">
+        <view>预估重量</view>
+        <view>请输入重量</view>
+    </view>
+    
+</view>
+
+<view class="tiji_box all">
+    <view class="content">
+        <view>预估体积</view>
+        <view style="margin-top: 20rpx;">请输入长宽高</view>
+    </view>
+</view>
+
+<view class="tiji_box all tiji_footer">
+    <view class="content">
+        <view>预估运费（实际结果以订单为准）</view>
+        <view >¥ 0.00</view>
+    </view>
+    
+</view>

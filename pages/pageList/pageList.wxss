@@ -1,0 +1,85 @@
+.pageList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    width: 100%;
+    height: 450rpx;
+    margin-top: 30rpx;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+
+.pageList .box {
+    margin-top: 20rpx;
+    width: 330rpx;
+    height: 182rpx;
+    line-height: 40rpx;
+    border-radius: 28rpx;
+    background-color: #7cb342;
+    color: #fff;
+    box-shadow: 0rpx 6rpx 14rpx 4rpx rgba(0, 0, 0, 0.4);
+}
+
+.pageList .box .text {
+    font-weight: bold;
+
+}
+
+.pageList .box .text1 {
+    font-size: 36rpx;
+    padding: 30rpx 0 0 13rpx;
+}
+
+.pageList .box .text2 {
+    padding: 20rpx 0 0 11rpx;
+}
+
+.pageFooter .box {
+    width: 702rpx;
+    height: 800rpx;
+    line-height: 36rpx;
+    border-radius: 20rpx;
+    margin: 45rpx auto 400rpx auto;
+    overflow: hidden;
+    color: rgba(51, 51, 51, 100);
+    font-size: 26rpx;
+    box-shadow: 0rpx 0rpx 10rpx 0rpx rgba(174, 174, 174, 35);
+    box-sizing: border-box;
+}
+
+.pageFooter .content {
+    display: flex;
+    justify-content: start;
+    margin: 40rpx;
+}
+
+.pageFooter .content .yuan {
+    width: 60rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #7cb342;
+    color: #fff;
+    font-size: 36rpx;
+}
+
+.pageFooter .content .wait {
+    font-size: 40rpx;
+    margin-top: 6rpx;
+    padding-left: 20rpx;
+}
+
+.pageFooter .content .num {
+    color: #7cb342;
+    font-size: 50rpx;
+    margin-top: 10rpx;
+    padding-left: 30rpx;
+}
+
+.pageFooter .box .smallText {
+    font-size: 30rpx;
+    color: #c2c2c2;
+    margin-left: 110rpx;
+}

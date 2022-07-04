@@ -1,0 +1,41 @@
+<view class="address all copyAddress">
+    <view class="first">
+        <view class="icon">
+            <image class="img" src="/assets/image/收货地址.png"></image>
+        </view>
+        <text class="text">仓库地址</text>
+    </view>
+    <view class="second1 ">
+        <view style="margin-left: 35rpx;">收件人: 迅达仓库</view>
+        <view style="height: 100rpx; margin-top:35rpx ;">收货地址：
+            <view style="float: right; margin-top: -40rpx;">
+                <view>深圳市龙华区龙华街道工业</view>
+                <view>路壹城欢智中心C座2607室</view>
+            </view>
+        </view>
+        <view style="margin-left: 6rpx; margin-top: 20rpx;">联系电话: 18688880130</view>
+        <view style="margin-left: 6rpx; margin-top: 40rpx;">邮政编码: 518000</view>
+    </view>
+
+    <!-- <view class="third"></view> -->
+</view>
+<view class="copy_btn">一键复制到仓库地址信息</view>
+
+<view class="copy_text">
+    <view class="wrap" >
+        <view class="title">第一步将包裹寄到河马转运仓</view>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复制以上收件人信息并添加到淘宝等网购平台，以河马转运为收货人ID号作为包裹识别归属的主要途;</text>
+    </view>
+    <view class="wrap">
+        <view class="title">第二步报备包裹国内快递单号</view>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快递寄出后将国内快递单号添加至河马转运，因国内部分快递公司会隐藏ID号，请自主添加单号备，以免被识别为无名包事造成不必要的损失;</text>
+    </view>
+    <view class="wrap">
+        <view class="title">第三步提交打包</view>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;包裹入库验货后，选择你要寄送的包事提交打包并选择线路渠道，打包时间通常为当天提交次日18:00前完成打包;</text>
+    </view>
+    <view class="wrap">
+        <view class="title">第四步支付运费</view>
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打包完成后确认重量与运费明细，完成支付后当日出库提交转运。</text>
+    </view>
+</view>

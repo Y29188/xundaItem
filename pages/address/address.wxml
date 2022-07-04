@@ -1,0 +1,45 @@
+<view class="address all">
+    <view class="first">
+        <view class="icon">
+            <image class="img" src="/assets/image/收货地址.png"></image>
+        </view>
+        <text class="text">仓库地址</text>
+    </view>
+    <view class="second">
+        <text class="cangku">迅达仓库</text>
+        <text class="tel">18688880130 <text class="copy">复制</text></text>
+    </view>
+    <view class="third">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
+</view>
+
+<view class="cangku_footer all">
+    <view class="aim">目标国收件信息</view>
+    <view class="second">
+        <text class="use">请用英文填写</text>
+        <text class="select">选择地址</text>
+    </view>
+    <view class="information">
+        <view class="inp">
+            <text>Name： </text>
+            <input style="width: 100%;" type="text" placeholder="Please fill in the recipient's name" />
+        </view>
+        <view class="inp">
+            <text>Phone： </text>
+            <input style="width: 100%;" type="text" placeholder="Please fill in the recipient's Phone" />
+        </view>
+        <view class="inp">
+            <text>Address：</text>
+            <input type="text" placeholder="Please fill in the address" />
+        </view>
+        <view class="inp">
+            <text>City：</text>
+            <input type="text" placeholder="Please fill in the city" />
+        </view>
+        <view class="inp">
+            <text> PostCode：</text>
+            <input style="width: 100%;" type="text" placeholder="Please fill in the postcode" />
+        </view>
+    </view>
+</view>
+
+<view class="btn">立即转运</view>

@@ -1,2 +1,15 @@
-<!--pages/coupon/coupon.wxml-->
-<text>pages/coupon/coupon.wxml</text>
+<view class="container2">
+    <view class="header"></view>
+</view>
+<view class="bigBox">
+    <view class="wrap">
+        <image class="img" src="/assets/image/you1.png"></image>
+    </view>
+    <view class="wrap">
+        <image class="img" src="/assets/image/you2.png"></image>
+    </view>
+    <view class="wrap">
+        <image class="img" src="/assets/image/you3.png"></image>
+    </view>
+</view>
+

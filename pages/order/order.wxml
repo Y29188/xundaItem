@@ -1,2 +1,152 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<!-- tab栏切换 -->
+<view class="header">
+    <mp-tabs tabs="{{tabs}}" tab-class="tab-class" activeTab="{{activeIndex}}" swiperClass="weui-tabs-swiper" bindchange="onChange" tabUnderlineColor="rgba(0, 0, 0, .0)" tab-active-text-color="#fff" tab-inactive-text-color="#e97731" active-class="tab-bar-title__selected" tab-background-color>
+    </mp-tabs>
+</view>
+
+
+<!-- 全部 -->
+<block wx:if="{{activeIndex === 0}}">
+    <!-- 待入仓 -->
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">待入仓</view>
+        <view class="buttons">
+            <button class="buttons1">确认打包</button>
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+    <!-- 待填写 -->
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">待填写</view>
+        <view class="buttons">
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+    <!-- 待支付 -->
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">待支付</view>
+        <view class="buttons">
+            <button class="buttons1">去支付</button>
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+    <!-- 已出仓 -->
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">已出仓</view>
+        <view class="buttons">
+            <button class="buttons1">物流详情</button>
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+    <!-- 已完成 -->
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">已完成</view>
+        <view class="buttons">
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+</block>
+
+
+<!-- 待支付 -->
+<block wx:if="{{activeIndex === 1}}">
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">待支付</view>
+        <view class="buttons">
+            <button class="buttons1">去支付</button>
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+</block>
+<!-- 已支付 -->
+<block wx:if="{{activeIndex === 2}}">
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">已支付</view>
+        <view class="buttons">
+            <button class="buttons1">已支付</button>
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+</block>
+
+<!-- 已完成 -->
+<block wx:if="{{activeIndex === 3}}">
+    <navigator open-type="navigate" class="orderNumber">
+        <view class="orderBox">
+            <text>订单号：{{text}}</text>
+            <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
+        </view>
+        <view class="text">
+            <text class="cityName">中国</text>
+            <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
+            <text class="cityName">美国</text>
+        </view>
+        <view class="texts">已完成</view>
+        <view class="buttons">
+            <button class="buttons2">详情</button>
+        </view>
+    </navigator>
+</block>

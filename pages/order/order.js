@@ -1,66 +1,48 @@
-// pages/order/order.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        tabs: [{
+                title: "全部"
+            },
+            {
+                title: "待支付"
+            },
+            {
+                title: "已支付"
+            },
+            {
+                title: "已完成"
+            }
+        ],
+        activeIndex: 0,
+        text: "20220509140712345678"
     },
 
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
 
+    // 切换选项卡
+    onChange(e) {
+        // console.log(e.detail);
+        let {
+            index
+        } = e.detail;
+        // 将值赋值给activeIndex
+        this.setData({
+            activeIndex: index
+        })
     },
 
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
 
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
+    // 复制订单号
+    copy: function (e) {
+        let item = e.currentTarget.dataset.item;
+        console.log('复制', e, item);
+        wx.setClipboardData({
+            data: item,
+            success: function (res) {
+                wx.showToast({
+                    title: '复制成功',
+                    icon: "success"
+                })
+            }
+        })
     }
 })

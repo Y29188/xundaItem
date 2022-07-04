@@ -1,0 +1,38 @@
+<view class="container3">
+    <view class="warp">
+        <image class="img" src="/assets/image/you4.jpg"></image>
+    </view>
+    <view class="warp">
+        <image class="img" src="/assets/image/you5.jpg"></image>
+    </view>
+    <view class="warp">
+        <image class="img" src="/assets/image/you6.jpg"></image>
+    </view>
+    <view class="warp">
+        <image class="img" src="/assets/image/you7.jpg"></image>
+    </view>
+    <view class="warp">
+        <image class="img" src="/assets/image/you8.jpg"></image>
+    </view>
+    <view class="warp footer">
+        <image class="img" src="/assets/image/you9.jpg"></image>
+    </view>
+</view>
+<view style="display: flex; justify-content: center; align-items: center;">
+    <view bindtap="showDialogBtn" class="btn">兑换优惠券</view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">兑换优惠券</view>
+    <view class="modal-content">
+        <view class="modal-input">
+            <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputChange" class="input" placeholder="请输入优惠券code，进行兑换"></input>
+        </view>
+    </view>
+    <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+        <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">领取</view>
+    </view>
+</view>

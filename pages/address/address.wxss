@@ -1,0 +1,125 @@
+.address {
+    position: relative;
+    width: 694rpx;
+    height: 290rpx;
+    line-height: 40rpx;
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.all {
+    box-shadow: 0rpx 4rpx 20rpx 0rpx rgba(0, 0, 0, 0.4);
+    margin: 50rpx auto;
+    border-radius: 6rpx;
+    opacity: 0.85;
+    background-color: rgba(255, 255, 255, 79);
+}
+
+.address .first {
+    display: flex;
+    justify-content: start;
+}
+
+.address .icon {
+    margin-top: 30rpx;
+    margin-left: 40rpx;
+    text-align: center;
+    width: 72rpx;
+    height: 72rpx;
+    background-color: #7cb342;
+    border-radius: 50%;
+}
+
+.address .icon .img {
+    width: 55rpx;
+    height: 55rpx;
+    padding-top: 10rpx;
+}
+
+.address .text {
+    padding-top: 40rpx;
+    padding-left: 25rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.address .second {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rpx;
+    font-size: 34rpx;
+}
+
+.address .second .cangku {
+    margin-left: 50rpx;
+}
+
+.address .second .copy {
+    font-size: 28rpx;
+    color: #40b850;
+}
+
+.address .third {
+    margin-top: 30rpx;
+    margin-left: 100rpx;
+    color: #9fa19f;
+}
+
+.cangku_footer {
+    width: 694rpx;
+    height: 740rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 200rpx;
+}
+
+.cangku_footer .aim {
+    margin-top: 50rpx;
+    margin-left: 100rpx;
+    font-size: 38rpx;
+    font-weight: bold;
+}
+
+.cangku_footer .second {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+}
+
+.cangku_footer .second .use {
+    color: #d42d2d;
+}
+
+.cangku_footer .second .select {
+    color: #40b850;
+    border: 1rpx solid #40b850;
+    padding: 4rpx;
+    background-color: #d9f1dd;
+    border-radius: 8rpx;
+}
+
+.cangku_footer  .information .inp {
+    margin-top: 30rpx;
+    margin-left: 50rpx;
+    display: flex;
+    justify-content: start;
+    font-size: 30rpx;
+}
+
+.btn {
+    width: 374rpx;
+    height: 82rpx;
+    line-height: 82rpx;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 8rpx;
+    margin: 200rpx auto;
+    font-size: 36rpx;
+    color: #fff;
+    background-color: #7cb342;
+
+}
+

@@ -1,0 +1,41 @@
+@import '../address/address.wxss';
+
+.copyAddress {
+    height: 500rpx;
+    box-sizing: border-box;
+}
+
+.copyAddress .second1 {
+    font-size: 36rpx;
+    margin: 30rpx 0 0 90rpx;
+    overflow: hidden;
+}
+
+.copy_btn {
+
+    width: 660rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 38rpx;
+    background-color: #7cb342;
+    color: rgba(255, 255, 255, 100);
+    margin: 0 auto;
+
+}
+
+.copy_text {
+    height: 880rpx;
+    margin: 40rpx;
+    box-sizing: border-box;
+}
+
+
+.copy_text .wrap {
+    margin-top: 40rpx;
+}
+
+.copy_text .wrap .title {
+    font-size: 40rpx;
+    font-weight: bold;
+}

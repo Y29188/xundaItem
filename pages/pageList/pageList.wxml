@@ -1,0 +1,64 @@
+<view class="pageList">
+    <view class="box">
+        <view class="text text1">全部包裹</view>
+        <view class="text text2">查看您的全部包裹</view>
+    </view>
+    <view class="box">
+        <view class="text text1">退回包裹</view>
+        <view class="text text2">退回给商家或仓库处理</view>
+    </view>
+    <view class="box">
+        <view class="text text1">异常包裹</view>
+        <view class="text text2">违禁品</view>
+    </view>
+    <view class="box">
+        <view class="text text1">入库包裹</view>
+        <view class="text text2">查看您的全部包裹</view>
+    </view>
+</view>
+
+<view class="pageFooter">
+    <view class="box">
+        <view class="content">
+            <view class="yuan">1</view>
+            <view class="wait">待处理</view>
+            <view class="num">3</view>
+        </view>
+        <view class="content">
+            <view class="yuan">2</view>
+            <view class="wait">待入仓</view>
+            <view class="num">6</view>
+        </view>
+        <view class="smallText" style="margin-top: -25rpx;">待验货
+            <text style="margin-left: 75rpx;">6</text>
+        </view>
+        <view class="smallText" style="margin-top:20rpx ;">
+            待打包<text style="margin-left: 80rpx;">0</text>
+        </view>
+        <view class="content">
+            <view class="yuan">3</view>
+            <view class="wait">待出仓</view>
+            <view class="num">7</view>
+        </view>
+        <view class="smallText" style="margin-top: -25rpx;">未付款
+            <text style="margin-left: 75rpx;">3</text>
+        </view>
+        <view class="smallText" style="margin-top:20rpx ;">
+            已付款<text style="margin-left: 80rpx;">4</text>
+        </view>
+        <view class="smallText" style="margin-top:20rpx ;">
+            打包中<text style="margin-left: 80rpx;">7</text>
+        </view>
+        <view class="smallText" style="margin-top:20rpx ;">
+            打包完成<text style="margin-left: 50rpx;">0</text>
+        </view>
+        <view class="content">
+            <view class="yuan">4</view>
+            <view class="wait">待收货</view>
+            <view class="num">8</view>
+        </view>
+        <view class="smallText" style="margin-top:-30rpx ;">
+            转运中<text style="margin-left: 80rpx;">8</text>
+        </view>
+    </view>
+</view>

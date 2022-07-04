@@ -1,0 +1,47 @@
+<view>
+    <view class="couponDet">
+        <view class="wrap">
+            <view class="left">
+                <text>¥</text>
+                <text style="font-size: 100rpx; font-weight: bold;">10</text>
+                <view>满 ¥ 599使用</view>
+            </view>
+            <view class="right">
+                <view style="margin-top: 40rpx; margin-left: 20rpx;">
+                    <text style="background-color: #f6390d; color: #fff; padding:0 4rpx;">满减卷</text>
+                    <text style="font-size: 28rpx; margin-left: 24rpx;">双十一无门槛10元券</text>
+                </view>
+                <view style="margin-top: 30rpx; margin-left: 3rpx;">
+                    <text style="color: #a7a7a7; font-size: 28rpx; margin-left: 8rpx;">2018.04.11到期</text>
+                    <text style="color: #f6390d; padding-left: 10rpx;">(满减卷)</text>
+                    <view class="liji">立即领取</view>
+
+                </view>
+
+            </view>
+        </view>
+        <view style="display: flex; justify-content: space-between; ">
+            <view style="margin: 10rpx;">全场通用</view>
+            <image style="width: 50rpx; height: 50rpx;padding-top: 20rpx;" src="/assets/image/xia.jpg"></image>
+        </view>
+    </view>
+
+    <view class=" footer">
+        <view class="title1">使用须知</view>
+        <view class="youxiaoqi">有效期：</view>
+        <view class="coupon_all">2022-04-29至2022-06-01 23:56</view>
+        <view class="reject">不可用日期：</view>
+        <view class="coupon_all">2022-2月1日至2022-2月-4日，12月26日以后开始</view>
+        <view class="coupon_all">使用</view>
+        <view class="coupon_all">使用时间：</view>
+        <view class="coupon_all">00:00-23:59</view>
+        <view class="coupon_all">适用范围：</view>
+        <view class="coupon_all">全场通用</view>
+        <view class="reject">使用规则</view>
+        <view class="coupon_all">● 适用于运费</view>
+        <view class="coupon_all">● 适用于普通货物，电子产品</view>
+        <view class="coupon_all">● 使用优惠券下单，有效期以优惠券规则为准</view>
+        <view class="coupon_all">● 不可叠加使用</view>
+        <view class="coupon_all">● 不兑现、不提现</view>
+    </view>
+</view>

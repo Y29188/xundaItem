@@ -1,1 +1,134 @@
-/* pages/order/order.wxss */
+body .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750rpx;
+    height: 64rpx;
+    box-sizing: border-box;
+}
+
+
+.header swiper {
+    width: 750rpx;
+    height: 0;
+}
+
+
+.weui-tabs-bar__item {
+    width: 188rpx;
+    height: 64rpx;
+    text-align: center;
+    line-height: 64rpx;
+}
+
+
+.tab-bar-title__selected {
+    width: 190rpx;
+    height: 64rpx;
+    background-color: #7cb342;
+}
+
+
+/* 订单管理-全部 */
+.orderNumber {
+    position: relative;
+    width: 694rpx;
+    height: 326rpx;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    margin-top: 22rpx;
+    padding-top: 24rpx;
+    box-sizing: border-box;
+    margin-bottom: 34rpx;
+}
+
+
+.orderNumber .orderBox {
+    width: 540rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-left: 24rpx;
+    color: #101010;
+    font-size: 28rpx;
+}
+
+
+.orderNumber .orderBox .orderText2 {
+    width: 62rpx;
+    height: 28rpx;
+    color: #40B850;
+    font-size: 24rpx;
+    background-color: rgba(217, 241, 221, 100);
+    margin-left: 24rpx;
+}
+
+
+.orderNumber .text {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 128rpx;
+    left: 140rpx;
+    width: 448rpx;
+    height: 80rpx;
+}
+
+
+.orderNumber .text .cityName {
+    width: 112rpx;
+    height: 80rpx;
+    font-size: 36rpx;
+    color: #101010;
+}
+
+
+.orderNumber .text image {
+    width: 64rpx;
+    height: 64rpx;
+    position: absolute;
+    top: -10rpx;
+    left: 180rpx;
+}
+
+
+.orderNumber .texts {
+    position: absolute;
+    top: 180rpx;
+    left: 300rpx;
+    color: #7cb342;
+}
+
+
+.orderNumber .buttons {
+    position: absolute;
+    top: 250rpx;
+    width: 694rpx;
+    height: 60rpx;
+}
+
+
+.orderNumber .buttons button {
+    width: 160rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 0;
+    font-size: 28rpx;
+    color: white;
+    background-color: #fff;
+}
+
+
+.orderNumber .buttons .buttons1 {
+    position: absolute;
+    left: 320rpx;
+    color: #EC0606;
+    border: 1px solid #EC0606;
+}
+
+
+.orderNumber .buttons .buttons2 {
+    position: absolute;
+    right: 20rpx;
+    background-color: #7cb342;
+}
