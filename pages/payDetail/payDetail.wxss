@@ -1,0 +1,165 @@
+@import '../../pages/orderDetail/orderDetail.wxss';
+
+.payHeader {
+    height: 200rpx;
+}
+
+.payMid {
+    width: 694rpx;
+    height: 840rpx;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 400rpx;
+}
+
+.payMid .payText {
+    display: flex;
+    justify-content: space-between;
+    margin: 28rpx;
+}
+
+.payMid .payText .img {
+    width: 38rpx;
+    height: 38rpx;
+    margin-right: 10rpx;
+}
+
+.payMid .payText .img1 {
+    width: 28rpx;
+    height: 28rpx;
+    margin-left: 10rpx;
+}
+
+.payMid .reaText {
+    position: relative;
+}
+
+.payMid .reaText .img {
+    width: 45rpx;
+    height: 45rpx;
+    margin-left: 20rpx;
+}
+
+.payMid .reaText .text {
+    position: absolute;
+    left: 80rpx;
+    top: 0rpx;
+}
+
+.payMid .line {
+    width: 658rpx;
+    margin: 10rpx auto;
+    border: 1rpx solid #bbbbbb;
+}
+
+.payMid .sellte {
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30rpx;
+}
+
+.payMid .sellte .value {
+    margin-left: 20rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.payFooter {
+    border-top: 1rpx solid rgba(226, 226, 226, 100);
+    display: flex;
+    justify-content: space-between;
+    height: 160rpx;
+    background-color: rgba(255, 255, 255, 79);
+    color: rgba(16, 16, 16, 100);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.payFooter .payLeft {
+    height: 130rpx;
+    /* border-right: 1rpx solid rgba(226, 226, 226, 100); */
+    width: 518rpx;
+    margin: 20rpx;
+    font-size: 28rpx;
+}
+
+.payFooter .payLeft .select {
+    margin-top: 20rpx;
+}
+
+.payFooter .payRight {
+    background-color: #e7691d;
+    width: 250rpx;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40rpx;
+}
+
+/*模态框*/
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.modal-cancel {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.bottom-dialog-body {
+    width: 100%;
+    position: absolute;
+    z-index: 3000;
+    bottom: 0;
+    left: 0;
+    background: #dfdede;
+}
+
+/*动画前初始位置*/
+.bottom-positon {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+
+/* 底部弹出框 */
+.bottom-positon {
+    text-align: center;
+}
+
+.Mselect view {
+    padding: 26rpx 0 10rpx 20rpx;
+    text-align: left;
+    background: #fff;
+    color: #898989;
+}
+
+
+.Mcancel {
+    background: #fff;
+    padding: 30rpx 0;
+}
+
+.Mcancel .yes {
+    width: 446rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin: 0 auto;
+    background-color: #e7691d;
+    color: #fff;
+    border-radius: 94rpx;
+}

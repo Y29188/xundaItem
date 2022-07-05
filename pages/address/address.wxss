@@ -68,6 +68,7 @@
 }
 
 .cangku_footer {
+    position: relative;
     width: 694rpx;
     height: 740rpx;
     box-sizing: border-box;
@@ -87,6 +88,14 @@
     justify-content: space-around;
     margin-top: 20rpx;
     margin-left: 10rpx;
+}
+
+.cangku_footer .second .img{
+    position: absolute;
+    top: 120rpx;
+    left: 50rpx;
+    width: 45rpx;
+    height: 45rpx;
 }
 
 .cangku_footer .second .use {

@@ -1,28 +1,25 @@
-<view class="address all copyAddress">
-    <view class="first">
-        <view class="icon">
-            <image class="img" src="/assets/image/收货地址.png"></image>
-        </view>
-        <text class="text">仓库地址</text>
-    </view>
-    <view class="second1 ">
-        <view style="margin-left: 35rpx;">收件人: 迅达仓库</view>
-        <view style="height: 100rpx; margin-top:35rpx ;">收货地址：
-            <view style="float: right; margin-top: -40rpx;">
-                <view>深圳市龙华区龙华街道工业</view>
-                <view>路壹城欢智中心C座2607室</view>
+<!-- 仓库地址 -->
+<view>
+    <view class="warehouse">
+        <view style="display: flex; margin-left: 50rpx;">
+            <view class="warehouseImage">
+                <image src="../../assets/image/收货地址.png"></image>
             </view>
+            <text class="text">仓库地址</text>
         </view>
-        <view style="margin-left: 6rpx; margin-top: 20rpx;">联系电话: 18688880130</view>
-        <view style="margin-left: 6rpx; margin-top: 40rpx;">邮政编码: 518000</view>
+        <view class="addressName">
+            <view style="margin-left: 32rpx;">{{person}}</view>
+            <view>{{address}}<text style="margin-left: 160rpx;">{{address1}}</text></view>
+            <view>{{tel}}</view>
+            <view>{{zipCode}}</view>
+        </view>
     </view>
-
-    <!-- <view class="third"></view> -->
+    <view class="copyWare" bindtap="copyAddress" data-item="{{person}},{{address}}{{address1}},{{tel}},{{zipCode}}">一键复制仓库地址信息</view>
 </view>
-<view class="copy_btn">一键复制到仓库地址信息</view>
 
+<!-- 步骤 -->
 <view class="copy_text">
-    <view class="wrap" >
+    <view class="wrap">
         <view class="title">第一步将包裹寄到河马转运仓</view>
         <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复制以上收件人信息并添加到淘宝等网购平台，以河马转运为收货人ID号作为包裹识别归属的主要途;</text>
     </view>

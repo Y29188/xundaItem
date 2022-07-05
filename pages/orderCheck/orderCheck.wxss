@@ -1,0 +1,24 @@
+@import "../orderDetail/orderDetail.wxss";
+@import "../orderPackage/orderPackage.wxss";
+
+.tip{
+    background-color: #fde5d2;
+}
+
+.orderMiddle .kuaidigeshu .kuaiDiNum {
+    color: #e7691d;
+}
+
+.orderMiddle .kuaidigeshu .waitRu{
+    background-color: #fde5d2;
+    color: #e7691d;
+}
+
+.orderDfooter{
+    height: 460rpx;
+}
+
+.bottom .contactKefu{
+    width: 750rpx;
+    background-color: #e7691d;
+}

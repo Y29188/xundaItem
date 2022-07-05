@@ -17,33 +17,35 @@
                 </swiper-item>
             </swiper>
         </view>
+
         <view class="box">
             <view class="city">
                 <text class="text china">中国</text>
                 <image class="plane" src="/assets/image/plane.jpg"></image>
                 <text class="text usa">{{country}}</text>
                 <view bindtap="showDialogBtn" class="fast">立即转运</view>
+                <!--弹窗-->
+                <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+                <view class="modal-dialog" wx:if="{{showModal}}">
+                    <view class="modal-title">预选渠道</view>
+                    <view class="modal-content">
+                        <view class="wrap" wx:for="{{list}}" wx:key="list">
+                            <view>
+                                <view bindtap="colorChange" data-index='{{index}}' class="yux {{index == flag ? 'active' : ''}}">{{item}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="modal-footer">
+                        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+                        <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">下一步</view>
+                    </view>
+                </view>
             </view>
-            <!--弹窗-->
-            <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
-            <view class="modal-dialog" wx:if="{{showModal}}">
-                <view class="modal-title">预选渠道</view>
-                <view class="modal-content">
-                    <view class="wrap active">普通货物</view>
 
-                    <view class="wrap">电子产品</view>
-                    <view class="wrap">液体粉末</view>
-                    <view class="wrap">内地EMS</view>
-                    <view class="wrap">广东EMS</view>
-                </view>
-                <view class="modal-footer">
-                    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
-                    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">下一步</view>
-                </view>
-            </view>
 
         </view>
     </view>
+
     <!-- 联系迅达 -->
     <navigator class="contact" url="/pages/contactSer/contactSer">
         <image class="kefu" src="/assets/image/kefu.jpg"></image>
@@ -117,9 +119,9 @@
     </view>
 
     <!-- 复制到仓库地址去购物 -->
-    <view class="copy">
+    <navigator url="/pages/copyAddress/copyAddress" class="copy">
         <image class="img" src="/assets/image/复制.png"></image>
         <text>复制仓库地址去购物</text>
-    </view>
+    </navigator>
     <view class="footer">电商平台的收货地址请填写我们</view>
 </view>

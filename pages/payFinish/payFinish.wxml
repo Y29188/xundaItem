@@ -1,0 +1,13 @@
+<view class="payFinish">
+    <image class="img" src="/assets/image/zhifuwancheng.jpg"></image>
+</view>
+<view class="zhifu">支付成功</view>
+
+<view style="margin-top: 70rpx;">
+    <view class="payTip">橙子会在24小时内为您发货，并推送信息给您，</view>
+    <view class="payTip">请您耐心等待，3秒钟后为您跳转</view>
+</view>
+
+<navigator url="/pages/index/index" open-type="switchTab">
+    <view class="finish">完成</view>
+</navigator>

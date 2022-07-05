@@ -1,0 +1,24 @@
+@import "../orderDetail/orderDetail.wxss";
+
+
+.boxCon {
+    /* width: 100rpx; */
+    position: relative;
+}
+.boxCon  .waitRu{
+    position: absolute;
+    top: 10rpx;
+    right: 70rpx;
+    font-size: 24rpx;
+    background-color: #7cb342;
+    border-radius: 8rpx;
+}
+
+.orderDfooter .orderNum .put{
+    color: #ffd700;
+}
+
+.bottom .mustPack{
+    background-color: #274f05;
+    color: #f5e4ad;
+}

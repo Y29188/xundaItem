@@ -1,0 +1,3 @@
+@import "../orderDetail/orderDetail.wxss";
+@import "../orderPackage/orderPackage.wxss";
+@import "../orderCheck/orderCheck.wxss";

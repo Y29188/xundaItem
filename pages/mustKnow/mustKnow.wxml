@@ -26,5 +26,5 @@
         八、如包裹丢失，且未购买“丢失保险”，先退运费，然后赔付实际货值(不超过运费且不超过100美金)，依照《华沙条约》国际标准为最高不超过100美元整(实时汇率人民币赔付)。
     </view>
     <view class="right">2020-11-02 23:46:48</view>
-    <navigator class="btn" url="/pages/index/index" open-type="switchTab">已阅读</navigator>
+    <navigator class="btn" url="/pages/orderDetail/orderDetail">已阅读</navigator>
 </view>

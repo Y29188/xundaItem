@@ -9,7 +9,7 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/orderDetail/orderDetail",
+                    "pathName": "pages/orderPay/orderPay",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

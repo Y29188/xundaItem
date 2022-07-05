@@ -1,4 +1,57 @@
-@import '../address/address.wxss';
+/* 仓库地址 */
+.warehouse {
+    width: 694rpx;
+    height: 458rpx;
+    margin: 52rpx auto;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.warehouse .warehouseImage {
+    width: 52rpx;
+    height: 52rpx;
+    background-color: #7cb342;
+    border-radius: 50%;
+    padding-top: 6rpx;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 22rpx;
+}
+
+.warehouse .warehouseImage image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.warehouse .text {
+    color: #101010;
+    font-size: 40rpx;
+    margin-top: 22rpx;
+    margin-left: 20rpx;
+    font-weight: 700;
+}
+
+.warehouse .addressName {
+    width: 566rpx;
+    height: 318rpx;
+    margin: 32rpx auto;
+}
+
+.warehouse .addressName view {
+    margin-bottom: 28rpx;
+}
+
+.copyWare {
+    width: 660rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: #7cb342;
+    border-radius: 38rpx;
+    text-align: center;
+    color: #fff;
+    margin-top: 58rpx;
+    margin: 0 auto;
+    margin-bottom: 40rpx;
+}
 
 .copyAddress {
     height: 500rpx;
@@ -11,8 +64,9 @@
     overflow: hidden;
 }
 
-.copy_btn {
 
+/* 步骤 */
+.copy_btn {
     width: 660rpx;
     height: 80rpx;
     line-height: 80rpx;

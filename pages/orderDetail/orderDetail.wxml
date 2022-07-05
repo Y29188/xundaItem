@@ -1,31 +1,31 @@
-<view class="tip">您的快递包裹已全部到达仓库，请及时确认捡货打包</view>
+<!-- 头部 -->
 <view class="address all">
     <view class="first">
         <view class="icon">
             <image class="img" src="/assets/image/收货地址.png"></image>
         </view>
         <text class="order_text1">新希望仓库</text>
-        <view class="tel all1">18688880130 <text class="copy all1">复制</text></view>
+        <view class="tel all1">{{tel}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></view>
     </view>
-    <view class="third" style="margin-top: -20rpx; padding-left: 45rpx;">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
+    <view class="third desAdd">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
     <view class="first">
         <view class="icon" style="background-color: #fff;">
-            <image class="img" style="margin-top: -40rpx; margin-left: -15rpx; width:100rpx; height: 100rpx;" src="/assets/image/9.jpg"></image>
+            <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
         <text class="order_text1">Yuu
         </text>
         <view class="tel all1">18688880130</view>
     </view>
-    <view class="third" style="margin-top: -20rpx; padding-left: 45rpx;">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
-
+    <view class="third addEng" style="font-size: 24rpx; ">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
 </view>
 
+<!-- 中间 -->
 <view class="orderMiddle all">
     <view class="redTip">快递全部到齐点击确认打包后，订单不可修改</view>
     <view class="kuaidigeshu">
-        <text style="color: red; font-size: 60rpx;"> * </text>
-        <text style="color: #7cb342; font-size: 40rpx;"> 快递个数</text>
-        <input class="inp" placeholder="请输入快递单号" type="number" name="" id="" />
+        <text class="fuhao"> * </text>
+        <text decode="{{true}}" class="kuaiDiNum">&nbsp; 快递个数</text>
+        <input class="inp" placeholder="请输入快递单号" type="number" />
     </view>
     <view style="margin-top: -10rpx;">
         <textarea class="remarks" name="" id="" cols="30" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
@@ -33,18 +33,58 @@
     <view class="kuaidigeshu" style="margin-top: 40rpx;">
         <text style="font-size: 40rpx;"> 1.</text>
         <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
+        <view class="putImg">
+            <image class="deleteImg" src="/assets/image/删除.png"></image>
+        </view>
     </view>
     <view class="kuaidigeshu">
         <text style="font-size: 40rpx;"> 2.</text>
         <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
+        <view class="putImg">
+            <image class="deleteImg" src="/assets/image/删除.png"></image>
+        </view>
     </view>
     <view class="kuaidigeshu">
         <text style="font-size: 40rpx;"> 3.</text>
         <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
+        <view class="putImg">
+            <image class="deleteImg" src="/assets/image/删除.png"></image>
+        </view>
     </view>
     <view class="kuaidigeshu">
         <text style="font-size: 40rpx;"> 4.</text>
         <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
+        <view class="putImg">
+            <image class="deleteImg" src="/assets/image/删除.png"></image>
+        </view>
     </view>
-    <view>+ 补充快递单号</view>
+    <view class="add" bindtap="replenishBtn">+ 补充快递单号</view>
+</view>
+
+<!-- 底部 -->
+<view class="orderDfooter">
+    <view class="orderNum">
+        <text>订单号：{{orderNum}}</text>
+        <text class="copy" data-item="{{orderNum}}" bindtap="copy">复制</text>
+    </view>
+    <view class="orderNum">
+        <text>转运路线：中国 — 美国</text>
+    </view>
+    <view class="orderNum">
+        <text>预选渠道：普通货物</text>
+    </view>
+    <view class="orderNum">
+        <text>订单状态：<text class="waitWrite">待填写</text></text>
+    </view>
+    <view class="orderNum">
+        <text>下单时间：2022-05-09 14:07:12</text>
+    </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="bottom">
+    <navigator url="/pages/contactSer/contactSer">
+        <view class="bottom-btn contactKefu">联系客服</view>
+    </navigator>
+    <view class="bottom-btn cancelOrder" bindtap="cancelOrder">取消订单</view>
 </view>

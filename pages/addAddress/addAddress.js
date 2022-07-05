@@ -5,7 +5,20 @@ Page({
      * 页面的初始数据
      */
     data: {
-        
+        switch1Checked: true,
+        region: [],
+        placeholderValue: "Please fill in resipient's phone"
+    },
+    // input 框失去焦点的回调
+    handleOnfocus() {
+        this.setData({
+            placeholderValue: ''
+        })
+    },
+    getUserProvince: function (e) {
+        this.setData({
+            region: e.detail.value //将用户选择的省市区赋值给region
+        })
     },
 
     /**

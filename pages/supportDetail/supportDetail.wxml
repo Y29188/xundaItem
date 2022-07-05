@@ -1,0 +1,70 @@
+<!-- 头部 -->
+<view class="supportHeader all">
+    <view class="supNum">
+        <text>订单号：20220509140712345678</text>
+    </view>
+    <view class="supTitle">
+        <image class="supImg" src="/assets/image/baojia.jpg"></image>
+        <view class="supText">保价</view>
+    </view>
+    <input class="supInp" placeholder="自定义物品价格，请填写真实物品价格" type="text" />
+</view>
+
+<!-- 中间 -->
+<view class="supportMiddle all">
+    <view class="supRedTip">国际快递由于多国调度，存在一定比例丢失的情况!</view>
+    <view class="supRedTip supRedTip1">如丢失包裹,购买丢失险可获得全额赔付赔付(最高5000元)!!</view>
+    <view class="textMid">
+        <text class="text1">丢失险（保价3%）</text>
+        <view class="body-view">
+            <switch checked="{{switch1Checked}}" />
+        </view>
+    </view>
+    <view class="line"></view>
+    <view class="textMid">
+        <text class="text1">保险费：¥ 30.00</text>
+    </view>
+</view>
+
+<!-- 底部 -->
+<view class="supportMiddle all supportFooter">
+    <view class="supRedTip">电子产品等容易被税的高客单价产品建议购买关税保险!英国关税起征点为0.01英镑!</view>
+    <view class="supRedTip supRedTip1">
+        综合关税=货值x增值税率+(货值+运费+货值x产品税率)x20%+清关杂费。
+    </view>
+    <view class="textMid">
+        <text class="text1">关说险（保价2%）</text>
+        <view class="body-view">
+            <switch checked="{{switch2Checked}}" />
+        </view>
+    </view>
+    <view class="line"></view>
+    <view class="textMid">
+        <text class="text1">保险费：¥ 20.00</text>
+    </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="bottom">
+    <navigator url="/pages/contactSer/contactSer">
+        <view class="bottom-btn contactKefu">联系客服</view>
+    </navigator>
+    <view class="bottom-btn cancelOrder next" bindtap="next">下一步</view>
+</view>
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">风险告知书</view>
+    <view class="modal-content">
+        <view style="text-align: left; color: #000;">尊敬的客户：</view>
+        <view style="color: #000;">
+            <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好，系统识别到您的订单未投保丢失保险，丢件的概率为万分之三，未购买丢失保险发生丢失的赔付原则为:退运费，按照实际货值赔付但不‘超过运费价值且最高不超过100美元。请悉知。</text>
+        </view>
+    </view>
+    <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">购买风险</view>
+        <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">承担风险</view>
+    </view>
+</view>

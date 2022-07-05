@@ -11,14 +11,20 @@
         "pages/myCoupon/myCoupon",
         "pages/couponDetail/couponDetail",
         "pages/orderDetail/orderDetail",
+        "pages/orderPackage/orderPackage",
+        "pages/orderCheck/orderCheck",
+        "pages/orderPay/orderPay",
+        "pages/allOrder/allOrder",
         "pages/activeCenter/activeCenter",
         "pages/contactSer/contactSer",
         "pages/mustKnow/mustKnow",
         "pages/procedure/procedure",
         "pages/aboutAs/aboutAs",
         "pages/fare/fare",
-       
-        "pages/pageList/pageList"
+        "pages/supportDetail/supportDetail",
+        "pages/pageList/pageList",
+        "pages/payDetail/payDetail",
+        "pages/payFinish/payFinish"
     ],
     "window": {
         "backgroundTextStyle": "light",

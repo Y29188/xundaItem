@@ -112,6 +112,7 @@
         </view>
     </navigator>
 </block>
+
 <!-- 已支付 -->
 <block wx:if="{{activeIndex === 2}}">
     <navigator open-type="navigate" class="orderNumber">

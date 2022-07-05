@@ -11,11 +11,11 @@
 
     </view>
     <view class="middle">
-        <view class="order">
+        <navigator url="/pages/allOrder/allOrder" class="order">
             <text class="left">我的订单</text>
             <text class="right">全部订单 ></text>
             <view class="line"></view>
-        </view>
+        </navigator>
         <view class="icon">
             <view class="box">
                 <image class="img" src="/assets/image/待付款.png"></image>

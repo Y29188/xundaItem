@@ -5,8 +5,17 @@ Page({
     data: {
         country: '美国',
         showModal: false,
+        list: ["普通货物", "电子产品", "液体粉末", "内地EMS", "广东EMS"],
+        flag: 0,
     },
-    
+    colorChange(e) {
+        let flag = e.currentTarget.dataset.index;
+        this.setData({
+            flag
+        })
+        console.log(e);
+    },
+
     onLoad: function () {},
     /**
      * 弹窗
@@ -38,7 +47,9 @@ Page({
      * 对话框确认按钮点击事件
      */
     onConfirm: function () {
+        wx.navigateTo({
+            url: "/pages/address/address"
+        })
         this.hideModal();
     }
 })
-

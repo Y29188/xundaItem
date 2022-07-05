@@ -1,0 +1,108 @@
+<!-- 头部 -->
+<view class="address all payHeader">
+    <view class="first">
+        <view class="icon" style="background-color: #fff;">
+            <image class="img2" src="/assets/image/9.jpg"></image>
+        </view>
+        <text class="order_text1">Yuu
+        </text>
+        <view class="tel all1">18688880130</view>
+    </view>
+    <view class="third addEng" style="font-size: 24rpx; ">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+</view>
+
+<!-- 中间 -->
+<view class="payMid all">
+    <view class="payText">
+        <text>订单号</text>
+        <text>20220509140712345678</text>
+    </view>
+    <view class="payText">
+        <text>转运路线</text>
+        <text>中国 - 美国</text>
+    </view>
+    <view class="payText">
+        <text>预先渠道</text>
+        <text>普通货物</text>
+    </view>
+    <view class="payText">
+        <text>货物属性</text>
+        <text>普通货物</text>
+    </view>
+    <view class="payText">
+        <text>转运费</text>
+        <text>¥138.00</text>
+    </view>
+    <view class="payText">
+        <text>附加费</text>
+        <text>¥38.00</text>
+    </view>
+    <view class="payText">
+        <text>丢失险</text>
+        <text>¥0.00</text>
+    </view>
+    <view class="payText">
+        <text>关税险</text>
+        <text>¥28.00</text>
+    </view>
+    <view class="payText">
+        <view>
+            <image class="img" src="/assets/image/youhuiquan.png"></image>
+            <text>优惠券</text>
+        </view>
+        <view>
+            <text style="color:#ec1d2e">- ¥ 8</text>
+            <image class="img1" src="/assets/image/右箭头.png"></image>
+        </view>
+    </view>
+    <view class="reaText">
+        <image class="img" src="/assets/image/e.png"></image>
+        <text class="text" style="color:#ec0606;">为您优先选择最优折扣优惠</text>
+    </view>
+    <view class="line"></view>
+    <view class="sellte">
+        <view>
+            <text>已优惠</text>
+            <text style="color: #ec0606;"> ¥ 8</text>
+            <text> 小计 </text>
+        </view>
+        <view class="value"> ¥ 28.00</view>
+    </view>
+</view>
+
+<!-- 底部 -->
+<view class="payFooter">
+    <view class="payLeft">
+        <view class="text">订单总金额：¥ 138.00</view>
+        <radio-group class="select">
+            <radio color="green" value="male"  bindtap="showModal"> 阅读并同意《电子运单契约条款》</radio>
+        </radio-group>
+    </view>
+    <view class="payRight">立即支付</view>
+</view>
+
+<!-- 底部弹出 -->
+<view class="wrap">
+    <!-- modal -->
+    <view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
+        <view class="modal-cancel" bindtap="hideModal"></view>
+        <view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
+            <view class='Mselect'>
+                <view>转运协议</view>
+                <view>
+                    您使用霆宇国际网系统服务或提交运单，将货物交付给霆宇国际网仓库，就表示您或者您所代表的货物的利益人，接受霆宇国际网的运输条款及条件，无论您是否已经提交或将要提交运单。您口头或书面的指示如果与霆宇国际网的提交条款发生冲突，我们将不受您指示的约束。
+                </view>
+                <view>
+                    使用霆宇国际服务或提交运单，代表您同意并遵守以下条款，并承担违反如下条款需承担的经济和法律责任:
+                </view>
+                <view>1．您保证委托给霆宇国际网仓储和运输的物品属于可接受的运输品。</view>
+                <view>如果出现以下情况，将被视为不可接受的:国际航空运输协会(IATA)、国际民用航空组织(ICAO)、任何所适用法律国家的政府部门或其他相关组织划定为危险材料、危险物品、禁运或限运物品;所适用的海关规定要求申报而未申报;或者霆宇国际网认为无法安全、合法地承运的物品(这些物品包括但不限于:动物、金条、货币、不记名的可流通票据、贵金属和宝石、军火或武器弹药及零配件、人类尸体、色情材料、打火机和非法麻醉剂/毒品。</view>
+            </view>
+            <view class='Mcancel' bindtap='mCancel'>
+                <view class="yes">同意本条款</view>
+            </view>
+
+        </view>
+    </view>
+
+</view>

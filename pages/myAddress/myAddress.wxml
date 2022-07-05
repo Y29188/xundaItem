@@ -1,4 +1,4 @@
 <view class="myAddress">
-<image class="img" src="/assets/image/地址.jpg"></image>
+    <image class="img" src="/assets/image/地址.jpg"></image>
 </view>
 <navigator class="btn" url="/pages/addAddress/addAddress">添加地址</navigator>

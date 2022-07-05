@@ -36,6 +36,8 @@
     margin-bottom: 100rpx;
 }
 
+
+/* 弹窗 */
 .modal-mask {
     width: 100%;
     height: 100%;

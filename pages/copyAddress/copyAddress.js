@@ -1,66 +1,24 @@
-// pages/copyAddress/copyAddress.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        person: "收件人：迅达仓库",
+        address: "收货地址：深圳市龙华区龙华街道工业",
+        address1: "路壹城环智中心C座2607室",
+        tel: "联系电话：18688880130",
+        zipCode: "邮政编码：518000"
     },
 
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
+    // 复制地址
+    copyAddress: function (e) {
+        let item = e.currentTarget.dataset.item;
+        console.log('复制', e, item);
+        wx.setClipboardData({
+            data: item,
+            success: function (res) {
+                wx.showToast({
+                    title: '复制成功',
+                    icon: "success"
+                })
+            }
+        })
     }
 })

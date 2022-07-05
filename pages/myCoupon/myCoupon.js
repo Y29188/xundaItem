@@ -1,17 +1,15 @@
-// pages/myCoupon/myCoupon.js
 Page({
-
     /**
      * 页面的初始数据
      */
     data: {
         showModal: false,
     },
-    onLoad: function (options) {
-        var tabbar = this.selectComponent("#tabbar")
-        // 父组件里面执行子组件的方法
-        tabbar.run();
-    },
+    // onLoad: function (options) {
+    //     var tabbar = this.selectComponent("#tabbar")
+    //     // 父组件里面执行子组件的方法
+    //     tabbar.run();
+    // },
     /**
      * 弹窗
      */

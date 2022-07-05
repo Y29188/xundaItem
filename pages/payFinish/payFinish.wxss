@@ -1,0 +1,36 @@
+.payFinish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 200rpx;
+    overflow: hidden;
+}
+
+.payFinish .img {
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.zhifu {
+    color: #06a103;
+    font-size: 50rpx;
+    margin-top: 40rpx;
+    text-align: center;
+    overflow: hidden;
+}
+
+.payTip {
+    margin-left: 50rpx;
+}
+
+.finish {
+    margin: 180rpx auto;
+    width: 378rpx;
+    height: 84rpx;
+    line-height: 84rpx;
+    text-align: center;
+    border: 2rpx solid rgba(6, 161, 3, 100);
+    color: #00b700;
+    border-radius: 10rpx;
+}

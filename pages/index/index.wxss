@@ -276,6 +276,7 @@
 }
 
 .copy {
+    position: relative;
     width: 660rpx;
     height: 80rpx;
     line-height: 80rpx;
@@ -288,6 +289,9 @@
 }
 
 .copy .img {
+    position: absolute;
+    left: 135rpx;
+    top: 25rpx;
     width: 38rpx;
     height: 34rpx;
     line-height: 34rpx;
@@ -344,13 +348,13 @@
     line-height: 96rpx;
     font-size: 36rpx;
     text-align: center;
-    color: #7cb342;
+    color: #000;
     border-radius: 14rpx;
     border: 1rpx solid #7cb342;
     margin: 10rpx;
 }
 
-.modal-content .active {
+.active {
     background-color: #7cb342;
     color: #fff;
 }
@@ -362,8 +366,6 @@
     flex-wrap: wrap;
     padding: 50rpx 32rpx;
 }
-
-
 
 
 .modal-footer {
