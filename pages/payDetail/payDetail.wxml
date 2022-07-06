@@ -45,16 +45,18 @@
         <text>关税险</text>
         <text>¥28.00</text>
     </view>
-    <view class="payText">
-        <view>
-            <image class="img" src="/assets/image/youhuiquan.png"></image>
-            <text>优惠券</text>
+    <navigator url="/pages/myCoupon/myCoupon">
+        <view class="payText">
+            <view>
+                <image class="img" src="/assets/image/youhuiquan.png"></image>
+                <text>优惠券</text>
+            </view>
+            <view>
+                <text style="color:#ec1d2e">- ¥ 8</text>
+                <image class="img1" src="/assets/image/右箭头.png"></image>
+            </view>
         </view>
-        <view>
-            <text style="color:#ec1d2e">- ¥ 8</text>
-            <image class="img1" src="/assets/image/右箭头.png"></image>
-        </view>
-    </view>
+    </navigator>
     <view class="reaText">
         <image class="img" src="/assets/image/e.png"></image>
         <text class="text" style="color:#ec0606;">为您优先选择最优折扣优惠</text>
@@ -75,10 +77,10 @@
     <view class="payLeft">
         <view class="text">订单总金额：¥ 138.00</view>
         <radio-group class="select">
-            <radio color="green" value="male"  bindtap="showModal"> 阅读并同意《电子运单契约条款》</radio>
+            <radio color="orange" value="male" bindtap="showModal"> 阅读并同意《电子运单契约条款》</radio>
         </radio-group>
     </view>
-    <view class="payRight">立即支付</view>
+    <view class="payRight" bindtap="payRight">立即支付</view>
 </view>
 
 <!-- 底部弹出 -->

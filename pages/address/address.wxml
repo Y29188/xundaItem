@@ -17,7 +17,9 @@
     <view class="second">
         <image class="img" src="/assets/image/e.png"></image>
         <text class="use">请用英文填写</text>
-        <text class="select">选择地址</text>
+        <navigator url="/pages/myAddress/myAddress">
+            <text class="select">选择地址</text>
+        </navigator>
     </view>
     <view class="information">
         <view class="inp">

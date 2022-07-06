@@ -1,0 +1,16 @@
+.user {
+    border-bottom: 2rpx gray solid;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user .name {
+    height: 35px;
+    margin: 10px 18px;
+}
+
+.user .english {
+    margin-left: 20rpx;
+    margin: 10px 18px;
+}

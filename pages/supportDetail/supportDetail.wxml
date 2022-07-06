@@ -16,8 +16,8 @@
     <view class="supRedTip supRedTip1">如丢失包裹,购买丢失险可获得全额赔付赔付(最高5000元)!!</view>
     <view class="textMid">
         <text class="text1">丢失险（保价3%）</text>
-        <view class="body-view">
-            <switch checked="{{switch1Checked}}" />
+        <view class="body-view wx-switch-input">
+            <switch  checked="{{switch1Checked}}" />
         </view>
     </view>
     <view class="line"></view>

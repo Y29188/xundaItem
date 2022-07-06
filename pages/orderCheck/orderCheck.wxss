@@ -18,7 +18,7 @@
     height: 460rpx;
 }
 
-.bottom .contactKefu{
+.bottom .contactKefu1{
     width: 750rpx;
     background-color: #e7691d;
 }

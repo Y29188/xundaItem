@@ -28,7 +28,7 @@
             <picker mode="region" bindchange="getUserProvince">
                 <input type="text" placeholder="" name="" id="" />
                 <view class="weizhi">
-                    <text wx:for="{{region}}">{{item}} </text>
+                    <text wx:for="{{region}}" wx:key="region">{{item}} </text>
                 </view>
             </picker>
         </view>
@@ -52,7 +52,7 @@
 
 <view class="set">
     <text class="default">设置默认</text>
-    <view class="body-view">
+    <view class="body-view wx-switch-input">
         <switch checked="{{switch1Checked}}" />
     </view>
 </view>

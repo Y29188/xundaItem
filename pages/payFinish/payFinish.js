@@ -5,14 +5,35 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        timer: '', // 定时器名字
+        time: '3'
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad(options) {
-
+    // 自动跳转页面
+    onLoad() {
+        let that = this;
+        let countTime = that.data.time;
+        that.setData({
+            timer: setInterval(function () {
+                countTime--;
+                that.setData({
+                    time: countTime
+                });
+                if (countTime == 0) {
+                    // 清除定时器
+                    clearInterval(that.data.timer);
+                    // 使用延时器让页面跳转
+                    setTimeout(() => {
+                        wx.reLaunch({
+                            url: '/pages/order/order'
+                        })
+                    }, 800)
+                }
+            }, 1000)
+        })
     },
 
     /**

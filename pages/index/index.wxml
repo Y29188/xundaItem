@@ -22,8 +22,11 @@
             <view class="city">
                 <text class="text china">中国</text>
                 <image class="plane" src="/assets/image/plane.jpg"></image>
-                <text class="text usa">{{country}}</text>
+                <navigator url="/pages/nationalArea/nationalArea">
+                    <text class="text usa">{{country}}</text>
+                </navigator>
                 <view bindtap="showDialogBtn" class="fast">立即转运</view>
+
                 <!--弹窗-->
                 <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
                 <view class="modal-dialog" wx:if="{{showModal}}">
@@ -123,5 +126,7 @@
         <image class="img" src="/assets/image/复制.png"></image>
         <text>复制仓库地址去购物</text>
     </navigator>
-    <view class="footer">电商平台的收货地址请填写我们</view>
+    <navigator url="/pages/addAddress/addAddress">
+        <view class="footer">电商平台的收货地址请填写我们</view>
+    </navigator>
 </view>

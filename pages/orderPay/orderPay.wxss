@@ -1,3 +1,200 @@
 @import "../orderDetail/orderDetail.wxss";
 @import "../orderPackage/orderPackage.wxss";
 @import "../orderCheck/orderCheck.wxss";
+
+.tip1 {
+    padding-left: 30rpx;
+}
+
+.orderPayTwo {
+    width: 694rpx;
+    height: 1620rpx;
+    /* background-color: rgb(200, 206, 206); */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.orderPayTwo .twoBox {
+    margin: 40rpx;
+}
+
+.orderPayTwo .twoBox .redText {
+    color: #ea691d;
+}
+
+.orderPayTwo .twoBox .twoCon {
+    margin-top: 25rpx;
+    overflow: hidden;
+}
+
+.orderPayTwo .imgWrap {
+    display: flex;
+    justify-content: space-around;
+    height: 164rpx;
+    box-sizing: border-box;
+
+}
+
+.orderPayTwo .imgWrap .img {
+    margin: 20rpx 0 20rpx 0;
+    width: 164rpx;
+    height: 164rpx;
+}
+
+.orderPayTwo .twoBox .twoCon2 {
+    margin-top: 50rpx;
+    overflow: hidden;
+}
+
+.orderPayTwo .twoBox .imgBox {
+    display: flex;
+    justify-content: start;
+    margin: 40rpx 0rpx 40rpx -15rpx;
+    width: 638rpx;
+    height: 260rpx;
+    border: 2rpx solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.orderPayTwo .twoBox .imgBox .img3 {
+    width: 200rpx;
+    height: 216rpx;
+    margin: 25rpx;
+}
+
+.orderPayTwo .twoBox .imgBox .img3 .img {
+    width: 200rpx;
+    height: 216rpx;
+}
+
+.orderPayTwo .twoBox .imgBox .textContent {
+    width: 168px;
+    height: 100px;
+    margin-top: 15rpx;
+    box-sizing: border-box;
+}
+
+.orderPayTwo .twoBox .imgBox .textContent .packDesc {
+    color: #acada8;
+    font-size: 28rpx;
+}
+
+.orderMiddle {
+    position: relative;
+    height: 760rpx;
+}
+
+.orderMiddle .kuaidigeshu {
+    margin-top: 20rpx;
+    overflow: hidden;
+}
+
+.orderMiddle .kuaidigeshu .fuhao {
+    position: absolute;
+    top: 7rpx;
+    left: 20rpx;
+}
+
+.orderMiddle .kuaidigeshu .weight {
+    position: absolute;
+    /* left: 0rpx; */
+    top: 12rpx;
+    right: 280rpx;
+}
+
+.orderDfooter {
+    height: 520rpx;
+}
+
+.orderDfooter .orderNum .waitPay {
+    color: #ef0606;
+}
+
+.bottom .contactKefu {
+    background-color: #e7691d;
+}
+
+/* 弹窗 */
+.modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+}
+
+.modal-dialog {
+    margin: 0 auto;
+    width: 600rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    background: #f9f9f9;
+    margin: -180rpx 105rpx;
+    border-radius: 16rpx;
+}
+
+.modal-title {
+    padding-top: 50rpx;
+    font-size: 34rpx;
+    color: #030303;
+    text-align: center;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: start;
+    padding: 50rpx 32rpx;
+    box-sizing: border-box;
+}
+
+.modal-content .imgBox .img2 {
+    width: 85rpx;
+    height: 85rpx;
+}
+
+.modal-content .arriveAddress .nameBox {
+    font-size: 34rpx;
+    text-align: left;
+    color: black;
+    margin-bottom: 20rpx;
+}
+
+.modal-content .arriveAddress .nameBox .name {
+    margin: 20rpx 30rpx 0rpx 20rpx;
+}
+
+.modal-content .arriveAddress .addressDetail {
+    font-size: 24rpx;
+    text-align: left;
+    margin-left: 20rpx;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    height: 86rpx;
+    border-top: 1px solid #dedede;
+    font-size: 34rpx;
+    line-height: 86rpx;
+}
+
+.modal-footer .btn-cancel {
+    width: 50%;
+    color: #666;
+    text-align: center;
+    border-right: 1px solid #dedede;
+}
+
+.modal-footer .btn-confirm {
+    width: 50%;
+    color: #ec5300;
+    text-align: center;
+}

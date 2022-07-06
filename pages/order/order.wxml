@@ -8,7 +8,7 @@
 <!-- 全部 -->
 <block wx:if="{{activeIndex === 0}}">
     <!-- 待入仓 -->
-    <navigator open-type="navigate" class="orderNumber">
+    <view class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -20,12 +20,17 @@
         </view>
         <view class="texts">待入仓</view>
         <view class="buttons">
-            <button class="buttons1">确认打包</button>
-            <button class="buttons2">详情</button>
+            <navigator url="/pages/orderPackage/orderPackage">
+                <button class="buttons1">确认打包</button>
+            </navigator>
+            <navigator url="/pages/orderDetail/orderDetail">
+                <button class="buttons2">详情</button>
+            </navigator>
         </view>
-    </navigator>
+    </view>
+
     <!-- 待填写 -->
-    <navigator open-type="navigate" class="orderNumber">
+    <view class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -36,12 +41,13 @@
             <text class="cityName">美国</text>
         </view>
         <view class="texts">待填写</view>
-        <view class="buttons">
+        <navigator url="/pages/orderDetail/orderDetail" class="buttons">
             <button class="buttons2">详情</button>
-        </view>
-    </navigator>
+        </navigator>
+    </view>
+
     <!-- 待支付 -->
-    <navigator open-type="navigate" class="orderNumber">
+    <view open-type="navigate" class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -53,12 +59,17 @@
         </view>
         <view class="texts">待支付</view>
         <view class="buttons">
-            <button class="buttons1">去支付</button>
-            <button class="buttons2">详情</button>
+            <navigator url="/pages/orderPay/orderPay">
+                <button class="buttons1">去支付</button>
+            </navigator>
+            <navigator url="/pages/orderDetail/orderDetail">
+                <button class="buttons2">详情</button>
+            </navigator>
         </view>
-    </navigator>
+    </view>
+
     <!-- 已出仓 -->
-    <navigator open-type="navigate" class="orderNumber">
+    <view class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -70,12 +81,17 @@
         </view>
         <view class="texts">已出仓</view>
         <view class="buttons">
-            <button class="buttons1">物流详情</button>
-            <button class="buttons2">详情</button>
+            <navigator url="/pages/logistics/logistics">
+                <button class="buttons1">物流详情</button>
+            </navigator>
+            <navigator url="/pages/orderDetail/orderDetail">
+                <button class="buttons2">详情</button>
+            </navigator>
         </view>
-    </navigator>
+    </view>
+
     <!-- 已完成 -->
-    <navigator open-type="navigate" class="orderNumber">
+    <view open-type="navigate" class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -87,15 +103,17 @@
         </view>
         <view class="texts">已完成</view>
         <view class="buttons">
-            <button class="buttons2">详情</button>
+            <navigator url="/pages/orderDetail/orderDetail">
+                <button class="buttons2">详情</button>
+            </navigator>
         </view>
-    </navigator>
+    </view>
 </block>
 
 
 <!-- 待支付 -->
 <block wx:if="{{activeIndex === 1}}">
-    <navigator open-type="navigate" class="orderNumber">
+    <view open-type="navigate" class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -107,15 +125,19 @@
         </view>
         <view class="texts">待支付</view>
         <view class="buttons">
-            <button class="buttons1">去支付</button>
-            <button class="buttons2">详情</button>
+            <navigator url="/pages/orderPay/orderPay">
+                <button class="buttons1">去支付</button>
+            </navigator>
+            <navigator url="/pages/orderDetail/orderDetail">
+                <button class="buttons2">详情</button>
+            </navigator>
         </view>
-    </navigator>
+    </view>
 </block>
 
 <!-- 已支付 -->
 <block wx:if="{{activeIndex === 2}}">
-    <navigator open-type="navigate" class="orderNumber">
+    <view open-type="navigate" class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -128,14 +150,16 @@
         <view class="texts">已支付</view>
         <view class="buttons">
             <button class="buttons1">已支付</button>
-            <button class="buttons2">详情</button>
+            <navigator url="/pages/orderDetail/orderDetail">
+                <button class="buttons2">详情</button>
+            </navigator>
         </view>
-    </navigator>
+    </view>
 </block>
 
 <!-- 已完成 -->
 <block wx:if="{{activeIndex === 3}}">
-    <navigator open-type="navigate" class="orderNumber">
+    <view open-type="navigate" class="orderNumber">
         <view class="orderBox">
             <text>订单号：{{text}}</text>
             <text class="orderText2" data-item='{{text}}' bindtap="copy">复制</text>
@@ -147,7 +171,9 @@
         </view>
         <view class="texts">已完成</view>
         <view class="buttons">
-            <button class="buttons2">详情</button>
+            <navigator url="/pages/orderDetail/orderDetail">
+                <button class="buttons2">详情</button>
+            </navigator>
         </view>
-    </navigator>
+    </view>
 </block>

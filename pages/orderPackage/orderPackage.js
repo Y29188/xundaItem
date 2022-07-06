@@ -59,7 +59,7 @@ Page({
         })
     },
 
-    /* 取消订单 */
+    // 确认打包
     mustPack() {
         wx.showModal({
             title: '是否确认打包所有的快递包裹',
@@ -74,7 +74,6 @@ Page({
                     wx.navigateTo({
                         url: '/pages/orderCheck/orderCheck',
                     })
-
                 } else {
                     console.log('用户点击取消')
                 }

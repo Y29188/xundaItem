@@ -78,7 +78,7 @@
 <!-- 底部按钮 -->
 <view class="bottom">
     <navigator url="/pages/contactSer/contactSer">
-        <view class="bottom-btn contactKefu">联系客服</view>
+        <view class="bottom-btn contactKefu ">联系客服</view>
     </navigator>
     <view class="bottom-btn cancelOrder mustPack" bindtap="mustPack">确认打包</view>
 </view>

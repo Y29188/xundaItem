@@ -1,10 +1,86 @@
+@import "../orderDetail//orderDetail.wxss";
+
+/* @import '../address/address.wxss'; */
+.address .first {
+    margin: 20rpx 0 20rpx 0rpx;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.address .first .icon {
+    margin-top: 20rpx;
+    line-height: 68rpx;
+    color: #fff;
+    text-align: center;
+    font-size: 32rpx;
+    width: 120rpx;
+    margin-right: 20rpx;
+}
+
+.address .first .me {
+    background-color: blue;
+}
+
+.address .first .right1 {
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+}
+
+.address .first .right1 .name {
+    margin-right: 30rpx;
+    font-size: 36rpx;
+}
+
+.address .first .right1 .tel {
+    font-size: 36rpx;
+}
+
+.address .first .right1 .detailAdr {
+    margin-top: 20rpx;
+    color: #9e9e9e;
+}
+
+.address .second1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address .second1 .select {
+    margin-top: 20rpx;
+    margin-left: 40rpx;
+}
+
+.address .second1 .right2 {
+    position: relative;
+}
+
+.address .second1 .del {
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    right: 0rpx;
+    top: 20rpx;
+}
+
+.address .second1 .edit {
+    right: 80rpx;
+}
+
+
+.active {
+    color: #e76b41;
+}
+
 .myAddress {
     width: 626rpx;
     height: 626rpx;
     margin: 0 auto;
 }
 
-.myAddress .img{
+
+.myAddress .img {
     width: 100%;
     height: 100%;
 }
@@ -20,4 +96,18 @@
     color: #fff;
     background-color: #7cb342;
 
+}
+
+.newAdd {
+    position: fixed;
+    left: 25rpx;
+    bottom: 0;
+    width: 355px;
+    height: 40px;
+    line-height: 80rpx;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #7cb342;
+    margin: 0 auto;
 }

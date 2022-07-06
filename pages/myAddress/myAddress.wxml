@@ -1,4 +1,60 @@
-<view class="myAddress">
+<!-- <view class="myAddress">
     <image class="img" src="/assets/image/地址.jpg"></image>
 </view>
-<navigator class="btn" url="/pages/addAddress/addAddress">添加地址</navigator>
+<navigator class="btn" url="/pages/addAddress/addAddress">添加地址</navigator> -->
+<!-- 头部 -->
+<view class="address">
+    <view class="first">
+        <view class="icon">我 </view>
+        <view class="right1">
+            <text class="name">Yuu</text>
+            <text class="tel">{{tel}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></text>
+            <view class="detailAdr">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+        </view>
+
+    </view>
+    <view class="second1">
+        <radio-group class="select">
+            <radio color="orange" value="male" checked="{{checked}}">
+                <text class="active defaultAdd">设置寄件默认地址</text>
+            </radio>
+        </radio-group>
+        <view class="right2">
+            <image class="del" src="/assets/image/删除.png"></image>
+            <image class="del edit" src="/assets/image/编辑.png"></image>
+        </view>
+    </view>
+
+    <view class=""></view>
+
+</view>
+
+<view class="address">
+    <view class="first">
+        <view class="icon me">时 </view>
+        <view class="right1">
+            <text class="name">小眠</text>
+            <text class="tel">{{tel1}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></text>
+            <view class="detailAdr">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+        </view>
+
+    </view>
+    <view class="second1">
+        <radio-group class="select">
+            <radio color="orange" value="male" checked="">
+                <text class=" defaultAdd">设置寄件默认地址</text>
+            </radio>
+        </radio-group>
+        <view class="right2">
+            <image class="del" src="/assets/image/删除.png"></image>
+            <image class="del edit" src="/assets/image/编辑.png"></image>
+        </view>
+    </view>
+
+    <view class=""></view>
+
+</view>
+
+<navigator url="/pages/addAddress/addAddress">
+    <view class="newAdd">新建地址</view>
+</navigator>

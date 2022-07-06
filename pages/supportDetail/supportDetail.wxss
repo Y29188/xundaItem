@@ -84,6 +84,25 @@
     border-bottom: 1px solid rgba(187, 187, 187, 100);
 }
 
+.wx-switch-input {
+    width: 84rpx !important;
+    height: 50rpx !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*白色样式（false的样式）*/
+.wx-switch-input::before {
+    width: 79rpx !important;
+    height: 46rpx !important;
+}
+
+/*绿色样式（true的样式）*/
+.wx-switch-input::after {
+    width: 45rpx !important;
+    height: 46rpx !important;
+}
+
 
 /* 底部 */
 .supportFooter {
@@ -129,9 +148,6 @@
     text-align: center;
 }
 
-.modal-content {
-    padding: 50rpx 32rpx;
-}
 
 .modal-footer {
     display: flex;

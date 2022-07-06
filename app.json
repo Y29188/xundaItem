@@ -24,7 +24,9 @@
         "pages/supportDetail/supportDetail",
         "pages/pageList/pageList",
         "pages/payDetail/payDetail",
-        "pages/payFinish/payFinish"
+        "pages/payFinish/payFinish",
+        "pages/logistics/logistics",
+        "pages/nationalArea/nationalArea"
     ],
     "window": {
         "backgroundTextStyle": "light",

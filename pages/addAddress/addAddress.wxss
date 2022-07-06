@@ -20,7 +20,7 @@
     overflow: hidden;
 }
 
-.addressCon .holder .inp .weizhi{
+.addressCon .holder .inp .weizhi {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@
     margin: 40rpx;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .add_address {
@@ -61,4 +61,23 @@
     margin: 60rpx auto;
     font-size: 36rpx;
     box-sizing: border-box;
+}
+
+.wx-switch-input {
+    width: 84rpx !important;
+    height: 50rpx !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*白色样式（false的样式）*/
+.wx-switch-input::before {
+    width: 79rpx !important;
+    height: 46rpx !important;
+}
+
+/*绿色样式（true的样式）*/
+.wx-switch-input::after {
+    width: 45rpx !important;
+    height: 46rpx !important;
 }

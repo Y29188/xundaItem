@@ -7,6 +7,7 @@ Page({
         showModal: false,
         list: ["普通货物", "电子产品", "液体粉末", "内地EMS", "广东EMS"],
         flag: 0,
+        indexList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     },
     colorChange(e) {
         let flag = e.currentTarget.dataset.index;

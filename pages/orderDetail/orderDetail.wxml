@@ -30,7 +30,8 @@
     <view style="margin-top: -10rpx;">
         <textarea class="remarks" name="" id="" cols="30" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
     </view>
-    <view class="kuaidigeshu" style="margin-top: 40rpx;">
+
+    <!-- <view class="kuaidigeshu" style="margin-top: 40rpx;">
         <text style="font-size: 40rpx;"> 1.</text>
         <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
         <view class="putImg">
@@ -57,8 +58,19 @@
         <view class="putImg">
             <image class="deleteImg" src="/assets/image/删除.png"></image>
         </view>
+    </view> -->
+    <view class="container2">
+        <block wx:for="{{conLists}}" wx:key="index">
+            <view class='template_title_list flex-x'>
+                {{index + 1}}、
+                <input class="inp inp1" placeholder="请输入快递单号" bindinput='changeConTitle' data-index='{{index}}' type="number" name="" id="" />
+                <view class="del" bindtap='del' data-index='{{index}}'>
+                    <image class="img3" src="/assets/image/删除.png"></image>
+                </view>
+            </view>
+        </block>
+        <view class='add_con flex-x adddanhao' bindtap='add'> + 补充快递单号</view>
     </view>
-    <view class="add" bindtap="replenishBtn">+ 补充快递单号</view>
 </view>
 
 <!-- 底部 -->

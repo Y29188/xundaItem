@@ -1,0 +1,180 @@
+<view class="tip tip1">转运账单已生成，请及时查看账单信息并支付</view>
+
+<!-- 头部 -->
+<view class="address all">
+    <view class="first">
+        <view class="icon">
+            <image class="img" src="/assets/image/收货地址.png"></image>
+        </view>
+        <text class="order_text1">新希望仓库</text>
+        <view class="tel all1">{{tel}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></view>
+    </view>
+    <view class="third desAdd">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
+    <view class="first">
+        <view class="icon" style="background-color: #fff;">
+            <image class="img2" src="/assets/image/9.jpg"></image>
+        </view>
+        <text class="order_text1">Yuu
+        </text>
+        <view class="tel all1">18688880130</view>
+    </view>
+    <view class="third addEng" style="font-size: 24rpx; ">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+</view>
+
+<!-- 第二部分 -->
+<view class="orderPayTwo all">
+    <view class="twoBox">
+        <view class="twoCon">运费：¥ 138.00</view>
+        <view class="twoCon">附加费：¥ 0.00</view>
+        <view class="twoCon">称重重量：5.6 kg</view>
+        <view class="twoCon">分拣备注：<text class="redText">以拆封分拣，统一归类</text></view>
+        <view class="twoCon">打包备注：<text class="redText">东西太多，已统一打包加固</text></view>
+        <view class="twoCon">称重图片：</view>
+        <view class="imgWrap">
+            <image class="img" src="/assets/image/img1.png"></image>
+            <image class="img" src="/assets/image/img1.png"></image>
+            <image class="img" src="/assets/image/img1.png"></image>
+        </view>
+        <view class="twoCon twoCon2">账单：</view>
+        <view class="imgBox">
+            <view class="img3">
+                <image class="img" src="/assets/image/img1.png"></image>
+            </view>
+            <view class="textContent">
+                <view>包裹一</view>
+                <view class="packDesc">
+                    <view>属性:普通货物</view>
+                    <view>长宽高:12*5*5 CM</view>
+                    <view>计费重量:1.25KG</view>
+                    <view>计费方式:实际重量</view>
+                    <view>运费: ¥125</view>
+                </view>
+            </view>
+        </view>
+        <view class="imgBox">
+            <view class="img3">
+                <image class="img" src="/assets/image/img1.png"></image>
+            </view>
+            <view class="textContent">
+                <view>包裹二</view>
+                <view class="packDesc">
+                    <view>属性:普通货物</view>
+                    <view>长宽高:12*5*5 CM</view>
+                    <view>计费重量:1.25KG</view>
+                    <view>计费方式:实际重量</view>
+                    <view>运费: ¥125</view>
+                </view>
+            </view>
+        </view>
+        <view class="imgBox">
+            <view class="img3">
+                <image class="img" src="/assets/image/img1.png"></image>
+            </view>
+            <view class="textContent">
+                <view>123456789823424234</view>
+                <view class="packDesc">
+                    <view>属性:普通货物</view>
+                    <view>长宽高:12*5*5 CM</view>
+                    <view>计费重量:1.25KG</view>
+                    <view>计费方式:实际重量</view>
+                    <view>运费: ¥125</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!-- 第三部分 -->
+<view class="orderMiddle all">
+    <view class="kuaidigeshu">
+        <text class="fuhao"> * </text>
+        <text decode="{{true}}" class="kuaiDiNum">&nbsp; 快递个数</text>
+        <input class="inp" placeholder="4" type="number" />
+    </view>
+    <view style="margin-top: -10rpx;">
+        <textarea class="remarks" name="" id="" cols="30" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
+    </view>
+    <view class="kuaidigeshu boxCon" style="margin-top: 40rpx;">
+        <text style="font-size: 40rpx;"> 1.</text>
+        <input class="inp inp1" placeholder="123456789" type="number" name="" id="" />
+        <view class="waitRu weight">1.28kg</view>
+        <text class="waitRu">待入仓</text>
+    </view>
+    <view class="kuaidigeshu boxCon">
+        <text style="font-size: 40rpx;"> 2.</text>
+        <input class="inp inp1" placeholder="12345567789" type="number" name="" id="" />
+        <view class="waitRu weight">1.28kg</view>
+        <text class="waitRu">已入库</text>
+    </view>
+    <view class="kuaidigeshu boxCon">
+        <text style="font-size: 40rpx;"> 3.</text>
+        <input class="inp inp1" placeholder="124234234242" type="number" name="" id="" />
+        <view class="waitRu weight">1.28kg</view>
+        <text class="waitRu">已入库</text>
+    </view>
+    <view class="kuaidigeshu boxCon">
+        <text style="font-size: 40rpx;"> 4.</text>
+        <input class="inp inp1" placeholder="12345" type="number" name="" id="" />
+        <view class="waitRu weight">1.28kg</view>
+        <text class="waitRu">已入库</text>
+    </view>
+</view>
+
+<!-- 底部 -->
+<view class="orderDfooter">
+    <view class="orderNum">
+        <text>订单号：{{orderNum}}</text>
+        <text class="copy" data-item="{{orderNum}}" bindtap="copy">复制</text>
+    </view>
+    <view class="orderNum">
+        <text>转运路线：中国 — 美国</text>
+    </view>
+    <view class="orderNum">
+        <text>预选渠道：普通货物</text>
+    </view>
+    <view class="orderNum">
+        <text>订单状态：<text class="waitWrite put">待出仓</text></text>
+    </view>
+    <view class="orderNum">
+        <text>支付状态：<text class="waitWrite put waitPay">待支付</text></text>
+    </view>
+    <view class="orderNum">
+        <text>下单时间：2022-05-09 14:07:12</text>
+    </view>
+    <view class="orderNum">
+        <text>入仓时间：2022-05-18 18:07:12</text>
+    </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="bottom">
+    <navigator url="/pages/contactSer/contactSer">
+        <view class="bottom-btn contactKefu ">联系客服</view>
+    </navigator>
+    <view class="bottom-btn cancelOrder mustPack" bindtap="showDialogBtn">支付选项</view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">请确认您的收货地址</view>
+    <view class="modal-content">
+        <view class="imgBox">
+            <image class="img2" src="/assets/image/9.jpg"></image>
+        </view>
+        <view class="arriveAddress">
+            <view class="nameBox">
+                <text class="name">Yuu</text>
+                <text class="telNum">13428969654</text>
+            </view>
+            <view class="addressDetail">
+                <view>MEGASYSTEMS INC 799 E DRAGRAM </view>
+                <view>SUITE 5ATUCSON, AZ 85705 USA</view>
+            </view>
+        </view>
+    </view>
+    <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">联系客服</view>
+        <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">确认无误</view>
+    </view>
+</view>

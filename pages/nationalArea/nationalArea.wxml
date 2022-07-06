@@ -1,0 +1,44 @@
+<van-sticky>
+    
+</van-sticky>
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+
+
+<van-index-bar index-list="{{ indexList }}">
+    <view>
+        <van-index-anchor index="#" use-slot="true">#</van-index-anchor>
+        <view class='user' wx:for='{{more}}' wx:key='name'>
+            <view class='name'>{{item.name}}</view>
+            <view class='english'>{{item.english}}</view>
+        </view>
+    </view>
+    <view>
+        <van-index-anchor index="A" use-slot="true">A</van-index-anchor>
+        <view class='user' wx:for='{{Acountry}}' wx:key='name'>
+            <view class='name'>{{item.name}}</view>
+            <view class='english'>{{item.english}}</view>
+        </view>
+    </view>
+    <view>
+        <van-index-anchor index="B" use-slot="true">B</van-index-anchor>
+        <view class='user' wx:for='{{Bcountry}}' wx:key='name'>
+            <view class='name'>{{item.name}}</view>
+            <view class='english'>{{item.english}}</view>
+        </view>
+    </view>
+    <view>
+        <van-index-anchor index="C" use-slot="true">C</van-index-anchor>
+        <view class='user' wx:for='{{Ccountry}}' wx:key='name'>
+            <view class='name'>{{item.name}}</view>
+            <view class='english'>{{item.english}}</view>
+        </view>
+    </view>
+    <view>
+        <van-index-anchor index="D" use-slot="true">D</van-index-anchor>
+        <view class='user' wx:for='{{Dcountry}}' wx:key='name'>
+            <view class='name'>{{item.name}}</view>
+            <view class='english'>{{item.english}}</view>
+        </view>
+    </view>
+
+</van-index-bar>

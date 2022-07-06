@@ -9,7 +9,28 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/orderPay/orderPay",
+                    "pathName": "pages/nationalArea/nationalArea",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/order/order",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/addAddress/addAddress",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/orderDetail/orderDetail",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

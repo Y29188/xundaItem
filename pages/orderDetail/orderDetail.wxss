@@ -72,17 +72,7 @@
     margin: 0rpx 0 25rpx 30rpx
 }
 
-.orderMiddle .kuaidigeshu .putImg{
-    position: relative;
-}
 
-.orderMiddle .kuaidigeshu .putImg .deleteImg{
-    position: absolute;
-    top: 8rpx;
-    left: -50rpx;
-    width: 40rpx;
-    height: 40rpx;
-}
 
 .orderMiddle .kuaidigeshu .fuhao {
     position: absolute;
@@ -116,27 +106,108 @@
     overflow: hidden;
 }
 
-.orderMiddle .kuaidigeshu .inp1 {
-    width: 550rpx;
+
+.orderMiddle .add {}
+
+/* 动态input框 */
+page {
+    background: #f2f2f2;
 }
 
+.flex-x {
+    display: flex;
+    align-items: center;
 
+}
 
+.template_title,
+.template_title1,
+.template_title_list {
+    height: 90rpx;
+    background: #fff;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
 
-.orderMiddle .add {
-    width: 222rpx;
-    height: 26rpx;
-    line-height: 26rpx;
-    border-radius: 22rpx;
-    background-color: rgba(255, 255, 255, 100);
-    color: rgba(64, 184, 80, 100);
-    font-size: 24rpx;
-    text-align: center;
-    box-shadow: 0rpx 4rpx 10rpx 0rpx rgba(0, 0, 0, 0.4);
-    padding: 10rpx;
-    margin-top: 10rpx;
+.template_title1 {
+    background: none;
+}
+
+.template_title_list {
+    margin-bottom: 4rpx;
+    margin-top: -30rpx;
+}
+
+.template_title>view,
+.template_title1>view {
+    font-size: 32rpx;
+    color: #8f8f8f;
+    flex-shrink: 0;
+    margin-right: 20rpx;
+}
+
+.template_title>input {
+    font-size: 28rpx;
+    color: #808080;
+    text-align: right;
+    flex-grow: 1;
+}
+
+/* 添加内容 */
+
+.add_con>text {
+    font-size: 40rpx;
+    color: #f16765;
+    display: block;
+    margin-right: 20rpx;
+    margin-left: 10rpx;
+    line-height: 44rpx;
+}
+
+.add_con>view {
+    font-size: 32rpx;
+    color: #7885cb;
+}
+
+.container2 {
+    margin-top: 0rpx;
+    padding: 20rpx 40rpx 0 20rpx;
+}
+
+.container2 .del .img3 {
+    width: 45rpx;
+    height: 45rpx;
+}
+
+/* 添加单号 */
+.adddanhao {
     margin-left: 420rpx;
+    width: 200rpx;
+    height: 52rpx;
+    padding-left: 20rpx;
+    line-height: 52rpx;
+    border-radius: 22rpx;
+    border: 2rpx solid rgba(64, 184, 80, 100);
+    font-size: 24rpx;
+    box-shadow: 0rpx 4rpx 10rpx 0px rgba(0, 0, 0, 0.4);
 }
+
+/* 删除内容 */
+.del {
+    font-size: 32rpx;
+    color: #f16765;
+    margin-right: 4rpx;
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+
+input {
+    flex-grow: 1;
+    font-size: 28rpx;
+    color: #808080;
+}
+
 
 /* 弹窗 */
 .modal-mask {

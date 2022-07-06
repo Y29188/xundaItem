@@ -80,6 +80,6 @@
 <!-- 底部按钮 -->
 <view class="bottom">
     <navigator url="/pages/orderPay/orderPay">
-        <view class="bottom-btn contactKefu">去支付</view>
+        <view class="bottom-btn contactKefu contactKefu1">去支付</view>
     </navigator>
 </view>
