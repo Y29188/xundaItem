@@ -1,31 +1,159 @@
-<view class="yunfei">
-    <image class="img" src="/assets/image/yunfei.png"></image>
+<!-- 背景 -->
+<view class="yunfei"></view>
+<view class="yunfei1"></view>
+<view class="yunfei2"></view>
+
+
+<view class="yunCon">
+    <view class="yunTit">
+        <view class="smallTit">转运渠道</view>
+        <view class="smallTit">时效（工作日）</view>
+        <view class="smallTit">首重（元）</view>
+        <view class="smallTit">续重（元）</view>
+    </view>
+    <view class="yunSec">
+        <view class="text">普通货物</view>
+        <view class="text">4-9</view>
+        <view class="text">59/斤</view>
+        <view class="text">39/斤</view>
+    </view>
+    <view class="yunSec yunSec1">
+        <view class="text">电子产品</view>
+        <view class="text">6-10</view>
+        <view class="text">69/斤</view>
+        <view class="text">49/斤</view>
+    </view>
+    <view class="yunSec">
+        <view class="text">液体粉末</view>
+        <view class="text">6-10</view>
+        <view class="text">79/斤</view>
+        <view class="text">59/斤</view>
+    </view>
+    <view class="yunSec yunSec1">
+        <view class="text">广东ESM</view>
+        <view class="text">7-30</view>
+        <view class="text">128/斤</view>
+        <view class="text">49/斤</view>
+    </view>
+    <view class="yunSec">
+        <view class="text">内地ESM</view>
+        <view class="text">7-30</view>
+        <view class="text">128/斤</view>
+        <view class="text">35/斤</view>
+    </view>
+    <view class="yunImgWrap">
+        <image class="yunImg" src="/assets/image/yunfei.jpg"></image>
+    </view>
+    <!-- 分类 -->
+    <view class="yunCate">
+        <text>转运渠道 /</text>
+        <text class="cate">|</text>
+        <text class="cate">普通货物</text>
+        <text class="cate">|</text>
+        <text class="cate">电子产品</text>
+        <text class="cate">|</text>
+        <text class="cate">液体粉末</text>
+        <text class="cate">|</text>
+        <text class="ESM">ESM</text>
+        <view class="huowu">货物种类</view>
+        <view class="guangd">(广东/内地)</view>
+    </view>
+    <view class="yunSec yunSec2">
+        <view class="text des" style="margin-top: -24rpx; font-size: 28rpx;margin-left: -10rpx;">普通货物</view>
+        <view style="font-size: 24rpx; position: absolute; top: 35rpx; left: 35rpx;">(衣鞋帽等)</view>
+        <checkbox checked="{{checked}}"></checkbox>
+        <checkbox checked="{{checked}}"></checkbox>
+        <checkbox checked="{{checked}}"></checkbox>
+        <checkbox checked="{{checked}}"></checkbox>
+    </view>
+    <view class="yunSec yunSec1" style="height: 48rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">直插电器</view>
+        <view class="select">
+            <checkbox style=" margin-right: 45rpx;" checked="{{checked}}"></checkbox>
+            <checkbox style=" margin: 0 20rpx;" checked="{{checked}}"></checkbox>
+            <checkbox style="margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec " style="height: 48rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">内电产品</view>
+        <view class="select">
+            <checkbox style=" margin-right: -110rpx;" checked="{{checked}}"></checkbox>
+            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec yunSec1" style="height: 48rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">纯电产品</view>
+        <view class="select">
+            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec" style="height: 48rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">液体粉末</view>
+        <view class="select">
+            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec yunSec1" style="height: 48rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -510rpx;">化妆品</view>
+        <view class="select">
+            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec" style="height: 48rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">防疫物资</view>
+        <view class="select">
+            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec yunSec1" style="height: 48rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">名牌仿牌</view>
+        <view class="select">
+            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec" style="height: 48rpx;  padding: 25rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">食品药品</view>
+        <view style="position: absolute; top: 62rpx; right: 30rpx; font-size: 24rpx;">(无液体)</view>
+        <view class="select">
+            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
+    <view class="yunSec yunSec1" style="height: 48rpx; padding: 25rpx;">
+        <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">大体积物品</view>
+        <view style="position: absolute; top: 62rpx; right: 46rpx; font-size: 24rpx;">(推荐)</view>
+        <view class="select">
+            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+        </view>
+    </view>
 </view>
 
-<view class="yunfei_title">预估运费</view>
-<view class="yunfei_box">
-    <view class="box left all">
-        <view>转运渠道</view>
-        <view>普通货物</view>
-    </view>
-    <view class="box right all">
-        <view>预估重量</view>
-        <view>请输入重量</view>
-    </view>
-    
-</view>
 
-<view class="tiji_box all">
-    <view class="content">
-        <view>预估体积</view>
-        <view style="margin-top: 20rpx;">请输入长宽高</view>
-    </view>
-</view>
+<view style="position: absolute; left: 26rpx; top: 1600rpx;">
+    <view class="yunfei_title">预估运费</view>
+    <view class="yunfei_box">
+        <view class="box left all">
+            <view style="padding: 10rpx;">转运渠道</view>
+            <view>普通货物</view>
+        </view>
+        <view class="box right all">
+            <view style="padding: 10rpx;">预估重量</view>
+            <view>请输入重量</view>
+        </view>
 
-<view class="tiji_box all tiji_footer">
-    <view class="content">
-        <view>预估运费（实际结果以订单为准）</view>
-        <view >¥ 0.00</view>
     </view>
-    
+
+    <view class="tiji_box all">
+        <view class="content">
+            <view>预估体积</view>
+            <view style="margin-top: 20rpx;">请输入长宽高</view>
+        </view>
+    </view>
+
+    <view class="tiji_box all tiji_footer">
+        <view class="content">
+            <view>预估运费（实际结果以订单为准）</view>
+            <view>¥ 0.00</view>
+        </view>
+
+    </view>
 </view>

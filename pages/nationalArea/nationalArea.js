@@ -6,6 +6,7 @@ Page({
      */
     data: {
         indexList: ["#", "A", "B", "C", "D"],
+        index: 0,
         more: [{
                 name: '美国',
                 english: 'United States'
@@ -84,6 +85,10 @@ Page({
                 english: 'Ottawa'
             },
         ],
+    },
+
+    onLoad: function (options) {
+        
     },
 
 })

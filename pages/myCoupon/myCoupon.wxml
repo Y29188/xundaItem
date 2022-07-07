@@ -1,24 +1,118 @@
-<view class="container3">
-    <view class="warp">
-        <image class="img" src="/assets/image/you4.jpg"></image>
+<view class="couponBox">
+    <view class="couLeft ">
+        <view>
+            <text class="text1">15</text>
+            <text class="text2">元</text>
+        </view>
+        <view>满100元使用</view>
     </view>
-    <view class="warp">
-        <image class="img" src="/assets/image/you5.jpg"></image>
-    </view>
-    <view class="warp">
-        <image class="img" src="/assets/image/you6.jpg"></image>
-    </view>
-    <view class="warp">
-        <image class="img" src="/assets/image/you7.jpg"></image>
-    </view>
-    <view class="warp">
-        <image class="img" src="/assets/image/you8.jpg"></image>
-    </view>
-    <view class="warp footer">
-        <image class="img" src="/assets/image/you9.jpg"></image>
+    <view class="couRight">
+        <view class="wrap">
+            <view class="new">新品优惠券</view>
+            <view class="time">2020.10.10 - 2020.11.11</view>
+        </view>
+        <view class="zhekou">抵扣券</view>
     </view>
 </view>
-<view style="display: flex; justify-content: center; align-items: center;">
+
+<view class="couponBox">
+    <view class="couLeft ">
+        <view>
+            <text class="text1">88</text>
+            <text class="text2">折</text>
+        </view>
+
+    </view>
+    <view class="couRight">
+        <view class="wrap">
+            <view class="new">折扣券</view>
+            <view class="time">2020.10.10 - 2020.11.11</view>
+        </view>
+
+        <view class="zhekou">折扣券</view>
+    </view>
+</view>
+
+<view class="couponBox">
+    <view class="couLeft couLeft1">
+        <view>
+            <text class="text1">免首重</text>
+        </view>
+    </view>
+    <view class="couRight couRight1">
+        <view class="wrap">
+            <view class="new">无首重</view>
+            <view class="time">2020.10.10 - 2020.11.11</view>
+        </view>
+        <view class="imgWrap">
+            <image class="img" src="/assets/image/yishiyong.png"></image>
+        </view>
+        <view class="zhekou">首重券</view>
+    </view>
+</view>
+
+<view class="couponBox">
+    <view class="couLeft couLeft1">
+        <view>
+            <text class="text1">88</text>
+            <text class="text2">折</text>
+        </view>
+        <view>满100元使用</view>
+    </view>
+    <view class="couRight couRight1">
+        <view class="wrap">
+            <view class="new">新品优惠券</view>
+            <view class="time">2020.10.10 - 2020.11.11</view>
+        </view>
+        <view class="imgWrap">
+            <image class="img" src="/assets/image/yishiyong.png"></image>
+        </view>
+        <view class="zhekou">折扣券</view>
+    </view>
+</view>
+
+<view class="couponBox">
+    <view class="couLeft couLeft3">
+        <view>
+            <text class="text1">15</text>
+            <text class="text2">元</text>
+        </view>
+        <view>满100元使用</view>
+    </view>
+    <view class="couRight couRight1">
+        <view class="wrap">
+            <view class="new">新品优惠券</view>
+            <view class="time">2020.10.10 - 2020.11.11</view>
+        </view>
+        <view class="imgWrap">
+            <image class="img" src="/assets/image/yiguoqi.png"></image>
+        </view>
+        <view class="zhekou zhekou2">抵扣券</view>
+    </view>
+</view>
+
+<view class="couponBox">
+    <view class="couLeft couLeft3">
+        <view>
+            <text class="text1">88</text>
+            <text class="text2">折</text>
+        </view>
+        <view>满100元使用</view>
+    </view>
+    <view class="couRight couRight1">
+        <view class="wrap">
+            <view class="new">新品优惠券</view>
+            <view class="time">2020.10.10 - 2020.11.11</view>
+        </view>
+        <view class="imgWrap">
+            <image class="img" src="/assets/image/yiguoqi.png"></image>
+        </view>
+        <view class="zhekou zhekou2">折扣券</view>
+    </view>
+</view>
+
+<!-- 兑换优惠券按钮 -->
+<view class="exchange">
     <view bindtap="showDialogBtn" class="btn">兑换优惠券</view>
 </view>
 

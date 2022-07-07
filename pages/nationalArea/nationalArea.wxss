@@ -1,5 +1,5 @@
 .user {
-    border-bottom: 2rpx gray solid;
+    border-bottom: 1rpx gray solid;
     height: 38px;
     display: flex;
     justify-content: space-between;

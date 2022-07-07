@@ -4,8 +4,14 @@ Page({
      * 页面的初始数据
      */
     data: {
+        agree: "同意本条款",
         hideFlag: true, // true-隐藏 false-显示
-        animationData: {}, 
+        animationData: {},
+        coutTime: 5,
+        ban: true,
+        reject: true,
+        timer: "",
+        check: false
     },
     // 点击选项
     getOption: function (e) {
@@ -15,18 +21,31 @@ Page({
             hideFlag: true
         })
     },
-    // 取消
-    mCancel: function () {
-        var that = this;
-        that.hideModal();
-    },
 
     // 显示遮罩层
     showModal: function () {
         var that = this;
+        let countTime = that.data.coutTime
         that.setData({
-            hideFlag: false
+            hideFlag: false,
+            agree: "请阅读" + countTime + "s",
+            timer: setInterval(function () {
+                countTime--;
+                that.setData({
+                    agree: "请阅读" + countTime + "s",
+                });
+                if (countTime == 0) {
+                    // 清除定时器
+                    clearInterval(that.data.timer);
+                    that.setData({
+                        reject: false,
+                        agree: "同意本条款",
+
+                    })
+                }
+            }, 1000)
         })
+
         // 创建动画实例
         var animation = wx.createAnimation({
             duration: 400, // 动画的持续时间
@@ -39,10 +58,28 @@ Page({
             time1 = null;
         }, 100)
     },
+    // 底部按钮禁用
+    checkTap: function () {
+        if (!this.data.check) {
+            this.data.check = true;
+            this.setData({
+                ban: false
+            })
+        } else {
+            this.data.check = false;
+            this.setData({
+                ban: true
+            })
+        }
+    },
 
     // 隐藏遮罩层
     hideModal: function () {
         var that = this;
+        that.setData({
+            check: true,
+            ban: false
+        })
         var animation = wx.createAnimation({
             duration: 400, // 动画的持续时间 默认400ms
             timingFunction: 'ease', // 动画的效果 默认值是linear

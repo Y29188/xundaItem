@@ -1,13 +1,136 @@
 .yunfei {
-    width: 100%;
-    height: 1132rpx;
-    background-color: aquamarine;
+    position: relative;
+    margin-top: 10rpx;  
+    height: 104rpx;
+    position: relative;
+    background-color: #256f3f;
 }
 
-.yunfei .img {
-    width: 100%;
-    height: 100%;
+.yunfei1{
+    height: 72rpx;
+    background-color: #5e9472;
 }
+
+.yunfei2{
+    height: 80rpx;
+    background-color: #76a286;
+}
+
+
+.yunCon {
+    position: absolute;
+    top: 10rpx;
+    left: 26rpx;
+    width: 700rpx;
+    margin: 10rpx auto;
+    border-radius: 32rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.yunCon .yunTit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rpx;
+    margin: 30rpx 10rpx 20rpx 10rpx;
+    overflow: hidden;
+}
+
+.yunCon .yunTit .smallTit {
+    font-size: 26rpx;
+    text-align: center;
+    height: 50rpx;
+    line-height: 48rpx;
+    background-color: #257041;
+    border-radius: 8rpx;
+    padding: 0 10rpx 0 20rpx;
+    color: #fff;
+}
+
+.yunCon .yunSec {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #bec9b4;
+    margin: 0rpx 10rpx;
+    padding: 10rpx;
+    overflow: hidden;
+}
+
+.yunCon .yunSec .text {
+    font-size: 24rpx;
+}
+
+.yunCon .yunSec1 {
+    background-color: #fff;
+    position: relative;
+}
+
+.yunCon .yunSec .select {
+    position: absolute;
+    top: 10rpx;
+    right: 0rpx;
+}
+
+
+.yunCon .yunImgWrap {
+    width: 329px;
+    height: 240rpx;
+    box-sizing: border-box;
+    margin: 30rpx auto 30rpx auto;
+    overflow: hidden;
+}
+
+.yunCon .yunImgWrap .yunImg {
+    width: 100%;
+    height: 240rpx;
+}
+
+.yunCon .yunCate {
+    background-color: #266f43;
+    height: 100rpx;
+    box-sizing: border-box;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    position: relative;
+    font-size: 26rpx;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20rpx;
+    color: #fff;
+    border-radius: 20rpx;
+}
+
+.yunCon .yunCate .cate {
+    font-size: 30rpx;
+}
+
+.yunCon .yunCate .ESM {
+    margin-left: 20rpx;
+    padding-right: 20rpx;
+    font-size: 30rpx;
+}
+
+.yunCon .yunCate .huowu {
+    position: absolute;
+    top: 55rpx;
+    left: 15rpx;
+}
+
+.yunCate .guangd {
+    position: absolute;
+    top: 55rpx;
+    right: 4rpx;
+    font-size: 24rpx;
+}
+
+.yunCon .yunSec2 {
+    margin-top: 20rpx;
+}
+
 
 .yunfei_title {
     font-size: 50rpx;
@@ -21,15 +144,15 @@
     height: 172rpx;
     margin: 40rpx;
     box-sizing: border-box;
-    font-size: 36rpx;
+    /* font-size: 36rpx; */
     text-align: center;
 }
 
-.flex_C_C {
+/* .flex_C_C {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .yunfei_box .box {
     display: flex;
@@ -38,6 +161,8 @@
     flex-wrap: wrap;
     height: 172rpx;
     width: 280rpx;
+    flex-direction: column;
+    font-size: 34rpx;
 }
 
 .all {
@@ -66,10 +191,10 @@
     background-color: #90aef6;
 }
 
-.tiji_footer  {
+.tiji_footer {
     margin-top: 40rpx;
     margin-bottom: 100rpx;
     background-color: #0b73f7;
-    font-size: 38rpx;
+    font-size: 34rpx;
     color: #fff;
 }

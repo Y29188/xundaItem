@@ -8,7 +8,23 @@ Page({
         tel: "186****0130",
         tel1: "186****4135",
         orderNum: "20220509140712345678",
-        checked: true
+
+        obj: [{
+                checked: true,
+                name: "小泽",
+                tel: "179****9697",
+                address: "广东省广州市白云区三元里抗英斗争纪念公园 ",
+                city: "广州市",
+                postCode: "510080"
+            },
+            {
+                name: "小眠",
+                tel: "148****0320",
+                address: "安徽省滁州市凤阳县",
+                city: "滁州市",
+                postCode: "233100"
+            }
+        ]
     },
 
     // 复制电话号码

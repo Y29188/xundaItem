@@ -16,6 +16,12 @@ Page({
         })
         console.log(e);
     },
+    clickCountry(e){
+        let country = e.currentTarget.dataset.index;
+        this.setData({
+            country
+        })
+    },
 
     onLoad: function () {},
     /**

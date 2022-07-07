@@ -49,7 +49,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 6rpx;
-    font-size: 34rpx;
+    font-size: 32rpx;
 }
 
 .address .second .cangku {
@@ -73,7 +73,7 @@
     height: 740rpx;
     box-sizing: border-box;
     overflow: hidden;
-    margin-bottom: 200rpx;
+    /* margin-bottom: 100rpx; */
 }
 
 .cangku_footer .aim {
@@ -90,12 +90,12 @@
     margin-left: 10rpx;
 }
 
-.cangku_footer .second .img{
+.cangku_footer .second .img {
     position: absolute;
-    top: 120rpx;
-    left: 50rpx;
-    width: 45rpx;
-    height: 45rpx;
+    top: 128rpx;
+    left: 60rpx;
+    width: 35rpx;
+    height: 35rpx;
 }
 
 .cangku_footer .second .use {
@@ -105,17 +105,37 @@
 .cangku_footer .second .select {
     color: #40b850;
     border: 1rpx solid #40b850;
-    padding: 4rpx;
     background-color: #d9f1dd;
     border-radius: 8rpx;
 }
 
-.cangku_footer  .information .inp {
-    margin-top: 30rpx;
-    margin-left: 50rpx;
+.cangku_footer .infWrap {
+    width: 640rpx;
+    height: 344rpx;
+    margin-left: 20rpx;
+    margin-top: 60rpx;
+}
+
+.cangku_footer .infWrap .information {
     display: flex;
-    justify-content: start;
-    font-size: 30rpx;
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+}
+
+.cangku_footer .infWrap .information .text1 {
+    width: 160rpx;
+    height: 40rpx;
+    text-align: right;
+}
+
+.cangku_footer .infWrap .information .ipt {
+    width: 480rpx;
+    height: 40rpx;
+    margin-left: 16rpx;
+}
+
+.cangku_footer .infWrap .information input {
+    width: 550rpx;
 }
 
 .btn {
@@ -123,12 +143,8 @@
     height: 82rpx;
     line-height: 82rpx;
     text-align: center;
-    background-color: aquamarine;
     border-radius: 8rpx;
-    margin: 200rpx auto;
-    font-size: 36rpx;
+    margin: 102rpx auto;
     color: #fff;
     background-color: #7cb342;
-
 }
-

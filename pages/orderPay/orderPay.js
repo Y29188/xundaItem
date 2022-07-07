@@ -8,7 +8,22 @@ Page({
         tel: "18688880130",
         orderNum: "20220509140712345678",
         showModal: false,
+        imgList: [
+            "/assets/image/img1.png",
+            "/assets/image/img1.png",
+            "/assets/image/img1.png"
+        ]
     },
+    // 预览图片，放大预览
+    preview(event) {
+        console.log(event.currentTarget.dataset.src)
+        let currentUrl = event.target.dataset.src
+        wx.previewImage({
+            current: currentUrl, // 当前显示图片的http链接
+            urls: this.data.imgList // 需要预览的图片http链接列表
+        })
+    },
+   
 
     // 复制电话号码
     copyTel: function (e) {

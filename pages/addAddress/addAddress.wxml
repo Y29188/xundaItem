@@ -53,7 +53,7 @@
 <view class="set">
     <text class="default">设置默认</text>
     <view class="body-view wx-switch-input">
-        <switch checked="{{switch1Checked}}" />
+        <switch checked="{{checked}}" />
     </view>
 </view>
 

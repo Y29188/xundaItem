@@ -31,34 +31,6 @@
         <textarea class="remarks" name="" id="" cols="30" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
     </view>
 
-    <!-- <view class="kuaidigeshu" style="margin-top: 40rpx;">
-        <text style="font-size: 40rpx;"> 1.</text>
-        <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
-        <view class="putImg">
-            <image class="deleteImg" src="/assets/image/删除.png"></image>
-        </view>
-    </view>
-    <view class="kuaidigeshu">
-        <text style="font-size: 40rpx;"> 2.</text>
-        <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
-        <view class="putImg">
-            <image class="deleteImg" src="/assets/image/删除.png"></image>
-        </view>
-    </view>
-    <view class="kuaidigeshu">
-        <text style="font-size: 40rpx;"> 3.</text>
-        <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
-        <view class="putImg">
-            <image class="deleteImg" src="/assets/image/删除.png"></image>
-        </view>
-    </view>
-    <view class="kuaidigeshu">
-        <text style="font-size: 40rpx;"> 4.</text>
-        <input class="inp inp1" placeholder="请输入快递单号" type="number" name="" id="" />
-        <view class="putImg">
-            <image class="deleteImg" src="/assets/image/删除.png"></image>
-        </view>
-    </view> -->
     <view class="container2">
         <block wx:for="{{conLists}}" wx:key="index">
             <view class='template_title_list flex-x'>
@@ -69,9 +41,25 @@
                 </view>
             </view>
         </block>
-        <view class='add_con flex-x adddanhao' bindtap='add'> + 补充快递单号</view>
+        <view>
+            <view class='add_con flex-x adddanhao' bindtap='add'> + 补充快递单号</view>
+            <!--弹窗-->
+            <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+            <view class="modal-dialog" wx:if="{{showModal}}">
+                <view class="modal-title">是否增加快递单号？</view>
+                <view class="modal-content">
+                    增加快递单号后，发往转运中心的快递个数+1,是否要继续？
+                </view>
+                <view class="modal-footer">
+                    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+                    <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">确认</view>
+                </view>
+            </view>
+        </view>
     </view>
 </view>
+
+
 
 <!-- 底部 -->
 <view class="orderDfooter">

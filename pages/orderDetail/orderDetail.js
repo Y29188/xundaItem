@@ -81,18 +81,43 @@ Page({
             }
         })
     },
-    //  添加内容
-    add(e) {
+
+    hideModal: function () {
+        this.setData({
+            showModal: false
+        });
+    },
+    /**
+     * 对话框取消按钮点击事件
+     */
+    onCancel: function () {
+        this.hideModal();
+    },
+    /**
+     * 对话框确认按钮点击事件
+     */
+    onConfirm: function () {
+        this.hideModal();
         // 点击添加按钮，就往数组里添加一条空数据
         var _list = this.data.conLists;
         _list.push("")
         this.setData({
             conLists: _list
+        });
+        wx.showToast({
+            title: '增加成功',
+            icon: "success"
+        })
+    },
+
+    //  添加内容
+    add(e) {
+        this.setData({
+            showModal: true
         })
     },
 
     // 删除内容
-
     del(e) {
         var idx = e.currentTarget.dataset.index;
         var _list = this.data.conLists;
@@ -105,6 +130,10 @@ Page({
         this.setData({
             conLists: _list
         })
+    },
+
+    onShow() {
+
     },
 
 })

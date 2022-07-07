@@ -1,50 +1,37 @@
-<view class="address all">
-    <view class="first">
-        <view class="icon">
-            <image class="img" src="/assets/image/收货地址.png"></image>
+<view>
+    <view class="address all">
+        <view class="first">
+            <view class="icon">
+                <image class="img" src="/assets/image/收货地址.png"></image>
+            </view>
+            <text class="text">仓库地址</text>
         </view>
-        <text class="text">仓库地址</text>
+        <view class="second">
+            <text class="cangku">{{depot}}</text>
+            <view class="tel">{{tel}} <text bindtap="copy" data-item="{{tel}}" class="copy">{{copy}}</text></view>
+        </view>
+        <view class="third">{{address}}</view>
     </view>
-    <view class="second">
-        <text class="cangku">迅达仓库</text>
-        <text class="tel">18688880130 <text class="copy">复制</text></text>
-    </view>
-    <view class="third">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
-</view>
 
-<view class="cangku_footer all">
-    <view class="aim">目标国收件信息</view>
-    <view class="second">
-        <image class="img" src="/assets/image/e.png"></image>
-        <text class="use">请用英文填写</text>
-        <navigator url="/pages/myAddress/myAddress">
-            <text class="select">选择地址</text>
-        </navigator>
-    </view>
-    <view class="information">
-        <view class="inp">
-            <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name： </text>
-            <input type="text" placeholder="Please fill in the recipient's name" />
+    <view class="cangku_footer all">
+        <view class="aim">目标国收件信息</view>
+        <view class="second">
+            <image class="img" src="/assets/image/e.png"></image>
+            <text class="use">请用英文填写</text>
+            <navigator url="/pages/myAddress/myAddress">
+                <text class="select">选择地址</text>
+            </navigator>
         </view>
-        <view class="inp">
-            <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone： </text>
-            <input style="width: 100%;" type="text" placeholder="Please fill in the recipient's Phone" />
-        </view>
-        <view class="inp">
-            <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;Address：</text>
-            <input type="text" placeholder="Please fill in the address" />
-        </view>
-        <view class="inp">
-            <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City：</text>
-            <input type="text" placeholder="Please fill in the city" />
-        </view>
-        <view class="inp">
-            <text> PostCode：</text>
-            <input style="width: 100%;" type="text" placeholder="Please fill in the postcode" />
+        <!-- 地址信息 -->
+        <view class="infWrap">
+            <view class="information" wx:for="{{obj}}" wx:key="obj" wx:for-item="value" data-item="{{value}}">
+                <view class="text1">{{value.name}}</view>
+                <input class="ipt" type="text" placeholder="{{value.tip}}" value="{{value.value}}" />
+            </view>
         </view>
     </view>
-</view>
 
-<navigator url="/pages/mustKnow/mustKnow">
-    <view class="btn">立即转运</view>
-</navigator>
+    <navigator url="/pages/mustKnow/mustKnow">
+        <view class="btn">立即转运</view>
+    </navigator>
+</view>

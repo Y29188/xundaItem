@@ -1,30 +1,116 @@
-.container3 {
+.couponBox {
+    display: flex;
+    justify-content: space-around;
+    width: 700rpx;
+    height: 200rpx;
+    box-sizing: border-box;
+    margin: 30rpx auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px 0px rgba(255, 247, 230, 100);
+    border-radius: 40rpx;
+}
+
+.couponBox .couLeft {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.container3 .warp {
-    margin-top: 30rpx;
-    width: 700rpx;
+    flex-direction: column;
+    width: 268rpx;
     height: 200rpx;
-    border-radius: 20rpx;
-    overflow: hidden;
-    background-color: aquamarine;
+    background-color: #ffc04c;
+    border-radius: 40rpx 0 0 40rpx;
+    color: #fff;
+}
+
+.couponBox .couLeft .text1 {
+    font-size: 70rpx;
+}
+
+.couponBox .couLeft .text2 {
+    margin-left: 10rpx;
+    font-size: 40rpx;
+}
+
+.couponBox .couRight {
+    height: 200rpx;
+    /* line-height: 100rpx; */
+    width: 400rpx;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
-.container3 .warp .img {
-    width: 100%;
-    height: 100%;
+.couponBox .couRight .wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.container3 .footer {
-    margin-bottom: 110rpx;
+.couponBox .couRight .wrap .new {
+    text-align: left;
+    color: #000;
+    /* margin-left: -140rpx; */
+    font-size: 40rpx;
 }
 
-.btn {
+.couponBox .couRight .wrap .time {
+    color: #bebdbc;
+    margin-top: 20rpx;
+}
+
+.couponBox .couRight .zhekou {
+    font-size: 28rpx;
+    background-color: #ffb045;
+    color: #fff;
+    position: absolute;
+    top: 10rpx;
+    right: 0rpx;
+    border-radius: 15rpx;
+    padding: 6rpx;
+}
+
+.couponBox .couLeft1 {
+    background-color: #ffdcac;
+}
+
+.couponBox .couRight1 {
+    background-color: #ffffff;
+    position: relative;
+}
+
+.couponBox .couRight1 .imgWrap {
+    box-sizing: border-box;
+    position: absolute;
+    right: 70rpx;
+    top: 50rpx;
+}
+
+.couponBox .couRight1 .imgWrap .img {
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.couponBox .couLeft3{
+    background-color: #cccccc;
+}
+
+.couponBox .couRight .zhekou2{
+    background-color: #b8b8b8;
+}
+
+
+
+.exchange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exchange .btn {
     height: 72rpx;
     line-height: 72rpx;
     text-align: center;
@@ -33,7 +119,7 @@
     background-color: #df6804;
     color: rgba(255, 255, 255, 100);
     font-size: 32rpx;
-    margin-bottom: 100rpx;
+    margin: 100rpx 0;
 }
 
 

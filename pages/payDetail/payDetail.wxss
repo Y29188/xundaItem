@@ -80,7 +80,6 @@
 
 .payFooter .payLeft {
     height: 130rpx;
-    /* border-right: 1rpx solid rgba(226, 226, 226, 100); */
     width: 518rpx;
     margin: 20rpx;
     font-size: 28rpx;
@@ -90,22 +89,58 @@
     margin-top: 20rpx;
 }
 
+.payFooter .payLeft .text {
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    font-size: 32rpx;
+}
+
+.payFooter .payLeft .textBox {
+    display: flex;
+    font-size: 28rpx;
+    margin-top: 12rpx;
+    color: #333333;
+}
+
 .payFooter .payRight {
     background-color: #e7691d;
-    width: 250rpx;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40rpx;
+    width: 254rpx;
+    line-height: 132rpx;
+    color: #fff;
+    font-size: 32rpx;
+    border-radius: 0rpx;
 }
+
+/* checkbox设置成圆形 */
+.checkbox .wx-checkbox-input {
+    border-radius: 50%;
+    width: 30rpx;
+    height: 30rpx;
+}
+
+/* 选中的背景颜色 */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+    background: #ffc29c;
+    border: 1px solid #e7691d;
+}
+
+/* 打钩的样式 */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+    width: 40rpx;
+    /* 选中后对勾大小 */
+    height: 40rpx;
+    /* 选中后对勾大小 */
+    font-size: 38rpx;
+    color: #e7691d;
+    /* 对勾颜色 白色 */
+}
+
 
 /*模态框*/
 .modal {
     position: fixed;
-    top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 140rpx;
     left: 0;
     z-index: 1000;
 }
@@ -126,7 +161,7 @@
     z-index: 3000;
     bottom: 0;
     left: 0;
-    background: #dfdede;
+    background: #ffffff;
 }
 
 /*动画前初始位置*/
@@ -135,13 +170,19 @@
     transform: translateY(100%);
 }
 
-
 /* 底部弹出框 */
 .bottom-positon {
     text-align: center;
 }
 
-.Mselect view {
+
+
+.Mcancel {
+    background: #fff;
+    /* padding: 30rpx 0; */
+    font-size: 28rpx;
+}
+.Mselect .text {
     padding: 26rpx 0 10rpx 20rpx;
     text-align: left;
     background: #fff;
@@ -149,17 +190,15 @@
 }
 
 
-.Mcancel {
-    background: #fff;
-    padding: 30rpx 0;
-}
-
 .Mcancel .yes {
-    width: 446rpx;
-    height: 90rpx;
-    line-height: 90rpx;
-    margin: 0 auto;
-    background-color: #e7691d;
-    color: #fff;
+    width: 460rpx;
+    margin-top: 40rpx;
+    margin-bottom: 20rpx;
+    height: 100rpx;
+    line-height: 75rpx;
     border-radius: 94rpx;
+    text-align: center;
+    font-size: 40rpx;
+    background-color: #e7691d;
+    color: #fff
 }

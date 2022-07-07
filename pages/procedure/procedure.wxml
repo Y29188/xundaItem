@@ -11,5 +11,7 @@
     </view>
     <view class="right">2020-11-02 23:46:48</view>
 
-    <view class="btn">已阅读</view>
+    <navigator url="/pages/orderDetail/orderDetail">
+        <view class="btn">已阅读</view>
+    </navigator>
 </view>

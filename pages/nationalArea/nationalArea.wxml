@@ -1,10 +1,9 @@
 <van-sticky>
-    
+    <van-search value="{{ value }}"  placeholder="请输入搜索关键词" />
 </van-sticky>
-<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
 
 
-<van-index-bar index-list="{{ indexList }}">
+<van-index-bar bindtap="clickCountry" index-list="{{ indexList }}">
     <view>
         <van-index-anchor index="#" use-slot="true">#</van-index-anchor>
         <view class='user' wx:for='{{more}}' wx:key='name'>
