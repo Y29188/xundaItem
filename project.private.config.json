@@ -10,21 +10,21 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/address/address",
+                    "pathName": "pages/index/index",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
                 },
                 {
                     "name": "",
-                    "pathName": "pages/order/order",
+                    "pathName": "pages/supportDetail/supportDetail",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
                 },
                 {
                     "name": "",
-                    "pathName": "pages/address/address",
+                    "pathName": "pages/pageList/pageList",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
@@ -38,6 +38,20 @@
                 },
                 {
                     "name": "",
+                    "pathName": "pages/address/address",
+                    "query": "address=%7B%22checked%22%3Atrue%2C%22name%22%3A%22XiaoZ%22%2C%22tell%22%3A%22179****9697%22%2C%22address%22%3A%22MEGASYSTEMS%20INC%2085705%20USA%20%22%2C%22city%22%3A%22DRAGRAM%22%2C%22postCode%22%3A%22510080%22%7D",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
                     "pathName": "pages/myAddress/myAddress",
                     "query": "",
                     "launchMode": "default",
@@ -45,8 +59,22 @@
                 },
                 {
                     "name": "",
-                    "pathName": "pages/addAddress/addAddress",
+                    "pathName": "pages/couponDetail/couponDetail",
                     "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/orderDetail/orderDetail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/address/address",
+                    "query": "address=%7B%22checked%22%3Atrue%2C%22name%22%3A%22XiaoZ%22%2C%22tell%22%3A%22179****9697%22%2C%22address%22%3A%22MEGASYSTEMS%20INC%2085705%20USA%20%22%2C%22city%22%3A%22DRAGRAM%22%2C%22postCode%22%3A%22510080%22%7D",
                     "launchMode": "default",
                     "scene": null
                 }

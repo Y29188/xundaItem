@@ -88,7 +88,7 @@
 <view class="wrap">
     <!-- modal -->
     <view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
-        <view class="modal-cancel" bindtap="hideModal"></view>
+        <view class="modal-cancel" ></view>
         <view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
             <view class='Mselect'>
                 <scroll-view scroll-y="true" style="height: 854rpx;">
@@ -127,9 +127,8 @@
                 </scroll-view>
             </view>
             <view class='Mcancel'>
-                <button class="yes" disabled="{{reject}}">{{agree}}</button>
+                <button class="yes" bindtap="hideModal" disabled="{{reject}}">{{agree}}</button>
             </view>
-
         </view>
     </view>
 

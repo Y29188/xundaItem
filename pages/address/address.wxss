@@ -1,11 +1,9 @@
-.address {
-    position: relative;
-    width: 694rpx;
-    height: 290rpx;
-    line-height: 40rpx;
-    color: rgba(16, 16, 16, 100);
-    font-size: 28rpx;
+/* pages/fillAddress/fillAddress.wxss */
+.writeAdd {
+    width: 680rpx;
+    height: 300rpx;
     box-sizing: border-box;
+    padding-left: 60rpx;
     overflow: hidden;
 }
 
@@ -17,128 +15,133 @@
     background-color: rgba(255, 255, 255, 79);
 }
 
-.address .first {
+.writeAdd .header {
     display: flex;
     justify-content: start;
+    margin-top: 20rpx;
 }
 
-.address .icon {
-    margin-top: 30rpx;
-    margin-left: 40rpx;
-    text-align: center;
-    width: 72rpx;
-    height: 72rpx;
+.writeAdd .header .WriteIcon {
+    width: 55rpx;
+    height: 55rpx;
     background-color: #7cb342;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
 }
 
-.address .icon .img {
-    width: 55rpx;
-    height: 55rpx;
-    padding-top: 10rpx;
-}
-
-.address .text {
-    padding-top: 40rpx;
-    padding-left: 25rpx;
-    font-size: 36rpx;
-    font-weight: bold;
-}
-
-.address .second {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 6rpx;
-    font-size: 32rpx;
-}
-
-.address .second .cangku {
-    margin-left: 50rpx;
-}
-
-.address .second .copy {
-    font-size: 28rpx;
-    color: #40b850;
-}
-
-.address .third {
-    margin-top: 30rpx;
-    margin-left: 100rpx;
-    color: #9fa19f;
-}
-
-.cangku_footer {
-    position: relative;
-    width: 694rpx;
-    height: 740rpx;
-    box-sizing: border-box;
-    overflow: hidden;
-    /* margin-bottom: 100rpx; */
-}
-
-.cangku_footer .aim {
-    margin-top: 50rpx;
-    margin-left: 100rpx;
-    font-size: 38rpx;
-    font-weight: bold;
-}
-
-.cangku_footer .second {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20rpx;
-    margin-left: 10rpx;
-}
-
-.cangku_footer .second .img {
-    position: absolute;
-    top: 128rpx;
-    left: 60rpx;
+.writeAdd .header .WriteIcon .img {
     width: 35rpx;
     height: 35rpx;
+
 }
 
-.cangku_footer .second .use {
-    color: #d42d2d;
+.writeAdd .header .cangkuAdd {
+    margin-top: 10rpx;
+    font-weight: bold;
+    margin-left: 20rpx;
 }
 
-.cangku_footer .second .select {
-    color: #40b850;
-    border: 1rpx solid #40b850;
+.writeAdd .mid {
+    display: flex;
+    margin: 20rpx 20rpx;
+}
+
+.writeAdd .mid .cangkuName {
+    font-size: 30rpx;
+    margin-left: 20rpx;
+}
+
+.writeAdd .mid .canhkuTel {
+    font-size: 28rpx;
+    margin-left: 100rpx;
+}
+
+.writeAdd .mid .copy {
+    font-size: 24rpx;
+    color: #5dc36b;
+    margin-top: 4rpx;
     background-color: #d9f1dd;
     border-radius: 8rpx;
 }
 
-.cangku_footer .infWrap {
-    width: 640rpx;
-    height: 344rpx;
-    margin-left: 20rpx;
+.writeAdd .deAddress {
+    margin-left: 36rpx;
+    font-size: 26rpx;
+    color: #999ba3;
+}
+
+.collect {
+    width: 680rpx;
+    height: 694rpx;
+    overflow: hidden;
+
+}
+
+.collect .msg {
     margin-top: 60rpx;
+    margin-left: 100rpx;
+    overflow: hidden;
+    font-weight: bold;
 }
 
-.cangku_footer .infWrap .information {
+.collect .add {
     display: flex;
-    font-size: 28rpx;
-    margin-bottom: 20rpx;
+    margin-left: 90rpx;
+    margin-top: 20rpx;
+    color: rgba(231, 105, 29, 100);
+    font-size: 24rpx;
 }
 
-.cangku_footer .infWrap .information .text1 {
+.collect .add .img {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 20rpx;
+    overflow: hidden;
+}
+
+.collect .add .selectAddress {
+    margin-left: 180rpx;
+    line-height: 40rpx;
+    width: 130rpx;
+    text-align: center;
+    height: 40rpx;
+    border-radius: 8rpx;
+    background-color: rgba(217, 241, 221, 100);
+    color: rgba(64, 184, 80, 100);
+    font-size: 24rpx;
+    border: 2rpx solid rgba(64, 184, 80, 100);
+}
+
+.addCon {
+    width: 694rpx;
+    height: 60rpx;
+}
+
+.addCon .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28rpx;
+    margin: 20rpx 30rpx;
+
+}
+
+.addCon .wrap .name {
     width: 160rpx;
     height: 40rpx;
+    line-height: 40rpx;
     text-align: right;
 }
 
-.cangku_footer .infWrap .information .ipt {
-    width: 480rpx;
-    height: 40rpx;
-    margin-left: 16rpx;
+.addCon .wrap .tip {
+    width: 450rpx;
+    color: #d9d3d3;
+    font-size: 26rpx;
 }
 
-.cangku_footer .infWrap .information input {
-    width: 550rpx;
-}
-
-.btn {
+.exchangeBtn {
     width: 374rpx;
     height: 82rpx;
     line-height: 82rpx;
@@ -148,3 +151,4 @@
     color: #fff;
     background-color: #7cb342;
 }
+

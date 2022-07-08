@@ -1,57 +1,27 @@
-<!-- <view class="myAddress">
-    <image class="img" src="/assets/image/地址.jpg"></image>
-</view>
-<navigator class="btn" url="/pages/addAddress/addAddress">添加地址</navigator> -->
-<!-- 头部 -->
-<view class="address">
-    <view class="first">
-        <view class="icon">我 </view>
-        <view class="right1">
-            <text class="name">Yuu</text>
-            <text class="tel">{{tel}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></text>
-            <view class="detailAdr">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+<view>
+    <view class="myAddress" wx:for="{{obj}}" wx:key="obj" bindtap="click" wx:for-item="value" data-item="{{value}}">
+        <view class="first">
+            <view>{{value.name}}</view>
+            <view class="myTel">{{value.tell}}</view>
+        </view>
+        <view class="detailAdd">
+            <view>{{value.address}}</view>
+        </view>
+
+
+        <!-- 默认地址 -->
+        <view class="defaultBox">
+            <view class="defaultAddress">
+                <checkbox class="checkbox " checked="{{checked}}" bing:change="onChange"></checkbox>
+                <view value="{{ checked }}" bind:change="onChange" icon-size='30rpx' checked-color="#d4237a">默认寄件地址</view>
+            </view>
+            <view class="icon">
+                <image class="del" src="/assets/image/删除.png"></image>
+                <image class="del edit" src="/assets/image/编辑.png"></image>
+            </view>
         </view>
 
     </view>
-    <view class="second1">
-        <radio-group class="select">
-            <radio color="orange" value="male" checked="{{checked}}">
-                <text class="active defaultAdd">设置寄件默认地址</text>
-            </radio>
-        </radio-group>
-        <view class="right2">
-            <image class="del" src="/assets/image/删除.png"></image>
-            <image class="del edit" src="/assets/image/编辑.png"></image>
-        </view>
-    </view>
-
-    <view class=""></view>
-
-</view>
-
-<view class="address">
-    <view class="first">
-        <view class="icon me">时 </view>
-        <view class="right1">
-            <text class="name">小眠</text>
-            <text class="tel">{{tel1}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></text>
-            <view class="detailAdr">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
-        </view>
-
-    </view>
-    <view class="second1">
-        <radio-group class="select">
-            <radio color="orange" value="male" checked="">
-                <text class=" defaultAdd">设置寄件默认地址</text>
-            </radio>
-        </radio-group>
-        <view class="right2">
-            <image class="del" src="/assets/image/删除.png"></image>
-            <image class="del edit" src="/assets/image/编辑.png"></image>
-        </view>
-    </view>
-
-    <view class=""></view>
 
 </view>
 

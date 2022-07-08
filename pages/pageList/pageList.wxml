@@ -29,36 +29,43 @@
             <view class="wait">待入仓</view>
             <view class="num">6</view>
         </view>
-        <view class="smallText" style="margin-top: -25rpx;">待验货
-            <text style="margin-left: 75rpx;">6</text>
+        <view class="smallText">
+            <text>待验货</text>
+            <text>6</text>
         </view>
-        <view class="smallText" style="margin-top:20rpx ;">
-            待打包<text style="margin-left: 80rpx;">0</text>
+        <view class="smallText">
+            <text>待打包</text>
+            <text>0</text>
         </view>
         <view class="content">
             <view class="yuan">3</view>
             <view class="wait">待出仓</view>
             <view class="num">7</view>
         </view>
-        <view class="smallText" style="margin-top: -25rpx;">未付款
-            <text style="margin-left: 75rpx;">3</text>
+        <view class="smallText">
+            <text>未付款</text>
+            <text>3</text>
         </view>
-        <view class="smallText" style="margin-top:20rpx ;">
-            已付款<text style="margin-left: 80rpx;">4</text>
+        <view class="smallText">
+            <text>已付款</text>
+            <text>4</text>
         </view>
-        <view class="smallText" style="margin-top:20rpx ;">
-            打包中<text style="margin-left: 80rpx;">7</text>
+        <view class="smallText">
+            <text>打包中</text>
+            <text>47</text>
         </view>
-        <view class="smallText" style="margin-top:20rpx ;">
-            打包完成<text style="margin-left: 50rpx;">0</text>
+        <view class="smallText">
+            <text>打包完成</text>
+            <text>0</text>
         </view>
         <view class="content">
             <view class="yuan">4</view>
             <view class="wait">待收货</view>
             <view class="num">8</view>
         </view>
-        <view class="smallText" style="margin-top:-30rpx ;">
-            转运中<text style="margin-left: 80rpx;">8</text>
+        <view class="smallText">
+            <text>转运中</text>
+            <text>8</text>
         </view>
     </view>
 </view>

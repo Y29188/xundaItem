@@ -1,2 +1,34 @@
-<!--pages/contactSer/contactSer.wxml-->
-<text>pages/contactSer/contactSer.wxml</text>
+<view class="serverCon">
+    <view class="SerHeader">
+        <view class="text">Hi，迅达物流客服为您服务。</view>
+    </view>
+    <view class="serverMid">
+        <view class="secondWrap all">
+            <view class="senContent content">
+                <view class="title">您近期没有物流订单</view>
+                <view class="tip1">
+                    <view>暂时停下脚步，是为了下一次更好的运程。</view>
+                    <navigator url="/pages/order/order" open-type="switchTab">
+                        <view class="histor">历史订单</view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+        <view class="thirdWrap all">
+            <view class="thirdTitle title content">服务贴士</view>
+            <view class="tipsCon">
+                <view class="tipBox">服务承诺</view>
+                <view class="tipBox tipBox1">听障专属会员服务</view>
+                <view class="tipBox tipBox2">有奖调研</view>
+                <view class="tipBox tipBox3">意见反馈</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="serFooter">
+        <view class="serFooterBox">
+            <image class="img" src="/assets/image/客服.png"></image>
+            <view class="text">电话客服</view>
+        </view>
+    </view>
+</view>

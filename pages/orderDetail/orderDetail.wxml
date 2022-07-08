@@ -25,7 +25,7 @@
     <view class="kuaidigeshu">
         <text class="fuhao"> * </text>
         <text decode="{{true}}" class="kuaiDiNum">&nbsp; 快递个数</text>
-        <input class="inp" placeholder="请输入快递单号" type="number" />
+        <input class="inp" bindblur="loseDopt" disabled="{{ban}}" placeholder="请输入快递单号" type="number" />
     </view>
     <view style="margin-top: -10rpx;">
         <textarea class="remarks" name="" id="" cols="30" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
@@ -35,7 +35,19 @@
         <block wx:for="{{conLists}}" wx:key="index">
             <view class='template_title_list flex-x'>
                 {{index + 1}}、
-                <input class="inp inp1" placeholder="请输入快递单号" bindinput='changeConTitle' data-index='{{index}}' type="number" name="" id="" />
+                <input class="inp inp1" bindblur="showdialog" placeholder="请输入快递单号" bindinput='inputChange' data-index='{{index}}' type="number" data-type='inputNum' value="{{inputNum}}" />
+                <!--弹窗-->
+                <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove2" wx:if="{{showModal2}}"></view>
+                <view class="modal-dialog" wx:if="{{showModal2}}">
+                    <view class="modal-title">请确认您的快递单号是否无误</view>
+                    <view class="modal-content">
+                        请确认快递单号是否无误，一旦提交，不可修改。
+                    </view>
+                    <view class="modal-footer">
+                        <view class="btn-cancel" bindtap="onCancel2" data-status="cancel">取消</view>
+                        <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm2" data-status="confirm">确认</view>
+                    </view>
+                </view>
                 <view class="del" bindtap='del' data-index='{{index}}'>
                     <image class="img3" src="/assets/image/删除.png"></image>
                 </view>

@@ -61,68 +61,68 @@
     <view class="yunSec yunSec2">
         <view class="text des" style="margin-top: -24rpx; font-size: 28rpx;margin-left: -10rpx;">普通货物</view>
         <view style="font-size: 24rpx; position: absolute; top: 35rpx; left: 35rpx;">(衣鞋帽等)</view>
-        <checkbox checked="{{checked}}"></checkbox>
-        <checkbox checked="{{checked}}"></checkbox>
-        <checkbox checked="{{checked}}"></checkbox>
-        <checkbox checked="{{checked}}"></checkbox>
+        <checkbox class="checkbox" checked="{{checked}}"></checkbox>
+        <checkbox class="checkbox" checked="{{checked}}"></checkbox>
+        <checkbox class="checkbox" checked="{{checked}}"></checkbox>
+        <checkbox class="checkbox" checked="{{checked}}"></checkbox>
     </view>
     <view class="yunSec yunSec1" style="height: 48rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">直插电器</view>
         <view class="select">
-            <checkbox style=" margin-right: 45rpx;" checked="{{checked}}"></checkbox>
-            <checkbox style=" margin: 0 20rpx;" checked="{{checked}}"></checkbox>
-            <checkbox style="margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin-right: 45rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 20rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style="margin: 0 45rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec " style="height: 48rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">内电产品</view>
         <view class="select">
-            <checkbox style=" margin-right: -110rpx;" checked="{{checked}}"></checkbox>
-            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin-right: -110rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec yunSec1" style="height: 48rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">纯电产品</view>
         <view class="select">
-            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec" style="height: 48rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">液体粉末</view>
         <view class="select">
-            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec yunSec1" style="height: 48rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -510rpx;">化妆品</view>
         <view class="select">
-            <checkbox style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 170rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec" style="height: 48rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">防疫物资</view>
         <view class="select">
-            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec yunSec1" style="height: 48rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">名牌仿牌</view>
         <view class="select">
-            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec" style="height: 48rpx;  padding: 25rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">食品药品</view>
         <view style="position: absolute; top: 62rpx; right: 30rpx; font-size: 24rpx;">(无液体)</view>
         <view class="select">
-            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
     <view class="yunSec yunSec1" style="height: 48rpx; padding: 25rpx;">
         <view class="text" style="font-size: 28rpx; margin-left: -500rpx;">大体积物品</view>
         <view style="position: absolute; top: 62rpx; right: 46rpx; font-size: 24rpx;">(推荐)</view>
         <view class="select">
-            <checkbox style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
+            <checkbox class="checkbox" style=" margin: 0 45rpx;" checked="{{checked}}"></checkbox>
         </view>
     </view>
 </view>

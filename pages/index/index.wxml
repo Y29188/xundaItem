@@ -22,9 +22,7 @@
             <view class="city">
                 <text class="text china">中国</text>
                 <image class="plane" src="/assets/image/plane.jpg"></image>
-                <navigator url="/pages/nationalArea/nationalArea">
-                    <text class="text usa" bindtap="clickCountry">{{country}}</text>
-                </navigator>
+                <view class="text usa" bindtap="selectCountry">{{country}}</view>
                 <view bindtap="showDialogBtn" class="fast">立即转运</view>
 
                 <!--弹窗-->

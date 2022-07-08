@@ -5,90 +5,81 @@ Page({
      * 页面的初始数据
      */
     data: {
-        indexList: ["#", "A", "B", "C", "D"],
-        index: 0,
-        more: [{
-                name: '美国',
-                english: 'United States'
-            },
-            {
-                name: '中国（香港，澳门，台湾）',
-                english: 'China'
-            },
-            {
-                name: '巴基斯坦',
-                english: 'Pakistan'
-            },
-            {
-                name: '英国',
-                english: 'United Kingdom'
-            },
-        ],
-        Acountry: [{
+        // indexList: ["#", "A", "B", "C", "D"],
+        indexList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        obj: [{
                 name: '阿尔巴尼亚',
-                english: 'Albania'
-            },
-            {
-                name: '阿尔及利亚',
-                english: 'Algeria'
-            },
-            {
-                name: '阿富汗',
-                english: 'Afghanistan'
-            },
-            {
-                name: '阿根廷',
-                english: 'Argentina'
-            },
-            {
-                name: '阿鲁巴岛',
-                english: 'Aruba'
-            },
-
-        ],
-        Bcountry: [{
-                name: '白俄罗斯',
-                english: 'Belarus'
-            },
-            {
-                name: '保加利亚',
-                english: 'Bulgaria'
+                country: 'Albania'
             },
             {
                 name: '比利时',
-                english: 'Belgium'
-            },
-        ],
-        Ccountry: [{
-                name: '古巴共和国',
-                english: 'Cuban '
+                country: 'Belgium'
             },
             {
                 name: '哥伦比亚',
-                english: 'Columbia'
+                country: 'Columbia'
             },
             {
-                name: '渥太华',
-                english: 'Ottawa'
+                name: '阿根廷',
+                country: 'Argentina'
+            },
+            {
+                name: '阿鲁巴岛',
+                country: 'Aruba'
+            },
+            {
+                name: '中国（香港，澳门，台湾）',
+                country: 'China'
+            },
+            {
+
+                name: '美国',
+                country: 'United States'
+            },
+
+            {
+                name: '巴基斯坦',
+                country: 'Pakistan'
+            },
+            {
+                name: '英国',
+                country: 'United Kingdom'
             },
         ],
-        Dcountry: [{
-                name: '古巴共和国',
-                english: 'Cuban '
-            },
-            {
-                name: '哥伦比亚',
-                english: 'Columbia'
-            },
-            {
-                name: '渥太华',
-                english: 'Ottawa'
-            },
-        ],
+        addressList: [],
+    },
+
+    clickCountry(e) {
+        console.log('带入参数');
+        let obj = e.currentTarget.dataset.item.name;
+        wx.reLaunch({
+            url: `/pages/index/index?country=${obj}&a=8`,
+        })
+
+        console.log(e.currentTarget.dataset.item.name);
+    },
+    // 过滤
+    initList(e) {
+        let obj = this.data.obj;
+        let list = {}
+        obj.forEach(item => {
+            if (!list[item.country[0]]) {
+                list[item.country[0]] = [item]
+            } else {
+                list[item.country[0]].push[item]
+            }
+        });
+        this.setData({
+            obj: list
+        })
+        console.log(list);
     },
 
     onLoad: function (options) {
-        
+
     },
+    onShow() {
+        this.initList()
+    }
 
 })

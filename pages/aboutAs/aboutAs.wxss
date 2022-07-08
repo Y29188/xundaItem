@@ -1,1 +1,46 @@
-/* pages/aboutAs/aboutAs.wxss */
+.aboutXunDa {
+    width: 694rpx;
+    margin: 20rpx auto;
+    box-sizing: border-box;
+    font-size: 28rpx;
+}
+
+.aboutXunDa .aboutBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 694rpx;
+    height: 80rpx;
+    border-bottom: 1rpx solid #dad6d6;
+    padding-bottom: 6rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.aboutXunDa .aboutBox .smallRed {
+    position: absolute;
+    top: 30rpx;
+    right: 50rpx;
+    width: 15rpx;
+    height: 15rpx;
+    background-color: #e65739;
+    border-radius: 50%;
+}
+
+.aboutXunDa .aboutBox .img {
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 10rpx;
+}
+
+.aboutXunDa .textBox {
+    margin-top: 140rpx;
+    font-size: 24rpx;
+    color: #b7b7b7;
+    margin-left: 70rpx;
+}
+
+.aboutXunDa .textBox .text {
+    padding: 4rpx;
+}

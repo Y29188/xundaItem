@@ -8,7 +8,20 @@ Page({
         tel: "18688880130",
         orderNum: "20220509140712345678",
         showModal: false,
-        conLists: [], // 内容标题（可以添加或者删除
+        showModal2: false,
+        conLists: [], // 内容标题（可以添加或者删除)
+        ban: false,
+        inputNum: "",
+        isClaer: false
+    },
+
+    inputChange: function (e) {
+        if (this.data.isClaer) {
+            this.setData({
+                isClaer: true
+            })
+            return
+        }
     },
 
     // 复制电话号码
@@ -84,7 +97,8 @@ Page({
 
     hideModal: function () {
         this.setData({
-            showModal: false
+            showModal: false,
+            showModal2: false
         });
     },
     /**
@@ -132,8 +146,63 @@ Page({
         })
     },
 
+    // 快递个数input框失去焦点
+    loseDopt: function (e) {
+        // 判断input必须是number
+        let reg = /^[0-9]*$/;
+        let value = e.detail.value;
+        if (!reg.test(value)) {
+            wx.showToast({
+                title: '请输入数字',
+                icon: "error"
+            })
+            return;
+        }
+        // console.log(e.detail.value);
+        if (reg.test(value)) {
+            let list = this.data.conLists;
+            for (let i = 0; i < value; i++) {
+                list.push("");
+            }
+            this.setData({
+                ban: true,
+                conLists: list
+            });
+            wx.setStorage({
+                key: "value",
+                data: list
+            })
+        }
+
+    },
+
+
+    // 动态添加input框失去焦点弹窗
+    showdialog: function () {
+        this.setData({
+            showModal2: true
+        })
+    },
+    // 失去焦点弹出框蒙层截断touchmove事件
+    preventTouchMove2: function () {},
+
+
+    // 对话框取消按钮点击事件
+    onCancel2: function () {
+        this.hideModal();
+
+    },
+
+    // 失去焦点弹窗点击确认
+    onConfirm2: function () {
+        this.hideModal();
+    },
+
     onShow() {
 
     },
+    onLoad: function (options) {
+
+    }
 
 })

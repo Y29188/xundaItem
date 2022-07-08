@@ -1,37 +1,43 @@
 <view>
-    <view class="address all">
-        <view class="first">
-            <view class="icon">
+    <view class="writeAdd all">
+        <view class="header">
+            <view class="WriteIcon">
                 <image class="img" src="/assets/image/收货地址.png"></image>
             </view>
-            <text class="text">仓库地址</text>
-        </view>
-        <view class="second">
-            <text class="cangku">{{depot}}</text>
-            <view class="tel">{{tel}} <text bindtap="copy" data-item="{{tel}}" class="copy">{{copy}}</text></view>
-        </view>
-        <view class="third">{{address}}</view>
-    </view>
-
-    <view class="cangku_footer all">
-        <view class="aim">目标国收件信息</view>
-        <view class="second">
-            <image class="img" src="/assets/image/e.png"></image>
-            <text class="use">请用英文填写</text>
-            <navigator url="/pages/myAddress/myAddress">
-                <text class="select">选择地址</text>
-            </navigator>
-        </view>
-        <!-- 地址信息 -->
-        <view class="infWrap">
-            <view class="information" wx:for="{{obj}}" wx:key="obj" wx:for-item="value" data-item="{{value}}">
-                <view class="text1">{{value.name}}</view>
-                <input class="ipt" type="text" placeholder="{{value.tip}}" value="{{value.value}}" />
+            <view class="cangkuAdd">
+                仓库地址
             </view>
         </view>
+        <view class="mid">
+            <view class="cangkuName">{{cku}}</view>
+            <view class="canhkuTel">{{tell}}</view>
+            <view style="margin-left: 10rpx;" class="copy" bindtap="copy" data-item="{{tell}}">{{copy}}</view>
+        </view>
+        <view class="deAddress">{{address}}</view>
+    </view>
+</view>
+
+<view class="collect all">
+    <view class="msg">目标国收件信息</view>
+    <view class="add">
+        <image class="img" src="/assets/image/e.png"></image>
+        <view>请用英文填写</view>
+        <navigator class="selectAddress" url="/pages/myAddress/myAddress">选择地址</navigator>
     </view>
 
-    <navigator url="/pages/mustKnow/mustKnow">
-        <view class="btn">立即转运</view>
-    </navigator>
+    <!-- 地址 -->
+    <view class="addCon" wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
+        <view class="wrap">
+            <view class="name">{{value.name}}</view>
+            <view class="tip">
+                <input placeholder="{{value.entry}}" value="{{value.value}}"></input>
+            </view>
+
+        </view>
+
+    </view>
 </view>
+
+<navigator url="/pages/mustKnow/mustKnow">
+    <view class="exchangeBtn">立即转运</view>
+</navigator>

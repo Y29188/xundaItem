@@ -63,13 +63,13 @@
 
 .couponDet .wrap .right .liji {
     position: absolute;
-    right: -100rpx;
+    right: -90rpx;
     bottom: 36rpx;
     background-color: #f6390d;
-    height: 65rpx;
-    line-height: 65rpx;
+    height: 55rpx;
+    line-height: 55rpx;
     text-align: center;
-    width: 140rpx;
+    width: 120rpx;
     border-radius: 34rpx;
     color: #fff;
     font-size: 24rpx;

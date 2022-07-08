@@ -7,40 +7,22 @@
         <image class="supImg" src="/assets/image/baojia.jpg"></image>
         <view class="supText">保价</view>
     </view>
-    <input class="supInp" placeholder="自定义物品价格，请填写真实物品价格" type="text" />
+    <input bindinput="input" class="supInp" placeholder="自定义物品价格，请填写真实物品价格" type="text" />
 </view>
 
 <!-- 中间 -->
-<view class="supportMiddle all">
-    <view class="supRedTip">国际快递由于多国调度，存在一定比例丢失的情况!</view>
-    <view class="supRedTip supRedTip1">如丢失包裹,购买丢失险可获得全额赔付赔付(最高5000元)!!</view>
+<view class="supportMiddle all" wx:for="{{obj}}">
+    <view class="supRedTip">{{item.info}}</view>
     <view class="textMid">
-        <text class="text1">丢失险（保价3%）</text>
-        <view class="body-view wx-switch-input">
-            <switch  checked="{{switch1Checked}}" />
+        <text class="text1">{{item.type}}</text>
+        <view>
+            <switch checked="{{ item.check }}" bind:change="onChange1" data-index="{{index}}" bindtap="switch1" />
         </view>
     </view>
     <view class="line"></view>
     <view class="textMid">
-        <text class="text1">保险费：¥ 30.00</text>
-    </view>
-</view>
-
-<!-- 底部 -->
-<view class="supportMiddle all supportFooter">
-    <view class="supRedTip">电子产品等容易被税的高客单价产品建议购买关税保险!英国关税起征点为0.01英镑!</view>
-    <view class="supRedTip supRedTip1">
-        综合关税=货值x增值税率+(货值+运费+货值x产品税率)x20%+清关杂费。
-    </view>
-    <view class="textMid">
-        <text class="text1">关说险（保价2%）</text>
-        <view class="body-view">
-            <switch checked="{{switch2Checked}}" />
-        </view>
-    </view>
-    <view class="line"></view>
-    <view class="textMid">
-        <text class="text1">保险费：¥ 20.00</text>
+        <!-- item.check ?  item.price : 0 输入的时候 不选中状态时 价格为0  -->
+        <text class="text1">{{item.insurance}} {{item.check ? item.price : 0}}</text>
     </view>
 </view>
 

@@ -9,16 +9,16 @@
         <text class="order_text1">新希望仓库</text>
         <view class="tel all1">{{tel}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></view>
     </view>
-    <view class="third desAdd">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
+    <view class="third desAdd">{{address}}</view>
     <view class="first">
         <view class="icon" style="background-color: #fff;">
             <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
         <text class="order_text1">Yuu
         </text>
-        <view class="tel all1">18688880130</view>
+        <view class="tel all1">{{tel}}</view>
     </view>
-    <view class="third addEng" style="font-size: 24rpx; ">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+    <view class="third addEng" style="font-size: 24rpx; ">{{address2}}</view>
 </view>
 
 <!-- 中间 -->
@@ -33,26 +33,26 @@
         <textarea class="remarks" name="" id="" cols="30" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
     </view>
     <view class="kuaidigeshu boxCon" style="margin-top: 40rpx;">
-        <text style="font-size: 40rpx;"> 1.</text>
+        <text> 1.</text>
         <input class="inp inp1" placeholder="123456789" type="number" name="" id="" />
             <text class="waitRu">待入仓</text>
     </view>
     <view class="kuaidigeshu boxCon">
-        <text style="font-size: 40rpx;"> 2.</text>
+        <text> 2.</text>
         <input class="inp inp1" placeholder="12345567789" type="number" name="" id="" />
         <text class="waitRu">已入库</text>
     </view>
     <view class="kuaidigeshu boxCon">
-        <text style="font-size: 40rpx;"> 3.</text>
+        <text> 3.</text>
         <input class="inp inp1" placeholder="124234234242" type="number" name="" id="" />
         <text class="waitRu">已入库</text>
     </view>
     <view class="kuaidigeshu boxCon">
-        <text style="font-size: 40rpx;"> 4.</text>
+        <text> 4.</text>
         <input class="inp inp1" placeholder="12345" type="number" name="" id="" />
         <text class="waitRu">已入库</text>
     </view>
-    <view class="add" bindtap="replenishBtn">+ 补充快递单号</view>
+    <view class="adddanhao" bindtap="replenishBtn">+ 补充快递单号</view>
 </view>
 
 <!-- 底部 -->

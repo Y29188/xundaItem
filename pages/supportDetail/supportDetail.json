@@ -1,4 +1,6 @@
 {
     "navigationBarTitleText": "保价详情",
-    "usingComponents": {}
+    "usingComponents": {
+        "van-switch": "/miniprogram_npm/@vant/weapp/switch/index"
+    }
 }

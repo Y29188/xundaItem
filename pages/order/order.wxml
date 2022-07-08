@@ -81,7 +81,7 @@
         </view>
         <view class="texts">已出仓</view>
         <view class="buttons">
-            <navigator url="/pages/logistics/logistics">
+            <navigator url="/pages/pageList/pageList">
                 <button class="buttons1">物流详情</button>
             </navigator>
             <navigator url="/pages/orderDetail/orderDetail">

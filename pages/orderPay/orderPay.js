@@ -98,15 +98,13 @@ Page({
     // 对话框取消按钮点击事件
     onCancel: function () {
         this.hideModal();
-        wx.navigateTo({
-            url: '/pages/contactSer/contactSer',
-        })
+        
     },
     // 对话框确认按钮点击事件
     onConfirm: function () {
         this.hideModal();
         wx.navigateTo({
-            url: '/pages/supportDetail/supportDetail',
+          url: '/pages/supportDetail/supportDetail',
         })
     },
 })

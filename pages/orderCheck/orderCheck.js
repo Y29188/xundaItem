@@ -7,6 +7,10 @@ Page({
     data: {
         tel: "18688880130",
         orderNum: "20220509140712345678",
+        cangKu:"新希望仓库",
+        address:"深圳市龙华区龙华街道工业路壹城欢智中心C座2607室",
+        name:"Yuu",
+        address2:"MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA"
     },
 
     // 复制电话号码

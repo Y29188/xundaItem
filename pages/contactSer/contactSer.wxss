@@ -1,1 +1,125 @@
-/* pages/contactSer/contactSer.wxss */
+page {
+    background-color: #ecf0f7;
+}
+
+.serverCon .SerHeader {
+    height: 350rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: #2fba70;
+    overflow: hidden;
+}
+
+.serverCon .SerHeader .text {
+    margin: 80rpx;
+    color: #fff;
+    font-weight: bold;
+}
+
+.serverMid {
+    position: relative;
+}
+
+.all {
+    position: absolute;
+    left: 25rpx;
+    background-color: #fff;
+    border-radius: 36rpx;
+    width: 700rpx;
+
+}
+
+.secondWrap {
+    top: -100rpx;
+    height: 150rpx;
+
+}
+
+.content {
+    margin-top: 20rpx;
+    margin-left: 40rpx;
+}
+
+.secondWrap .senContent {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    padding: 6rpx;
+}
+
+.senContent .tip1 {
+    display: flex;
+    padding: 6rpx;
+    font-size: 24rpx;
+    color: #b3b3b3;
+}
+
+.senContent .tip1 .histor {
+    color: #91deb5;
+    font-weight: bold;
+}
+
+.thirdWrap {
+    height: 300rpx;
+    position: absolute;
+    top: 70rpx;
+    left: 25rpx;
+}
+
+.thirdWrap .tipsCon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thirdWrap .tipsCon .tipBox {
+    width: 280rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 28rpx;
+    background-color: #f2f8ff;
+    color: #82a0c4;
+    border-radius: 20rpx;
+    margin-top: 20rpx;
+    font-weight: bold;
+}
+
+.thirdWrap .tipsCon .tipBox1 {
+    background-color: #fdfbe8;
+    color: #ccba90;
+}
+
+.thirdWrap .tipsCon .tipBox2 {
+    background-color: #fff7f7;
+    color: #d0898a;
+}
+
+.thirdWrap .tipsCon .tipBox3 {
+    background-color: #f2fcf2;
+    color: #7bcc9d;
+}
+
+.serFooter .serFooterBox {
+    display: flex;
+    justify-content: start;
+}
+
+.serFooter .serFooterBox .img {
+    width: 40rpx;
+    height: 30rpx;
+    margin-top: 400rpx;
+    margin-left: 300rpx;
+}
+
+.serFooter .serFooterBox .text {
+    margin-top: 396rpx;
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    color: #25bd6e;
+}

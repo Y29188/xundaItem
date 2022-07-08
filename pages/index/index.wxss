@@ -362,9 +362,8 @@
 .modal-content {
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 50rpx 32rpx;
+    padding: 50rpx;
 }
 
 

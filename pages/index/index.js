@@ -7,8 +7,13 @@ Page({
         showModal: false,
         list: ["普通货物", "电子产品", "液体粉末", "内地EMS", "广东EMS"],
         flag: 0,
-        indexList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     },
+    selectCountry: function () {
+        wx.navigateTo({
+            url: '/pages/nationalArea/nationalArea',
+        })
+    },
+    // 立即转运切换
     colorChange(e) {
         let flag = e.currentTarget.dataset.index;
         this.setData({
@@ -16,17 +21,19 @@ Page({
         })
         console.log(e);
     },
-    clickCountry(e){
-        let country = e.currentTarget.dataset.index;
-        this.setData({
-            country
-        })
-    },
 
     onLoad: function () {},
     /**
      * 弹窗
      */
+    onShow() {
+        // 选择国家跳转的参数
+        if (this.options?.country) {
+            this.setData({
+                country: this.options.country
+            })
+        }
+    },
     showDialogBtn: function () {
         this.setData({
             showModal: true

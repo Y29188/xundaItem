@@ -58,6 +58,7 @@ Page({
             time1 = null;
         }, 100)
     },
+    
     // 底部按钮禁用
     checkTap: function () {
         if (!this.data.check) {

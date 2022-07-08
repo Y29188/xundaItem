@@ -1,2 +1,37 @@
-<!--pages/aboutAs/aboutAs.wxml-->
-<text>pages/aboutAs/aboutAs.wxml</text>
+<view class="aboutXunDa">
+    <view class="aboutBox">
+        <view>评价迅达</view>
+        <view>
+            <image class="img" src="/assets/image/右箭头1.png"></image>
+        </view>
+    </view>
+    <view class="aboutBox">
+        <view>分享给好友</view>
+        <view>
+            <image class="img" src="/assets/image/右箭头1.png"></image>
+        </view>
+    </view>
+    <view class="aboutBox">
+        <view>用户协议</view>
+        <view>
+            <image class="img" src="/assets/image/右箭头1.png"></image>
+        </view>
+    </view>
+    <view class="aboutBox">
+        <view>隐私条款</view>
+        <view>
+            <view class="smallRed"></view>
+            <image class="img" src="/assets/image/右箭头1.png"></image>
+        </view>
+    </view>
+    <view class="aboutBox">
+        <view>内容规范</view>
+        <view>
+            <image class="img" src="/assets/image/右箭头1.png"></image>
+        </view>
+    </view>
+    <view class="textBox">
+        <view class="text">已通过IOS/IEC 27001:2013信息安全管理体系认证</view>
+        <view class="text">已通过IOS/IEC 27001:2073隐私信息管理体系认证</view>
+    </view>
+</view>
