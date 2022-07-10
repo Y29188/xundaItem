@@ -23,7 +23,7 @@ Page({
         money: "8",
         reduce: "8",
         subtotal: "28.00",
-        tatl:"138.00"
+        total:"138.00"
     },
     // 点击选项
     getOption: function (e) {

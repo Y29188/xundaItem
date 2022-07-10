@@ -1,15 +1,16 @@
 <view>
-    <view class="my">
-        <view class="header">
-            <image class="img" src="/assets/image/7.jpg"></image>
+    <navigator url="/pages/login/login">
+        <view class="my">
+            <view class="header">
+                <image class="img" src="/assets/image/7.jpg"></image>
+            </view>
+            <view class="desc">
+                <view class="name">Yuu</view>
+                <view class="content">编码：XDY</view>
+            </view>
         </view>
-        <view class="desc">
-            <view class="name">Yuu</view>
-            <view class="content">编码：XDY</view>
-        </view>
+    </navigator>
 
-
-    </view>
     <view class="middle">
         <navigator url="/pages/order/order" open-type="switchTab" class="order">
             <text class="left">我的订单</text>
@@ -38,6 +39,7 @@
             </view>
         </view>
     </view>
+    
     <view class="footer">
         <navigator url="/pages/myAddress/myAddress" class="wrap">
             <text class="text">我的地址</text>

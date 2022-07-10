@@ -6,27 +6,26 @@
         <view class="icon">
             <image class="img" src="/assets/image/收货地址.png"></image>
         </view>
-        <text class="order_text1">新希望仓库</text>
+        <text class="order_text1">{{cangKu}}</text>
         <view class="tel all1">{{tel}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></view>
     </view>
-    <view class="third desAdd">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
+    <view class="third desAdd">{{address}}</view>
     <view class="first">
         <view class="icon" style="background-color: #fff;">
             <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
-        <text class="order_text1">Yuu
-        </text>
-        <view class="tel all1">18688880130</view>
+        <text class="order_text1">{{name}}</text>
+        <view class="tel all1">{{tel}}</view>
     </view>
-    <view class="third addEng" style="font-size: 24rpx; ">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+    <view class="third addEng" style="font-size: 24rpx; ">{{address2}}</view>
 </view>
 
 <!-- 第二部分 -->
 <view class="orderPayTwo all">
     <view class="twoBox">
-        <view class="twoCon">运费：¥ 138.00</view>
-        <view class="twoCon">附加费：¥ 0.00</view>
-        <view class="twoCon">称重重量：5.6 kg</view>
+        <view class="twoCon">运费：¥ {{fare}}</view>
+        <view class="twoCon">附加费：¥ {{attach}}</view>
+        <view class="twoCon">称重重量：{{weight}}</view>
         <view class="twoCon">分拣备注：<text class="redText">以拆封分拣，统一归类</text></view>
         <view class="twoCon">打包备注：<text class="redText">东西太多，已统一打包加固</text></view>
         <view class="twoCon">称重图片：</view>
@@ -127,10 +126,10 @@
         <text class="copy" data-item="{{orderNum}}" bindtap="copy">复制</text>
     </view>
     <view class="orderNum">
-        <text>转运路线：中国 — 美国</text>
+        <text>转运路线：中国 — {{country}}</text>
     </view>
     <view class="orderNum">
-        <text>预选渠道：普通货物</text>
+        <text>预选渠道：{{cate}}</text>
     </view>
     <view class="orderNum">
         <text>订单状态：<text class="waitWrite put">待出仓</text></text>
@@ -164,8 +163,8 @@
         </view>
         <view class="arriveAddress">
             <view class="nameBox">
-                <text class="name">Yuu</text>
-                <text class="telNum">13428969654</text>
+                <text class="name">{{name}}</text>
+                <text class="telNum">{{tel}}</text>
             </view>
             <view class="addressDetail">
                 <view>MEGASYSTEMS INC 799 E DRAGRAM </view>

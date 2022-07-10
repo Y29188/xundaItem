@@ -4,6 +4,7 @@
         "pages/coupon/coupon",
         "pages/order/order",
         "pages/my/my",
+        "pages/login/login",
         "pages/myAddress/myAddress",
         "pages/address/address",
         "pages/addAddress/addAddress",
@@ -25,6 +26,7 @@
         "pages/payDetail/payDetail",
         "pages/payFinish/payFinish",
         "pages/nationalArea/nationalArea"
+
     ],
     "window": {
         "backgroundTextStyle": "light",

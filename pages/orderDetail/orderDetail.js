@@ -11,12 +11,14 @@ Page({
         address2: "MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA",
         cangku: "新希望仓库",
         name: "Yuu",
+        country: "",
         orderTime: "2022-05-09 14:07:12",
         showModal: false,
         showModal2: false,
         conLists: [], // 内容标题（可以添加或者删除)
         ban: false,
         inputNum: "",
+        waitWrite: "待填写",
     },
 
     // 复制电话号码
@@ -189,7 +191,7 @@ Page({
                     [`conLists[${index}].value`]: e.detail.value,
                     [`conLists[${index}].disabled`]: true,
                     // 设置弹窗提示
-                    showModal: true
+                    showModal2: true
                 });
 
             }
@@ -213,9 +215,6 @@ Page({
         this.hideModal();
     },
 
-    onShow() {
-
-    },
     onLoad: function (options) {
 
     }

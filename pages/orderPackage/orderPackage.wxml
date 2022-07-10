@@ -62,7 +62,7 @@
         <text class="copy" data-item="{{orderNum}}" bindtap="copy">复制</text>
     </view>
     <view class="orderNum">
-        <text>转运路线：中国 — 美国</text>
+        <text>转运路线：中国 — {{country}}</text>
     </view>
     <view class="orderNum">
         <text>预选渠道：普通货物</text>

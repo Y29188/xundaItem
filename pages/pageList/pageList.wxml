@@ -30,11 +30,11 @@
             <view class="num">6</view>
         </view>
         <view class="smallText">
-            <text>待验货</text>
+            <text>{{six}}</text>
             <text>6</text>
         </view>
         <view class="smallText">
-            <text>待打包</text>
+            <text>{{packing}}</text>
             <text>0</text>
         </view>
         <view class="content">
@@ -43,19 +43,19 @@
             <view class="num">7</view>
         </view>
         <view class="smallText">
-            <text>未付款</text>
+            <text>{{waitPay}}</text>
             <text>3</text>
         </view>
         <view class="smallText">
-            <text>已付款</text>
+            <text>{{pay}}</text>
             <text>4</text>
         </view>
         <view class="smallText">
-            <text>打包中</text>
-            <text>47</text>
+            <text>{{packing}}</text>
+            <text>7</text>
         </view>
         <view class="smallText">
-            <text>打包完成</text>
+            <text>{{packed}}</text>
             <text>0</text>
         </view>
         <view class="content">
@@ -64,7 +64,7 @@
             <view class="num">8</view>
         </view>
         <view class="smallText">
-            <text>转运中</text>
+            <text>{{transfer}}</text>
             <text>8</text>
         </view>
     </view>

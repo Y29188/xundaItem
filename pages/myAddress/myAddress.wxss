@@ -4,9 +4,28 @@ page {
     background-color: #ffffff;
 }
 
+
+
 .myAddress {
     margin: 40rpx 60rpx;
     /* font-size: 28rpx; */
+}
+
+.myAddress .addressBox {
+    display: flex;
+    justify-content: start;
+}
+
+.myAddress .addressBox .addressAvatar {
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #fff;
+    background-color: blueviolet;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 50%;
 }
 
 
@@ -38,7 +57,7 @@ page {
     bottom: 10rpx;
 }
 
-.defaultBox{
+.defaultBox {
     display: flex;
     justify-content: space-between;
 }
@@ -50,7 +69,7 @@ page {
     /* position: relative; */
 }
 
-.defaultBox .icon{
+.defaultBox .icon {
     position: relative;
 }
 

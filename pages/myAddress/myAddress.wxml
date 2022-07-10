@@ -1,12 +1,19 @@
 <view>
     <view class="myAddress" wx:for="{{obj}}" wx:key="obj" bindtap="click" wx:for-item="value" data-item="{{value}}">
-        <view class="first">
-            <view>{{value.name}}</view>
-            <view class="myTel">{{value.tell}}</view>
+
+        <view class="addressBox">
+            <view class="addressAvatar">我</view>
+            <view>
+                <view class="first">
+                    <view>{{value.name}}</view>
+                    <view class="myTel">{{value.phone}}</view>
+                </view>
+                <view class="detailAdd">
+                    <view>{{value.address}}</view>
+                </view>
+            </view>
         </view>
-        <view class="detailAdd">
-            <view>{{value.address}}</view>
-        </view>
+
 
 
         <!-- 默认地址 -->
