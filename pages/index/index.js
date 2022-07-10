@@ -19,7 +19,7 @@ Page({
         this.setData({
             flag
         })
-        console.log(e);
+        // console.log(e);
     },
 
     onLoad: function () {},

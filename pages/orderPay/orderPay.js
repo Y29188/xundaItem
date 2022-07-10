@@ -8,6 +8,10 @@ Page({
         tel: "18688880130",
         orderNum: "20220509140712345678",
         showModal: false,
+        weight: "1.28kg",
+        state1: "带入仓",
+        state: "已入库",
+        size:"123759874",
         imgList: [
             "/assets/image/img1.png",
             "/assets/image/img1.png",
@@ -23,7 +27,7 @@ Page({
             urls: this.data.imgList // 需要预览的图片http链接列表
         })
     },
-   
+
 
     // 复制电话号码
     copyTel: function (e) {
@@ -98,13 +102,16 @@ Page({
     // 对话框取消按钮点击事件
     onCancel: function () {
         this.hideModal();
-        
+        wx.navigateTo({
+          url: '/pages/contactSer/contactSer',
+        })
+
     },
     // 对话框确认按钮点击事件
     onConfirm: function () {
         this.hideModal();
         wx.navigateTo({
-          url: '/pages/supportDetail/supportDetail',
+            url: '/pages/supportDetail/supportDetail',
         })
     },
 })

@@ -9,7 +9,7 @@
     <view class="couRight">
         <view class="wrap">
             <view class="new">新品优惠券</view>
-            <view class="time">2020.10.10 - 2020.11.11</view>
+            <view class="time">{{effectTime}}</view>
         </view>
         <view class="zhekou">抵扣券</view>
     </view>
@@ -26,7 +26,7 @@
     <view class="couRight">
         <view class="wrap">
             <view class="new">折扣券</view>
-            <view class="time">2020.10.10 - 2020.11.11</view>
+            <view class="time">{{effectTime}}</view>
         </view>
 
         <view class="zhekou">折扣券</view>
@@ -42,7 +42,7 @@
     <view class="couRight couRight1">
         <view class="wrap">
             <view class="new">无首重</view>
-            <view class="time">2020.10.10 - 2020.11.11</view>
+            <view class="time">{{effectTime}}</view>
         </view>
         <view class="imgWrap">
             <image class="img" src="/assets/image/yishiyong.png"></image>
@@ -62,7 +62,7 @@
     <view class="couRight couRight1">
         <view class="wrap">
             <view class="new">新品优惠券</view>
-            <view class="time">2020.10.10 - 2020.11.11</view>
+            <view class="time">{{effectTime}}</view>
         </view>
         <view class="imgWrap">
             <image class="img" src="/assets/image/yishiyong.png"></image>
@@ -82,7 +82,7 @@
     <view class="couRight couRight1">
         <view class="wrap">
             <view class="new">新品优惠券</view>
-            <view class="time">2020.10.10 - 2020.11.11</view>
+            <view class="time">{{effectTime}}</view>
         </view>
         <view class="imgWrap">
             <image class="img" src="/assets/image/yiguoqi.png"></image>
@@ -102,7 +102,7 @@
     <view class="couRight couRight1">
         <view class="wrap">
             <view class="new">新品优惠券</view>
-            <view class="time">2020.10.10 - 2020.11.11</view>
+            <view class="time">{{effectTime}}</view>
         </view>
         <view class="imgWrap">
             <image class="img" src="/assets/image/yiguoqi.png"></image>

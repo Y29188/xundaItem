@@ -8,17 +8,17 @@ Page({
         obj: [{
                 checked: true,
                 name: "XiaoZ",
-                tell: "179****9697",
+                phone: "179****9697",
                 address: "MEGASYSTEMS INC 85705 USA ",
                 city: "DRAGRAM",
-                postCode: "510080"
+                postcode: "510080"
             },
             {
                 name: "Yuu",
-                tell: "148****0320",
+                phone: "148****0320",
                 address: "British Museum London England",
                 city: "London",
-                postCode: "233100"
+                postcode: "233100"
             }
         ]
     },
@@ -37,9 +37,9 @@ Page({
         let list = {}
         obj.forEach(item => {
             if (!list[item.city[0]]) {
-                list[item.city[0]] = [item]
+                list[item.city[0]] = [item];
             } else {
-                list[item.city[0]].push[item]
+                list[item.city[0]].push[item];
             }
         });
         this.setData({

@@ -19,7 +19,7 @@ Page({
                 name: 'Phone：',
                 entry: "Please fill in the recipient's phone",
                 value: '',
-                text: 'tell'
+                text: 'phone'
             },
             {
                 name: 'Address：',
@@ -37,9 +37,8 @@ Page({
                 name: 'PostCode：',
                 entry: 'Please fill in the postcode',
                 value: '',
-                text: 'postCode'
+                text: 'postcode'
             },
-
         ],
     },
     // 复制电话号码
@@ -63,14 +62,6 @@ Page({
     onLoad(options) {
 
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
-    },
-
     /**
      * 生命周期函数--监听页面显示
      */
@@ -92,6 +83,38 @@ Page({
 
     },
 
+    // 立即转运
+    handleToTransfer() {
+        let obj = {}
+        // 循环对象
+        for (let key in this.data.obj) {
+            // 创建字段拿到value
+            obj[this.data.obj[`${key}`].text] = this.data.obj[`${key}`].value
+        }
+        // 设置同步本地存储
+        wx.setStorageSync('selectaddr',obj );
+        wx.navigateTo({
+          url: '/pages/procedure/procedure',
+        })
+    },
+
+    // input框失去焦点事件
+    handleInput(e) {
+        // 取下标和获取input的value
+        let indexipt = e.target.dataset.index
+        let value = e.detail.value
+        // console.log(value);
+        // 循环数组
+        this.data.obj.forEach((item, index) => {
+            if (index == indexipt) {
+                this.setData({
+                    // 取出下标赋值
+                    [`obj[${index}].value`]: value
+                })
+            }
+        })
+    },
+
     // exchangeBtn:function(){
     //     let value = this.data.obj.value;
     //     if(value == ''){
@@ -101,39 +124,4 @@ Page({
     //         return
     //     }
     // },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
-    }
 })

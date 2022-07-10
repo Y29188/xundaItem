@@ -7,21 +7,16 @@ Page({
     data: {
         tel: "18688880130",
         orderNum: "20220509140712345678",
+        address: "深圳市龙华区龙华街道工业路壹城欢智中心C座2607室",
+        address2: "MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA",
+        cangku: "新希望仓库",
+        name: "Yuu",
+        orderTime: "2022-05-09 14:07:12",
         showModal: false,
         showModal2: false,
         conLists: [], // 内容标题（可以添加或者删除)
         ban: false,
         inputNum: "",
-        isClaer: false
-    },
-
-    inputChange: function (e) {
-        if (this.data.isClaer) {
-            this.setData({
-                isClaer: true
-            })
-            return
-        }
     },
 
     // 复制电话号码
@@ -162,7 +157,10 @@ Page({
         if (reg.test(value)) {
             let list = this.data.conLists;
             for (let i = 0; i < value; i++) {
-                list.push("");
+                list.push({
+                    value: "",
+                    disabled: false
+                });
             }
             this.setData({
                 ban: true,
@@ -178,11 +176,28 @@ Page({
 
 
     // 动态添加input框失去焦点弹窗
-    showdialog: function () {
-        this.setData({
-            showModal2: true
+    showdialog: function (e) {
+        // console.log(e);
+        // 先取出下标
+        let indexipt = e.target.dataset.index;
+        // console.log(indexipt);
+        // 循环数组
+        this.data.conLists.forEach((item, index) => {
+            if (index == indexipt) {
+                this.setData({
+                    // 设置哪个下标就给哪个input框禁用
+                    [`conLists[${index}].value`]: e.detail.value,
+                    [`conLists[${index}].disabled`]: true,
+                    // 设置弹窗提示
+                    showModal: true
+                });
+
+            }
         })
+        console.log(this.data.conLists);
     },
+
+
     // 失去焦点弹出框蒙层截断touchmove事件
     preventTouchMove2: function () {},
 

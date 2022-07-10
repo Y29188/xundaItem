@@ -4,6 +4,7 @@ Page({
      */
     data: {
         showModal: false,
+        effectTime:"2020.10.10 - 2020.11.11"
     },
 
     // 弹窗

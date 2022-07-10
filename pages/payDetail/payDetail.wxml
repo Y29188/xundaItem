@@ -4,18 +4,17 @@
         <view class="icon" style="background-color: #fff;">
             <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
-        <text class="order_text1">Yuu
-        </text>
-        <view class="tel all1">18688880130</view>
+        <text class="order_text1">{{name}}</text>
+        <view class="tel all1">{{tel}}</view>
     </view>
-    <view class="third addEng" style="font-size: 24rpx; ">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+    <view class="third addEng" style="font-size: 24rpx; ">{{address}}</view>
 </view>
 
 <!-- 中间 -->
 <view class="payMid all">
     <view class="payText">
         <text>订单号</text>
-        <text>20220509140712345678</text>
+        <text>{{orderNum}}</text>
     </view>
     <view class="payText">
         <text>转运路线</text>
@@ -31,19 +30,19 @@
     </view>
     <view class="payText">
         <text>转运费</text>
-        <text>¥138.00</text>
+        <text>¥{{transport}}</text>
     </view>
     <view class="payText">
         <text>附加费</text>
-        <text>¥38.00</text>
+        <text>¥{{attach}}</text>
     </view>
     <view class="payText">
         <text>丢失险</text>
-        <text>¥0.00</text>
+        <text>¥{{lose}}</text>
     </view>
     <view class="payText">
         <text>关税险</text>
-        <text>¥28.00</text>
+        <text>¥{{customs}}</text>
     </view>
     <navigator url="/pages/myCoupon/myCoupon">
         <view class="payText">
@@ -52,7 +51,7 @@
                 <text>优惠券</text>
             </view>
             <view>
-                <text style="color:#ec1d2e">- ¥ 8</text>
+                <text style="color:#ec1d2e">- ¥ {{money}}</text>
                 <image class="img1" src="/assets/image/右箭头.png"></image>
             </view>
         </view>
@@ -65,17 +64,17 @@
     <view class="sellte">
         <view>
             <text>已优惠</text>
-            <text style="color: #ec0606;"> ¥ 8</text>
+            <text style="color: #ec0606;"> ¥ {{reduce}}</text>
             <text> 小计 </text>
         </view>
-        <view class="value"> ¥ 28.00</view>
+        <view class="value"> ¥ {{subtotal}}</view>
     </view>
 </view>
 
 <!-- 底部 -->
 <view class="payFooter">
     <view class="payLeft">
-        <view class="text">订单总金额：¥ 138.00</view>
+        <view class="text">订单总金额：¥ {{total}}</view>
         <view class="textBox">
             <checkbox class="checkbox" checked="{{check}}" bindtap="checkTap" />
             <view bindtap="showModal">阅读并同意《电子运单契约条款》</view>
@@ -88,7 +87,7 @@
 <view class="wrap">
     <!-- modal -->
     <view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
-        <view class="modal-cancel" ></view>
+        <view class="modal-cancel"></view>
         <view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
             <view class='Mselect'>
                 <scroll-view scroll-y="true" style="height: 854rpx;">

@@ -131,15 +131,14 @@
 <view style="position: absolute; left: 26rpx; top: 1600rpx;">
     <view class="yunfei_title">预估运费</view>
     <view class="yunfei_box">
-        <view class="box left all">
+        <view class="box left all" bindtap="handleSelectGoods">
             <view style="padding: 10rpx;">转运渠道</view>
-            <view>普通货物</view>
+            <view>{{goods}}</view>
         </view>
         <view class="box right all">
             <view style="padding: 10rpx;">预估重量</view>
-            <view>请输入重量</view>
+            <input type="number" model:value="{{value}}" bindblur="handleWeight" placeholder="请输入重量"/>
         </view>
-
     </view>
 
     <view class="tiji_box all">
@@ -152,7 +151,7 @@
     <view class="tiji_box all tiji_footer">
         <view class="content">
             <view>预估运费（实际结果以订单为准）</view>
-            <view>¥ 0.00</view>
+            <view>¥ {{total}}</view>
         </view>
 
     </view>

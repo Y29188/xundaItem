@@ -39,17 +39,17 @@
     <view class="kuaidigeshu boxCon">
         <text> 2.</text>
         <input class="inp inp1" placeholder="12345567789" type="number" name="" id="" />
-        <text class="waitRu">已入库</text>
+        <text class="waitRu">{{state}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 3.</text>
         <input class="inp inp1" placeholder="124234234242" type="number" name="" id="" />
-        <text class="waitRu">已入库</text>
+        <text class="waitRu">{{state}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 4.</text>
         <input class="inp inp1" placeholder="12345" type="number" name="" id="" />
-        <text class="waitRu">已入库</text>
+        <text class="waitRu">{{state}}</text>
     </view>
 </view>
 

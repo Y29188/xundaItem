@@ -43,11 +43,11 @@
             <view class="textContent">
                 <view>包裹一</view>
                 <view class="packDesc">
-                    <view>属性:普通货物</view>
-                    <view>长宽高:12*5*5 CM</view>
-                    <view>计费重量:1.25KG</view>
-                    <view>计费方式:实际重量</view>
-                    <view>运费: ¥125</view>
+                    <view>属性：普通货物</view>
+                    <view>长宽高：12*5*5 CM</view>
+                    <view>计费重量：1.25KG</view>
+                    <view>计费方式：实际重量</view>
+                    <view>运费： ¥125</view>
                 </view>
             </view>
         </view>
@@ -58,11 +58,11 @@
             <view class="textContent">
                 <view>包裹二</view>
                 <view class="packDesc">
-                    <view>属性:普通货物</view>
-                    <view>长宽高:12*5*5 CM</view>
-                    <view>计费重量:1.25KG</view>
-                    <view>计费方式:实际重量</view>
-                    <view>运费: ¥125</view>
+                    <view>属性：普通货物</view>
+                    <view>长宽高：12*5*5 CM</view>
+                    <view>计费重量：1.25KG</view>
+                    <view>计费方式：实际重量</view>
+                    <view>运费： ¥125</view>
                 </view>
             </view>
         </view>
@@ -71,13 +71,13 @@
                 <image class="img" src="/assets/image/img1.png"></image>
             </view>
             <view class="textContent">
-                <view>123456789823424234</view>
+                <view>包裹三</view>
                 <view class="packDesc">
-                    <view>属性:普通货物</view>
-                    <view>长宽高:12*5*5 CM</view>
-                    <view>计费重量:1.25KG</view>
-                    <view>计费方式:实际重量</view>
-                    <view>运费: ¥125</view>
+                    <view>属性：普通货物</view>
+                    <view>长宽高：12*5*5 CM</view>
+                    <view>计费重量：1.25KG</view>
+                    <view>计费方式：实际重量</view>
+                    <view>运费： ¥125</view>
                 </view>
             </view>
         </view>
@@ -96,27 +96,27 @@
     </view>
     <view class="kuaidigeshu boxCon" style="margin-top: 40rpx;">
         <text> 1.</text>
-        <input class="inp inp1" placeholder="123456789" type="number" name="" id="" />
-        <view class="waitRu weight">1.28kg</view>
-        <text class="waitRu">待入仓</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+        <view class="waitRu weight">{{weight}}</view>
+        <text class="waitRu">{{state1}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 2.</text>
-        <input class="inp inp1" placeholder="12345567789" type="number" name="" id="" />
-        <view class="waitRu weight">1.28kg</view>
-        <text class="waitRu">已入库</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+        <view class="waitRu weight">{{weight}}</view>
+        <text class="waitRu">{{state}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 3.</text>
-        <input class="inp inp1" placeholder="124234234242" type="number" name="" id="" />
-        <view class="waitRu weight">1.28kg</view>
-        <text class="waitRu">已入库</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+        <view class="waitRu weight">{{weight}}</view>
+        <text class="waitRu">{{state}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 4.</text>
-        <input class="inp inp1" placeholder="12345" type="number" name="" id="" />
-        <view class="waitRu weight">1.28kg</view>
-        <text class="waitRu">已入库</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+        <view class="waitRu weight">{{weight}}</view>
+        <text class="waitRu">{{state}}</text>
     </view>
 </view>
 

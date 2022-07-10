@@ -4,19 +4,18 @@
         <view class="icon">
             <image class="img" src="/assets/image/收货地址.png"></image>
         </view>
-        <text class="order_text1">新希望仓库</text>
+        <text class="order_text1">{{cangku}}</text>
         <view class="tel all1">{{tel}} <text class="copy all1" data-item="{{tel}}" bindtap="copyTel">复制</text></view>
     </view>
-    <view class="third desAdd">深圳市龙华区龙华街道工业路壹城欢智中心C座2607室</view>
+    <view class="third desAdd">{{address}}</view>
     <view class="first">
         <view class="icon" style="background-color: #fff;">
             <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
-        <text class="order_text1">Yuu
-        </text>
-        <view class="tel all1">18688880130</view>
+        <text class="order_text1">{{name}}</text>
+        <view class="tel all1">{{tel}}</view>
     </view>
-    <view class="third addEng" style="font-size: 24rpx; ">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA</view>
+    <view class="third addEng" style="font-size: 24rpx; ">{{address2}}</view>
 </view>
 
 <!-- 中间 -->
@@ -25,7 +24,7 @@
     <view class="kuaidigeshu">
         <text class="fuhao"> * </text>
         <text decode="{{true}}" class="kuaiDiNum">&nbsp; 快递个数</text>
-        <input class="inp" bindblur="loseDopt" disabled="{{ban}}" placeholder="请输入快递单号" type="number" />
+        <input type="number" class="inp" bindblur="loseDopt" disabled="{{ban}}" placeholder="请输入快递单号" type="number" />
     </view>
     <view style="margin-top: -10rpx;">
         <textarea class="remarks" name="" id="" cols="30" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
@@ -35,14 +34,12 @@
         <block wx:for="{{conLists}}" wx:key="index">
             <view class='template_title_list flex-x'>
                 {{index + 1}}、
-                <input class="inp inp1" bindblur="showdialog" placeholder="请输入快递单号" bindinput='inputChange' data-index='{{index}}' type="number" data-type='inputNum' value="{{inputNum}}" />
-                <!--弹窗-->
+                <input class="inp inp1" bindblur="showdialog" model:value="{{item.value}}" placeholder="请输入快递单号" bindinput='inputChange' data-index='{{index}}' disabled="{{item.disabled}}" type="number" data-type='inputNum' value="{{item.value}}" />
+                <!--失去焦点弹窗-->
                 <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove2" wx:if="{{showModal2}}"></view>
                 <view class="modal-dialog" wx:if="{{showModal2}}">
                     <view class="modal-title">请确认您的快递单号是否无误</view>
-                    <view class="modal-content">
-                        请确认快递单号是否无误，一旦提交，不可修改。
-                    </view>
+                    <view class="modal-content">请确认快递单号是否无误，一旦提交，不可修改。</view>
                     <view class="modal-footer">
                         <view class="btn-cancel" bindtap="onCancel2" data-status="cancel">取消</view>
                         <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm2" data-status="confirm">确认</view>
@@ -53,6 +50,7 @@
                 </view>
             </view>
         </block>
+
         <view>
             <view class='add_con flex-x adddanhao' bindtap='add'> + 补充快递单号</view>
             <!--弹窗-->
@@ -89,7 +87,7 @@
         <text>订单状态：<text class="waitWrite">待填写</text></text>
     </view>
     <view class="orderNum">
-        <text>下单时间：2022-05-09 14:07:12</text>
+        <text>下单时间：{{orderTime}}</text>
     </view>
 </view>
 

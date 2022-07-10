@@ -5,13 +5,25 @@ Page({
      */
     data: {
         agree: "同意本条款",
+        name:"Yuu",
         hideFlag: true, // true-隐藏 false-显示
         animationData: {},
         coutTime: 5,
         ban: true,
         reject: true,
         timer: "",
-        check: false
+        check: false,
+        tel:"18688880130",
+        orderNum: "20220509140712345678",
+        address:"MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA",
+        transport: "138.00",
+        attach: "38.00",
+        lose: "0.00",
+        customs: "28.00",
+        money: "8",
+        reduce: "8",
+        subtotal: "28.00",
+        tatl:"138.00"
     },
     // 点击选项
     getOption: function (e) {
@@ -58,7 +70,7 @@ Page({
             time1 = null;
         }, 100)
     },
-    
+
     // 底部按钮禁用
     checkTap: function () {
         if (!this.data.check) {

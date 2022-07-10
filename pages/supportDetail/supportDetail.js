@@ -91,6 +91,9 @@ Page({
     // 对话框确认按钮点击事件
     onConfirm: function () {
         this.hideModal();
+        wx.navigateTo({
+            url: '/pages/payDetail/payDetail',
+        })
     },
 
 

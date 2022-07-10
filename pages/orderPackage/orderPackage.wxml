@@ -34,23 +34,23 @@
     </view>
     <view class="kuaidigeshu boxCon" style="margin-top: 40rpx;">
         <text> 1.</text>
-        <input class="inp inp1" placeholder="123456789" type="number" name="" id="" />
-            <text class="waitRu">待入仓</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+            <text class="waitRu">{{state1}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 2.</text>
-        <input class="inp inp1" placeholder="12345567789" type="number" name="" id="" />
-        <text class="waitRu">已入库</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+        <text class="waitRu">{{state}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 3.</text>
-        <input class="inp inp1" placeholder="124234234242" type="number" name="" id="" />
-        <text class="waitRu">已入库</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+        <text class="waitRu">{{state}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 4.</text>
-        <input class="inp inp1" placeholder="12345" type="number" name="" id="" />
-        <text class="waitRu">已入库</text>
+        <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
+        <text class="waitRu">{{state}}</text>
     </view>
     <view class="adddanhao" bindtap="replenishBtn">+ 补充快递单号</view>
 </view>

@@ -26,18 +26,16 @@
     </view>
 
     <!-- 地址 -->
-    <view class="addCon" wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
+    <view class="addCon" wx:for="{{obj}}">
         <view class="wrap">
-            <view class="name">{{value.name}}</view>
+            <view class="name">{{item.name}}</view>
             <view class="tip">
-                <input placeholder="{{value.entry}}" value="{{value.value}}"></input>
+                <input placeholder="{{item.entry}}" data-index="{{index}}" model:value="{{item.value}}" value="{{item.value}}" bindblur="handleInput"></input>
             </view>
-
         </view>
-
     </view>
 </view>
 
-<navigator url="/pages/mustKnow/mustKnow">
-    <view class="exchangeBtn">立即转运</view>
-</navigator>
+<!-- <navigator url="/pages/mustKnow/mustKnow"> -->
+<view class="exchangeBtn" bindtap="handleToTransfer">立即转运</view>
+<!-- </navigator> -->
