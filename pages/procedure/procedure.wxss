@@ -22,7 +22,7 @@
 .procedure .btn {
     width: 374rpx;
     height: 82rpx;
-    line-height: 82rpx;
+    line-height: 62rpx;
     text-align: center;
     border-radius: 8rpx;
     margin: 220rpx auto;

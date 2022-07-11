@@ -19,7 +19,7 @@
 .main .login .kuang {
     width: 600rpx;
     background-color: #fff;
-    height: 350rpx;
+    height: 550rpx;
     border-radius: 20rpx;
     display: flex;
     flex-direction: column;
@@ -33,6 +33,14 @@
     background-color: #0E9489;
     color: #fff;
     font-size: 32rpx;
+}
+
+.main .login .loginInfo {
+    margin-left: 120rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -58,4 +66,3 @@
     height: 90rpx;
     background-color: white;
 }
-

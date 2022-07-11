@@ -2,6 +2,7 @@ const app = getApp()
 
 Page({
     data: {
+
     },
     bindGetLogin() {
         wx.showModal({
@@ -48,16 +49,6 @@ Page({
             }
         })
     },
-    // onLoad() {
-    //     var that = this
-    //     wx.getSystemInfo({
-    //         success: function (res) {
-    //             console.log(res.windowHeight)
-    //             that.setData({
-    //                 clientHeight: res.windowHeight
-    //             });
-    //         }
-    //     })
-    // },
+    onLoad() {},
 
 })

@@ -5,8 +5,10 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        know: "已阅读",
+        disabled: true,
     },
+
 
     /**
      * 生命周期函数--监听页面加载
@@ -26,7 +28,26 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-
+        var that = this
+        var num = 5;
+        that.setData({
+            know: "已阅读" + num + "s"
+        })
+        var timer = setInterval(function () {
+            num--;
+            if (num <= 0) {
+                clearInterval(timer);
+                that.setData({
+                    know: '已阅读',
+                    disabled: false
+                })
+            } else {
+                that.setData({
+                    know: "已阅读" + num + "s",
+                    disabled: true
+                })
+            }
+        }, 1000)
     },
 
     /**

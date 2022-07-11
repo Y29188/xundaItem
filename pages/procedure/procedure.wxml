@@ -12,6 +12,6 @@
     <view class="right">2020-11-02 23:46:48</view>
 
     <navigator url="/pages/orderDetail/orderDetail">
-        <view class="btn">已阅读</view>
+        <button class="btn" disabled="{{disabled}}" bindtap="getKonw">{{know}}</button>
     </navigator>
 </view>
