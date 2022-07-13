@@ -1,15 +1,13 @@
-<view>
-    <navigator url="/pages/login/login">
-        <view class="my">
-            <view class="header">
-                <image class="img" src="/assets/image/7.jpg"></image>
-            </view>
-            <view class="desc">
-                <view class="name">Yuu</view>
-                <view class="content">编码：XDY</view>
-            </view>
+<view wx:if="{{userInfo.length!=0}}">
+    <view class="my">
+        <view class="header">
+            <image class="img" src="{{userInfo.avatar}}"></image>
         </view>
-    </navigator>
+        <view class="desc">
+            <view class="name">{{userInfo.nickName}}</view>
+            <view class="content">编码：{{userInfo.memberNo}}</view>
+        </view>
+    </view>
 
     <view class="middle">
         <navigator url="/pages/order/order" open-type="switchTab" class="order">
@@ -39,7 +37,7 @@
             </view>
         </view>
     </view>
-    
+
     <view class="footer">
         <navigator url="/pages/myAddress/myAddress" class="wrap">
             <text class="text">我的地址</text>
@@ -70,4 +68,9 @@
             <text class="arrow">></text>
         </navigator>
     </view>
+</view>
+<view wx:else style="margin-top: 500rpx;">
+    <navigator url="/pages/login/login">
+        <button type="primary" bindtap="getUserProfile">登陆</button>
+    </navigator>
 </view>

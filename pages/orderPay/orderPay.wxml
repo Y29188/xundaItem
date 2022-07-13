@@ -14,10 +14,10 @@
         <view class="icon" style="background-color: #fff;">
             <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
-        <text class="order_text1">{{name}}</text>
-        <view class="tel all1">{{tel}}</view>
+        <text class="order_text1">{{selectaddr.name}}</text>
+        <view class="tel all1">{{selectaddr.phone}}</view>
     </view>
-    <view class="third addEng" style="font-size: 24rpx; ">{{address2}}</view>
+    <view class="third addEng" style="font-size: 24rpx; ">{{selectaddr.address}}</view>
 </view>
 
 <!-- 第二部分 -->

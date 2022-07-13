@@ -1,5 +1,8 @@
 // index.js
 // 获取应用实例
+import {
+    getBanner
+} from '../api/data'
 const app = getApp()
 Page({
     data: {
@@ -7,6 +10,7 @@ Page({
         showModal: false,
         list: ["普通货物", "电子产品", "液体粉末", "内地EMS", "广东EMS"],
         flag: 0,
+        banner: [],
     },
     selectCountry: function () {
         wx.navigateTo({
@@ -16,10 +20,11 @@ Page({
     // 立即转运切换
     colorChange(e) {
         let flag = e.currentTarget.dataset.index;
+        // console.log(e);
         this.setData({
             flag
         })
-        // console.log(e);
+        wx.setStorageSync('flag', flag)
     },
 
     onLoad: function () {},
@@ -27,6 +32,11 @@ Page({
      * 弹窗
      */
     onShow() {
+        getBanner().then(res => {
+            this.setData({
+                banner: res.data.data
+            })
+        })
         // 选择国家跳转的参数
         if (this.options?.country) {
             this.setData({

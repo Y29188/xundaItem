@@ -55,6 +55,7 @@ Page({
         wx.reLaunch({
             url: `/pages/index/index?country=${obj}&a=8`,
         })
+        wx.setStorageSync('country', obj)
 
         console.log(e.currentTarget.dataset.item.name);
     },

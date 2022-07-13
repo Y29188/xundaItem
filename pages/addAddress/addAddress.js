@@ -1,79 +1,170 @@
 // pages/addAddress/addAddress.js
+// import { areaList } from '@vant/area-data';
+import {
+  areaList
+} from '../../miniprogram_npm/@vant/weapp/area';
+import {
+  addAddress,
+  setAddress,
+  updateAddress
+} from '../api/data';
 Page({
 
-    /**
-     * 页面的初始数据
-     */
-    data: {
-        switch1Checked: true,
-        region: [],
-        placeholderValue: "Please fill in resipient's phone"
-    },
-    // input 框失去焦点的回调
-    // handleOnfocus() {
-    //     this.setData({
-    //         placeholderValue: ''
-    //     })
-    // },
-    getUserProvince: function (e) {
-        this.setData({
-            region: e.detail.value //将用户选择的省市区赋值给region
-        })
-    },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    status: false,
+    areaList,
+    address: {
+      name: '',
+      phone: '',
+      area: '',
+      city: '',
+      code: '',
 
     },
+    obj: [{
+        name: 'Name：',
+        entry: 'Please fill in the  name',
+        value: '',
+        text: 'name'
+      },
+      {
+        name: 'Phone：',
+        entry: 'Please fill in the  phone',
+        value: '',
+        text: 'phone'
+      },
+      {
+        name: 'Address：',
+        entry: 'Please fill in  address',
+        value: '',
+        text: 'area'
+      },
+      {
+        name: 'City：',
+        entry: 'Please fill in the city',
+        value: '',
+        text: 'city'
+      },
+      {
+        name: 'PostCode：',
+        entry: 'Please fill  postcode',
+        value: '',
+        text: 'code'
+      },
 
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
+    ],
+    isAdd: 0,
+  },
 
-    },
 
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+    this.initForm()
+  },
 
-    },
+  onChange({
+    detail
+  }) {
+    console.log(detail);
+    // 需要手动对 checked 状态进行更新
+    this.setData({
+      status: detail
+    });
+  },
 
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
 
-    },
+  blur(e) {
+    let {
+      text
+    } = e.currentTarget.dataset.item
+    let {
+      value
+    } = e.detail;
+    let address = this.data.address;
+    address[text] = value;
+    this.setData({
+      value
+    })
+    console.log(value, text);
+  },
 
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
+  // 添加地址
+  addAddress() {
+    console.log(this.data.address);
+    // console.log(this.data.status);
+    // 默认状态 0 1 
+    let status = this.data.status ? 1 : 0
+    console.log(status);
+    let userInfo = wx.getStorageSync('userInfo')
+    // 解构 
+    let data = {
+      ...this.data.address,
+      status,
+      memberId: userInfo.id,
+      type: '1'
     }
+    console.log(data);
+    addAddress(data).then(res => {
+      console.log(res);
+    })
+    wx.navigateTo({
+      url: '/pages/myAddress/myAddress',
+    })
+  },
+
+  // 添加地址 重新调用初始化
+  initForm() {
+    if (this.options?.address) {
+      let address = this.options.address;
+      address = JSON.parse(address);
+      console.log(address);
+      let obj = this.data.obj;
+      obj.forEach(item => {
+        item.value = address[item.text];
+      })
+      this.setData({
+        obj,
+        isAdd: 1,
+        id: address.id,
+        address
+      })
+
+      // console.log('11');
+    } else {
+      // console.log('222');
+    }
+  },
+
+  // 保存地址
+  setAddress() {
+    let status = this.data.status ? 1 : 0
+    // console.log(status);
+    // 个人信息
+    let userInfo = wx.getStorageSync('userInfo')
+    let address = this.data.address;
+    let id = this.data.id;
+    let data = {
+      ...address,
+      id,
+      status,
+      memberId: userInfo.id,
+      type: '1'
+    }
+    // console.log(data);
+    // 更新地址 成功后跳转到selectAddress
+    updateAddress(data).then(res => {
+      console.log(res);
+      wx.navigateTo({
+        url: '../myAddress/myAddress',
+      })
+    })
+
+  },
+
+
 })

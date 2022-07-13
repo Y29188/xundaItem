@@ -4,7 +4,6 @@
         "pages/coupon/coupon",
         "pages/order/order",
         "pages/my/my",
-        "pages/login/login",
         "pages/myAddress/myAddress",
         "pages/address/address",
         "pages/addAddress/addAddress",
@@ -64,6 +63,5 @@
             }
         ]
     },
-    "style": "v2",
     "sitemapLocation": "sitemap.json"
 }

@@ -1,115 +1,125 @@
-// pages/selectAddress/selectAddress.js
+import { setDefaultAddress,delAddress,getAddressList } from '../api/data';
 Page({
 
-    /**
-     * 页面的初始数据
-     */
-    data: {
-        obj: [{
-                checked: true,
-                name: "XiaoZ",
-                phone: "179****9697",
-                address: "MEGASYSTEMS INC 85705 USA ",
-                city: "DRAGRAM",
-                postcode: "510080"
-            },
-            {
-                name: "Yuu",
-                phone: "148****0320",
-                address: "British Museum London England",
-                city: "London",
-                postcode: "233100"
-            }
-        ]
-    },
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    show:false,
+    addressList: '',
+    obj: [
+    ]
+  },
 
-    click(e) {
-        wx.navigateTo({
-            url: `/pages/address/address?address=${JSON.stringify(e.currentTarget.dataset.item) }`,
-        })
-        console.log(e.currentTarget.dataset.item);
-    },
+  // 点击编辑
+  editclick(e){
+    // console.log(e);
+    let {item} = e.currentTarget.dataset;
+
+    item = JSON.stringify(item)
+    console.log(item);
+    wx.navigateTo({
+      url: `../addAddress/addAddress?address=${item}`,
+    })
+  },
+
+  clickCity(e) {
+    console.log(e);
+  },
+
+  // 过滤
+  initList(e) {
+    let obj = this.data.obj;
+    getAddressList().then(res => {
+      this.setData({
+        addressList: res.data.data
+      })
+      console.log(res.data.data);
+    })
+  },
+
+  onShow() {
+    this.initList()
+  },
+
+  // 单选复选
+  onChange(event) {
+    // 解构 item，index 
+    let { item, index } = event.currentTarget.dataset;
+    // 赋值 
+    let addressList = this.data.addressList;
+    // 循环数组下标item的状态
+    addressList.forEach((item) => {
+      item.status = false
+
+    })
+    // 取反addressList下标的状态
+    addressList[index].status = !addressList[index].status;
+    let id = addressList[index].id;
+    // console.log(addressList[index]);
+    setDefaultAddress(id).then(res => {
+
+      // console.log(res);
+    })
+    this.setData({
+      checked: event.detail,
+      addressList,
+    });
+  },
+
+  // 删除地址
+  delAddress(e) {
+    let { id } = e.currentTarget.dataset
+    console.log(id);
+    delAddress(id).then(res =>{
+      this.initList()
+      console.log(res);
+    })
+    
+    this.setData({
+      show:true,
+      res,
+      address
+      
+    })
+
+    
+  },
+
+  clickAddress() {
+    wx.navigateTo({
+      url: '/pages/addAddress/addAddress',
+    })
+  },
+
+  // 
+  huixianAddress(e){
+    console.log(e);
+    let {item}= e.currentTarget.dataset;
+    console.log(item);
+    item = JSON.stringify(item)
+    wx.navigateTo({
+      url: `/pages/address/address?address=${item}`,
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
 
 
-    // 过滤
-    initList(e) {
-        let obj = this.data.obj;
-        let list = {}
-        obj.forEach(item => {
-            if (!list[item.city[0]]) {
-                list[item.city[0]] = [item];
-            } else {
-                list[item.city[0]].push[item];
-            }
-        });
-        this.setData({
-            obj: list
-        })
-        console.log(list);
-    },
-    onShow() {
-        this.initList()
-    },
-    // 单选复选
-    onChange(event) {
-        this.setData({
-            checked: event.detail,
-        });
-    },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
-    }
 })

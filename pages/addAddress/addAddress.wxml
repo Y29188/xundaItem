@@ -1,60 +1,21 @@
-<!-- 城市选择器 -->
-<!-- <picker mode="region" bindchange="getUserProvince">
-    <view>
-        选择的省份:<text wx:for="{{region}}">{{item}} </text>
-    </view>
-</picker> -->
+<view class="address">
+  <view class="box box2">
 
-<view class="addressCon">
-    <view class="holder">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name：</text>
-        <view class="inp"><input type="text" placeholder="Please fill in resipient's name" name="" id="" /></view>
+    <!-- 选择地址 -->
+    <view class="target-msg" wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
+      <view class="no-wrap">
+        <view>{{value.name}}</view>
+        <input class="entry" placeholder="{{value.entry}}" bindblur='blur' data-item="{{value}}" value="{{value.value}}"></input>
+      </view>
     </view>
-    <view class="holder">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone：</text>
-        <view class="inp">
-            <input style="width: 100%;" type="text" placeholder="Please fill in resipient's phone" name="" id="" />
-        </view>
-    </view>
-    <view class="holder">
-        <text decode="{{true}}">&nbsp;&nbsp;Address：</text>
-        <view class="inp">
-            <input type="text" placeholder="Please fill in the address" name="" id="" />
-        </view>
-    </view>
-    <view class="holder">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City：</text>
-        <view class="inp">
-            <picker mode="region" bindchange="getUserProvince">
-                <input type="text" placeholder="" name="" id="" />
-                <view class="weizhi">
-                    <text wx:for="{{region}}" wx:key="region">{{item}} </text>
-                </view>
-            </picker>
-        </view>
-    </view>
-    <view class="holder">
-        <text decode="{{true}}">PostCode：</text>
-        <view class="inp">
-            <input type="text" placeholder="Please fill in the postcode" name="" id="" />
-        </view>
-    </view>
-    <view class="holder">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;Country：</text>
-        <view class="inp1">
-            <input type="text" placeholder="Please select a country" name="" id="" />
-            <image class="img1" src="/assets/image/右箭头1.png"></image>
-        </view>
-    </view>
+  </view>
 </view>
 
-<view class="addLine"></view>
-
-<view class="set">
-    <text class="default">设置默认</text>
-    <view class="body-view wx-switch-input">
-        <switch checked="{{checked}}" />
-    </view>
+<view class="line"></view>
+<view class="moren">
+  <view>设为默认</view>
+  <van-switch checked="{{ status }}" bind:change="onChange" active-color="#07c160" />
 </view>
 
-<navigator url="/pages/myAddress/myAddress" class="add_address">添加地址</navigator>
+<view wx:if="{{isAdd}}" class="btn1 btn-dd" bindtap="setAddress">保存地址</view>
+<view wx:else class="btn1 btn-dd" bindtap="addAddress">添加地址</view>

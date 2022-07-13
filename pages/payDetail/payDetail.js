@@ -108,6 +108,7 @@ Page({
         }, 220) // 先执行下滑动画，再隐藏模块
 
     },
+
     // 动画 -- 滑入
     slideIn: function () {
         this.animation.translateY(0).step() // 在y轴偏移，然后用step()完成一个动画
@@ -116,6 +117,7 @@ Page({
             animationData: this.animation.export()
         })
     },
+    
     // 动画 -- 滑出
     slideDown: function () {
         this.animation.translateY(300).step()

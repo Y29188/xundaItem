@@ -14,11 +14,10 @@
         <view class="icon" style="background-color: #fff;">
             <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
-        <text class="order_text1">Yuu
-        </text>
-        <view class="tel all1">{{tel}}</view>
+        <text class="order_text1">{{selectaddr.name}}</text>
+        <view class="tel all1">{{selectaddr.phone}}</view>
     </view>
-    <view class="third addEng" style="font-size: 24rpx; ">{{address2}}</view>
+    <view class="third addEng" style="font-size: 24rpx; ">{{selectaddr.address}}</view>
 </view>
 
 <!-- 中间 -->
@@ -35,7 +34,7 @@
     <view class="kuaidigeshu boxCon" style="margin-top: 40rpx;">
         <text> 1.</text>
         <input class="inp inp1" placeholder="{{size}}" type="number" name="" id="" />
-            <text class="waitRu">{{state1}}</text>
+        <text class="waitRu">{{state1}}</text>
     </view>
     <view class="kuaidigeshu boxCon">
         <text> 2.</text>

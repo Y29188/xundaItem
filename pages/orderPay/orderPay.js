@@ -5,10 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        name: "Yuu",
         cangKu: "新希望仓库",
         address: "深圳市龙华区龙华街道工业路壹城欢智中心C座2607室",
-        address2: "MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA",
         tel: "18688880130",
         orderNum: "20220509140712345678",
         showModal: false,
@@ -19,13 +17,20 @@ Page({
         fare: "138.00",
         attach: "0.00",
         weight: "5.6 kg",
-        countr: "美国",
         cate: "普通货物",
         imgList: [
             "/assets/image/img1.png",
             "/assets/image/img1.png",
             "/assets/image/img1.png"
         ]
+    },
+    onShow() {
+        let selectaddr = wx.getStorageSync('selectaddr')
+        let country = wx.getStorageSync('country')
+        this.setData({
+            selectaddr,
+            country
+        })
     },
     // 预览图片，放大预览
     preview(event) {
@@ -99,6 +104,7 @@ Page({
             showModal: true
         })
     },
+    
     // 弹出框蒙层截断touchmove事件
     preventTouchMove: function () {},
 

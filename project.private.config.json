@@ -10,7 +10,7 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "pages/my/my",
+                    "pathName": "pages/index/index",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
@@ -31,15 +31,15 @@
                 },
                 {
                     "name": "",
-                    "pathName": "pages/index/index",
+                    "pathName": "pages/orderDetail/orderDetail",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
                 },
                 {
                     "name": "",
-                    "pathName": "pages/address/address",
-                    "query": "address=%7B%22checked%22%3Atrue%2C%22name%22%3A%22XiaoZ%22%2C%22tell%22%3A%22179****9697%22%2C%22address%22%3A%22MEGASYSTEMS%20INC%2085705%20USA%20%22%2C%22city%22%3A%22DRAGRAM%22%2C%22postCode%22%3A%22510080%22%7D",
+                    "pathName": "pages/my/my",
+                    "query": "",
                     "launchMode": "default",
                     "scene": null
                 },
@@ -88,6 +88,13 @@
                 {
                     "name": "",
                     "pathName": "pages/procedure/procedure",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/address/address",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

@@ -14,10 +14,10 @@
         <view class="icon" style="background-color: #fff;">
             <image class="img2" src="/assets/image/9.jpg"></image>
         </view>
-        <text class="order_text1">{{name}}</text>
-        <view class="tel all1">{{tel}}</view>
+        <text class="order_text1">{{selectaddr.name}}</text>
+        <view class="tel all1">{{selectaddr.phone}}</view>
     </view>
-    <view class="third addEng" style="font-size: 24rpx; ">{{address2}}</view>
+    <view class="third addEng" style="font-size: 24rpx; ">{{selectaddr.address}}</view>
 </view>
 
 <!-- 中间 -->
@@ -60,7 +60,7 @@
         <text class="copy" data-item="{{orderNum}}" bindtap="copy">复制</text>
     </view>
     <view class="orderNum">
-        <text>转运路线：中国 — 美国</text>
+        <text>转运路线：中国 — {{country}}</text>
     </view>
     <view class="orderNum">
         <text>预选渠道：普通货物</text>

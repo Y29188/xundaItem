@@ -1,9 +1,4 @@
-// pages/fare/fare.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
         check: false,
         checked: true,
@@ -33,9 +28,7 @@ Page({
         total: "0.00"
     },
 
-    /**
-     * 生命周期函数--监听页面加载
-     */
+
     onLoad(options) {
 
     },

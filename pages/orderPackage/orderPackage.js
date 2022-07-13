@@ -9,11 +9,17 @@ Page({
         showModal: false,
         orderNum: "20220509140712345678",
         address: "深圳市龙华区龙华街道工业路壹城欢智中心C座2607室",
-        address2: "MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA",
         state1: "待入仓",
         state: "已入库",
         size: "123759874",
-        country:"",
+    },
+    onShow() {
+        let selectaddr = wx.getStorageSync('selectaddr')
+        let country = wx.getStorageSync('country')
+        this.setData({
+            selectaddr,
+            country
+        })
     },
 
     // 复制电话号码

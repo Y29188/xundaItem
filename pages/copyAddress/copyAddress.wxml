@@ -8,13 +8,13 @@
             <text class="text">仓库地址</text>
         </view>
         <view class="addressName">
-            <view style="margin-left: 32rpx;">{{person}}</view>
-            <view>{{address}}<text style="margin-left: 160rpx;">{{address1}}</text></view>
-            <view>{{tel}}</view>
-            <view>{{zipCode}}</view>
+            <view style="margin-left: 32rpx;">收件人：{{cangKu}}</view>
+            <view>收货地址：{{address}}<text style="margin-left: 160rpx;">{{address1}}</text></view>
+            <view>联系电话：{{tel}}</view>
+            <view>邮政编码：{{zipCode}}</view>
         </view>
     </view>
-    <view class="copyWare" bindtap="copyAddress" data-item="{{person}},{{address}}{{address1}},{{tel}},{{zipCode}}">一键复制仓库地址信息</view>
+    <view class="copyWare" bindtap="copyAddress" data-item="{{cangKu}},{{address}}{{address1}},{{tel}},{{zipCode}}">一键复制仓库地址信息</view>
 </view>
 
 <!-- 步骤 -->

@@ -8,9 +8,7 @@ Page({
         tel: "18688880130",
         orderNum: "20220509140712345678",
         address: "深圳市龙华区龙华街道工业路壹城欢智中心C座2607室",
-        address2: "MEGASYSTEMS INC 799 E DRAGRAM SUITE 5ATUCSON, AZ 85705 USA",
         cangku: "新希望仓库",
-        name: "Yuu",
         country: "",
         orderTime: "2022-05-09 14:07:12",
         showModal: false,
@@ -121,7 +119,7 @@ Page({
         })
     },
 
-    //  添加内容
+    // 添加内容
     add(e) {
         this.setData({
             showModal: true
@@ -217,6 +215,16 @@ Page({
 
     onLoad: function (options) {
 
+    },
+    onShow() {
+        let selectaddr = wx.getStorageSync('selectaddr')
+        let country = wx.getStorageSync('country')
+        let flag = wx.getStorageSync('flag')
+        this.setData({
+            selectaddr,
+            country,
+            flag
+        })
     }
 
 })

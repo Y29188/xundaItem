@@ -16,7 +16,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">待入仓</view>
         <view class="buttons">
@@ -38,7 +38,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">待填写</view>
         <navigator url="/pages/orderDetail/orderDetail" class="buttons">
@@ -55,7 +55,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">待支付</view>
         <view class="buttons">
@@ -77,7 +77,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">已出仓</view>
         <view class="buttons">
@@ -99,7 +99,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">已完成</view>
         <view class="buttons">
@@ -121,7 +121,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">待支付</view>
         <view class="buttons">
@@ -145,7 +145,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">已支付</view>
         <view class="buttons">
@@ -167,7 +167,7 @@
         <view class="text">
             <text class="cityName">中国</text>
             <image mode="widthFix" src="../../assets/image/plane.jpg"></image>
-            <text class="cityName">美国</text>
+            <text class="cityName">{{country}}</text>
         </view>
         <view class="texts">已完成</view>
         <view class="buttons">

@@ -14,16 +14,17 @@
 
 .index .banner swiper {
     position: absolute;
-    left: 12rpx;
+    left: 20rpx;
     top: 60rpx;
-    height: 100%;
-    width: 100%;
+    width: 708rpx;
+    overflow: hidden;
 }
 
-.index .banner image {
+.index .banner .img {
     width: 708rpx;
-    height: 312rpx;
+    height: 300rpx;
     border-radius: 6px;
+    overflow: hidden;
 }
 
 .index .box {
@@ -68,7 +69,12 @@
 }
 
 .index .box .city .usa {
-    right: 80rpx;
+    width: 190rpx;
+    height: 70rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    right: 20rpx;
     top: 125rpx;
 }
 

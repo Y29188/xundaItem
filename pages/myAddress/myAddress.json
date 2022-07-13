@@ -1,4 +1,10 @@
 {
     "navigationBarTitleText": "我的地址",
-    "usingComponents": {}
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-tag": "@vant/weapp/tag/index",
+        "van-checkbox": "@vant/weapp/checkbox/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-dialog": "@vant/weapp/dialog/index"
+    }
 }

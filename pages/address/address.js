@@ -5,27 +5,27 @@ Page({
      * 页面的初始数据
      */
     data: {
-        cku: "迅达仓库",
+        cku: "中德仓库",
         tell: '18688880130',
         copy: '复制',
         address: '深圳市龙华区龙华街道工业路壹城环智中心C座2607室',
         obj: [{
                 name: 'Name：',
-                entry: "Please fill in the recipient's name",
+                entry: 'Please fill in the  name',
                 value: '',
                 text: 'name'
             },
             {
                 name: 'Phone：',
-                entry: "Please fill in the recipient's phone",
+                entry: 'Please fill in the  phone',
                 value: '',
                 text: 'phone'
             },
             {
                 name: 'Address：',
-                entry: 'Please fill in the address',
+                entry: 'Please fill in  address',
                 value: '',
-                text: 'address'
+                text: 'area'
             },
             {
                 name: 'City：',
@@ -35,23 +35,24 @@ Page({
             },
             {
                 name: 'PostCode：',
-                entry: 'Please fill in the postcode',
+                entry: 'Please fill  postcode',
                 value: '',
-                text: 'postcode'
+                text: 'code'
             },
+
         ],
     },
-    // 复制电话号码
+    // 点击复制
     copy: function (e) {
         let item = e.currentTarget.dataset.item;
         console.log("复制", e, item);
         wx.setClipboardData({
             data: item,
             success: function (res) {
-                wx.showToast({
+                showToastInfo({
                     title: '复制成功',
                     icon: "success"
-                })
+                });
             }
         });
     },
@@ -62,17 +63,30 @@ Page({
     onLoad(options) {
 
     },
+
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+    onReady() {
+
+    },
+
     /**
      * 生命周期函数--监听页面显示
      */
     onShow() {
+
         if (this.options?.address) {
             let address = JSON.parse(this.options.address);
-            // console.log(address);
+            console.log(address, 'fff');
             let obj = this.data.obj;
             obj.forEach((item) => {
-                item.value = address[item.text];
+
+                item.value = address[item.text]
+
+                // console.log(address[item.name]);
             })
+            console.log(obj, 'ooo');
             this.setData({
                 obj,
             })
@@ -83,45 +97,38 @@ Page({
 
     },
 
-    // 立即转运
-    handleToTransfer() {
-        let obj = {}
-        // 循环对象
-        for (let key in this.data.obj) {
-            // 创建字段拿到value
-            obj[this.data.obj[`${key}`].text] = this.data.obj[`${key}`].value
-        }
-        // 设置同步本地存储
-        wx.setStorageSync('selectaddr',obj );
-        wx.navigateTo({
-          url: '/pages/procedure/procedure',
-        })
+    /**
+     * 生命周期函数--监听页面隐藏
+     */
+    onHide() {
+
     },
 
-    // input框失去焦点事件
-    handleInput(e) {
-        // 取下标和获取input的value
-        let indexipt = e.target.dataset.index
-        let value = e.detail.value
-        // console.log(value);
-        // 循环数组
-        this.data.obj.forEach((item, index) => {
-            if (index == indexipt) {
-                this.setData({
-                    // 取出下标赋值
-                    [`obj[${index}].value`]: value
-                })
-            }
-        })
+    /**
+     * 生命周期函数--监听页面卸载
+     */
+    onUnload() {
+
     },
 
-    // exchangeBtn:function(){
-    //     let value = this.data.obj.value;
-    //     if(value == ''){
-    //         wx:wx.showToast({
-    //           title: '请输入对应的值',
-    //         })
-    //         return
-    //     }
-    // },
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh() {
+
+    },
+
+    /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom() {
+
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage() {
+
+    }
 })

@@ -1,49 +1,44 @@
-@import "../orderDetail//orderDetail.wxss";
+.valie {
+    /* width: 200rpx; */
+
+    margin: 40rpx 20rpx;
+    font-size: 28rpx;
+}
+
+.username1 {
+    display: flex;
+}
+
+.username {
+    margin-left: 30rpx;
+}
+
+.circle {
+    width: 64rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+    background-color: rgba(255, 167, 38, 100);
+    color: rgba(255, 255, 255, 100);
+    font-size: 24rpx;
+    text-align: center;
+    border: 1px solid rgba(255, 167, 38, 100);
+    border-radius: 100%;
+}
 
 page {
     background-color: #ffffff;
 }
 
-
-
-.myAddress {
-    margin: 40rpx 60rpx;
-    /* font-size: 28rpx; */
+.del_address {
+    margin: 20rpx 180rpx;
 }
 
-.myAddress .addressBox {
+.flex {
     display: flex;
-    justify-content: start;
 }
 
-.myAddress .addressBox .addressAvatar {
-    width: 80rpx;
-    height: 80rpx;
-    line-height: 80rpx;
-    text-align: center;
-    color: #fff;
-    background-color: blueviolet;
-    margin-top: 20rpx;
-    margin-right: 20rpx;
-    border-radius: 50%;
-}
-
-
-.myAddress .first {
-    display: flex;
-    justify-content: start;
-    margin: 20rpx 0;
-    font-size: 30rpx;
-}
-
-.myAddress .detailAdd {
-    font-size: 26rpx;
-    color: #a3a3a3;
-    margin: 20rpx 0;
-}
-
-.myTel {
-    margin-left: 60rpx;
+.value {
+    margin-left: 30rpx;
 
 }
 
@@ -57,67 +52,13 @@ page {
     bottom: 10rpx;
 }
 
-.defaultBox {
+.morenAddress {
     display: flex;
+    margin-top: 30rpx;
     justify-content: space-between;
 }
 
-.defaultBox .defaultAddress {
-    display: flex;
-    font-size: 26rpx;
-    color: #eb691d;
-    /* position: relative; */
-}
-
-.defaultBox .icon {
-    position: relative;
-}
-
-.defaultBox .icon .del {
-    width: 80rpx;
-    height: 80rpx;
-    position: absolute;
-    right: -40rpx;
-    top: -20rpx;
-}
-
-.defaultBox .icon .edit {
-    right: 20rpx;
-}
-
-/* checkbox设置成圆形 */
-.checkbox .wx-checkbox-input {
-    border-radius: 50%;
-    width: 28rpx;
-    height: 28rpx;
-}
-
-/* 选中的背景颜色 */
-.checkbox .wx-checkbox-input.wx-checkbox-input-checked {
-    border: 1px solid #e7691d;
-}
-
-/* 打钩的样式 */
-.checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
-    width: 40rpx;
-    /* 选中后对勾大小 */
-    height: 40rpx;
-    /* 选中后对勾大小 */
-    font-size: 38rpx;
-    color: #e7691d;
-    /* 对勾颜色 白色 */
-}
-
-.newAdd {
-    position: fixed;
-    left: 25rpx;
-    bottom: 0;
-    width: 355px;
-    height: 40px;
-    line-height: 80rpx;
-    text-align: center;
-    color: #fff;
-    border-radius: 20px;
-    background-color: #7cb342;
-    margin: 0 auto;
+.address {
+    font-size: 24rpx;
+    color: rgba(153, 153, 153, 100);
 }

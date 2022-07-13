@@ -2,18 +2,9 @@
     <!-- 轮播图的使用 -->
     <view class="index">
         <view class="banner">
-            <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
-                <swiper-item>
-                    <image class="img" src="/assets/image/1.jpg"></image>
-                </swiper-item>
-                <swiper-item>
-                    <image class="img" src="/assets/image/2.jpg"></image>
-                </swiper-item>
-                <swiper-item>
-                    <image class="img" src="/assets/image/3.jpg"></image>
-                </swiper-item>
-                <swiper-item>
-                    <image class="img" src="/assets/image/4.jpg"></image>
+            <swiper circular indicator-dots indicator-active-color="#424242" circular indicator-color="#424242" autoplay interval="2000">
+                <swiper-item wx:for="{{banner}}" wx:key="banner">
+                    <image class="img" src="{{item.src}}"></image>
                 </swiper-item>
             </swiper>
         </view>
@@ -42,8 +33,6 @@
                     </view>
                 </view>
             </view>
-
-
         </view>
     </view>
 
