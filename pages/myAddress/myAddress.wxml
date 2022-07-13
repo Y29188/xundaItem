@@ -1,35 +1,32 @@
 <view>
-
-  <view class="valie" wx:for="{{addressList}}" data-item="{{value}}" wx:for-item="value" data-item="{{value}}" catch:tap="huixianAddress">
-    <view class="username1">
-      <view class="circle">{{value.name[0]}}</view>
-      <view class="username">
-        <view class="flex">
-          <view>{{value.name}}</view>
-          <view class="value">{{value.phone}}</view>
+    <view class="myAddress" wx:for="{{addressList}}" data-item="{{value}}" wx:for-item="value" data-item="{{value}}" catch:tap="huixianAddress">
+        <view class="info">
+            <view class="avatar">{{value.name[0]}}</view>
+            <view class="username">
+                <view class="flex">
+                    <view>{{value.name}}</view>
+                    <view class="value">{{value.phone}}</view>
+                </view>
+                <view class="address">{{value.city}}</view>
+            </view>
         </view>
-        <view class="address">{{value.city}}</view>
-      </view>
+
+        <!-- 默认地址 -->
+        <view class="morenAddress">
+            <!-- 默认寄件地址 -->
+            <van-checkbox value="{{ value.status }}" data-item="{{value}}" data-index="{{index}}" bind:change="onChange" icon-size='30rpx' checked-color="#e7691d">默认寄件地址</van-checkbox>
+            <view>
+                <!-- 编辑 -->
+                <van-icon  name="edit" bindtap="editclick" data-item="{{value}}" custom-style='margin-right:30rpx;color: rgba(153, 153, 153, 100)' />
+                <!-- 删除 -->
+                <van-icon data-id='{{value.id}}' bind:click='delAddress' name="delete-o" custom-style='margin-right:20rpx;color: rgba(153, 153, 153, 100)' />
+            </view>
+        </view>
     </view>
-
-    <!-- 默认地址 -->
-    <view class="morenAddress">
-      <!-- 默认寄件地址 -->
-      <van-checkbox value="{{ value.status }}" data-item="{{value}}" data-index="{{index}}" bind:change="onChange" icon-size='30rpx' checked-color="#d4237a">{{value.status}}默认寄件地址</van-checkbox>
-      <view>
-        <!-- 编辑 -->
-        <van-icon name="edit" bindtap="editclick" data-item="{{value}}" custom-style='margin-right:30rpx;color: rgba(153, 153, 153, 100)' />
-        <!-- 删除 -->
-        <van-icon data-id='{{value.id}}' bind:click='delAddress' name="delete-o" custom-style='margin-right:20rpx;color: rgba(153, 153, 153, 100)' />
-      </view>
-    </view>
-
-  </view>
-
 </view>
 
-<view class="btn flex-c-c" bindtap="clickAddress">新建地址</view>
+<view class="btn" bindtap="clickAddress">新建地址</view>
 
 <van-dialog use-slot title="删除地址" show="{{ show }}" show-cancel-button bind:close="onClose">
-  <view class="del_address">确认删除地址吗？</view>
+    <view class="del_address">确认删除地址吗？</view>
 </van-dialog>

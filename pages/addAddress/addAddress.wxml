@@ -1,21 +1,20 @@
 <view class="address">
-  <view class="box box2">
-
-    <!-- 选择地址 -->
-    <view class="target-msg" wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
-      <view class="no-wrap">
-        <view>{{value.name}}</view>
-        <input class="entry" placeholder="{{value.entry}}" bindblur='blur' data-item="{{value}}" value="{{value.value}}"></input>
-      </view>
+    <view class="addAddress">
+        <!-- 选择地址 -->
+        <view wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
+            <view class="selWrap">
+                <view class="selName">{{value.name}}</view>
+                <input class="ipt" placeholder="{{value.entry}}" bindblur='blur' data-item="{{value}}" value="{{value.value}}"></input>
+            </view>
+        </view>
     </view>
-  </view>
 </view>
 
 <view class="line"></view>
-<view class="moren">
-  <view>设为默认</view>
-  <van-switch checked="{{ status }}" bind:change="onChange" active-color="#07c160" />
+<view class="setDefault">
+    <view>设为默认</view>
+    <van-switch checked="{{ status }}" bind:change="onChange" active-color="#07c160" />
 </view>
 
 <view wx:if="{{isAdd}}" class="btn1 btn-dd" bindtap="setAddress">保存地址</view>
-<view wx:else class="btn1 btn-dd" bindtap="addAddress">添加地址</view>
+<view wx:else class="addAdd" bindtap="addAddress">添加地址</view>

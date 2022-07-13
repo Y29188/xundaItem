@@ -2,7 +2,7 @@
 // 获取应用实例
 import {
     getBanner
-} from '../api/data'
+} from '../../api/data'
 const app = getApp()
 Page({
     data: {

@@ -1,35 +1,34 @@
 <view>
-
-    <view class="box">
-        <view class="boxfl" style="font-weight: 700;">
-            <!-- <image src="../../images/仓库地址.png" style="width: 40rpx;height: 40rpx;font-size: 40rpx;"></image> -->
-            仓库地址
+    <view class="box all">
+        <view class="imgWrap">
+            <image class="img" src="/assets/image/收货地址.png"></image>
         </view>
-        <view class="copy">
-            <view class="boxfl">{{cku}}</view>
-            <view class="boxfl" style="margin-left: 130rpx;">{{tell}}</view>
-            <view style="margin-left: 10rpx;" class="fuzhi" bindtap="copy" data-item="{{tell}}">{{copy}}</view>
+        <view class="cangkuAdd">仓库地址</view>
+        <view class="detailAdd">
+            <view>{{cku}}</view>
+            <view class="tel">{{tell}}</view>
+            <view class="copy" bindtap="copy" data-item="{{tell}}">{{copy}}</view>
         </view>
-        <view class="boxfl address">{{address}}</view>
+        <view class="address">{{address}}</view>
     </view>
 </view>
 
-<view class="box box2">
+<view class="targetAdd all">
     <view class="msg">目标国收件信息</view>
     <view class="add">
-        <!-- <image class="gth" src="../../images/感叹号.png"></image> -->
+        <image class="img" src="/assets/image/e.png"></image>
         <view>请用英文填写</view>
         <navigator class="selectAddress" url="/pages/myAddress/myAddress">选择地址</navigator>
     </view>
 
     <!-- 地址 -->
-    <view class="target-msg" wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
-        <view class="no-wrap">
-            <view>{{value.name}}</view>
+    <view class="addBox" wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
+        <view class="addWrap">
+            <view class="addName">{{value.name}}</view>
             <input class="entry" placeholder="{{value.entry}}" value="{{value.value}}"></input>
         </view>
 
     </view>
 </view>
 
-<navigator class="btn1 btn-dd" url="/pages/mustKnow/mustKnow">立即转运</navigator>
+<navigator class="exchange" url="/pages/mustKnow/mustKnow">立即转运</navigator>

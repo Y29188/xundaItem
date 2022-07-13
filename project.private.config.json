@@ -31,7 +31,7 @@
                 },
                 {
                     "name": "",
-                    "pathName": "pages/orderDetail/orderDetail",
+                    "pathName": "pages/address/address",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
@@ -80,7 +80,7 @@
                 },
                 {
                     "name": "",
-                    "pathName": "pages/address/address",
+                    "pathName": "pages/myAddress/myAddress",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

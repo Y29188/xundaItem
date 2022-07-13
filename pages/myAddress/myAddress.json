@@ -1,4 +1,5 @@
 {
+    "navigationBarBackgroundColor": "#e7691d",
     "navigationBarTitleText": "我的地址",
     "usingComponents": {
         "van-button": "@vant/weapp/button/index",
